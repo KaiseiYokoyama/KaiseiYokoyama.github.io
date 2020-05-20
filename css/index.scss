@@ -1,0 +1,142 @@
+body {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+}
+
+header {
+    width: 25vw;
+}
+
+main {
+    width: 75vw;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    //align-items: stretch;
+    justify-items: center;
+
+    background: #90caf9;
+
+    #index.collection {
+        border: none;
+
+        a {
+            color: black;
+        }
+
+        .secondary-content {
+            color: black;
+        }
+
+        > * {
+            border: none;
+            background: inherit;
+        }
+    }
+
+    //> img#face {
+    //    flex-shrink: 1;
+    //    width: 100%;
+    //}
+    //
+    //> #name {
+    //
+    //}
+}
+
+main {
+    overflow-y: scroll;
+
+    #profile {
+        &.card {
+            border-right: #90caf9 solid 10vw;
+        }
+
+        .card-content {
+            display: flex;
+            flex-direction: column;
+
+            .profile {
+                display: flex;
+                justify-items: center;
+
+                #face {
+                    width: 100px;
+                    object-fit: scale-down;
+
+                    margin: 20px;
+                }
+
+                #name {
+                    flex-shrink: 1;
+
+                    .kanji {
+                    }
+
+                    .alphabet {
+                        color: #039be5;
+                    }
+                }
+            }
+
+            #affiliations.collection {
+                .collection-item:before {
+                    color: #9e9e9e;
+                    content: '- ';
+                }
+            }
+
+            .links {
+                padding-left: 30px;
+
+                a {
+                    font-size: 18px;
+                    color: #039be5;
+                    //
+                    //i.material-icons {
+                    //    font-size: 22px;
+                    //    line-height: 1;
+                    //}
+                }
+
+                //:not(*:first-child) {
+                //    margin-left: 5px;
+                //}
+            }
+        }
+    }
+
+    #affiliations.collection {
+        border: none;
+
+        * {
+            border: none;
+        }
+    }
+
+    #interests.collection, #awards.collection, #job-history.collection {
+        border: none;
+
+        > * {
+            border: none;
+        }
+    }
+
+    #works {
+        .card {
+            .card-content {
+                > * {
+                    margin-bottom: 10px;
+                }
+
+                .awards > .award {
+                    display: flex;
+                }
+            }
+        }
+    }
+}

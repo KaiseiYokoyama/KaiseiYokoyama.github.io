@@ -1,0 +1,90 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+header {
+  width: 25vw;
+}
+
+main {
+  width: 75vw;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  background: #90caf9;
+}
+header #index.collection {
+  border: none;
+}
+header #index.collection a {
+  color: black;
+}
+header #index.collection .secondary-content {
+  color: black;
+}
+header #index.collection > * {
+  border: none;
+  background: inherit;
+}
+
+main {
+  overflow-y: scroll;
+}
+main #profile.card {
+  border-right: #90caf9 solid 10vw;
+}
+main #profile .card-content {
+  display: flex;
+  flex-direction: column;
+}
+main #profile .card-content .profile {
+  display: flex;
+  justify-items: center;
+}
+main #profile .card-content .profile #face {
+  width: 100px;
+  object-fit: scale-down;
+  margin: 20px;
+}
+main #profile .card-content .profile #name {
+  flex-shrink: 1;
+}
+main #profile .card-content .profile #name .alphabet {
+  color: #039be5;
+}
+main #profile .card-content #affiliations.collection .collection-item:before {
+  color: #9e9e9e;
+  content: "- ";
+}
+main #profile .card-content .links {
+  padding-left: 30px;
+}
+main #profile .card-content .links a {
+  font-size: 18px;
+  color: #039be5;
+}
+main #affiliations.collection {
+  border: none;
+}
+main #affiliations.collection * {
+  border: none;
+}
+main #interests.collection, main #awards.collection, main #job-history.collection {
+  border: none;
+}
+main #interests.collection > *, main #awards.collection > *, main #job-history.collection > * {
+  border: none;
+}
+main #works .card .card-content > * {
+  margin-bottom: 10px;
+}
+main #works .card .card-content .awards > .award {
+  display: flex;
+}
+
+/*# sourceMappingURL=index.css.map */
