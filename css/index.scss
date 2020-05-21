@@ -5,12 +5,26 @@ body {
     display: flex;
 }
 
-header {
-    width: 25vw;
+/// スマホ用
+@media only screen and (max-width: 600px) {
+    header {
+        width: 0vw;
+    }
+
+    main {
+        width: 100vw;
+    }
 }
 
-main {
-    width: 75vw;
+/// タブレット, スマホ用
+@media only screen and (min-width: 600px) {
+    header {
+        width: 25vw;
+    }
+
+    main {
+        width: 75vw;
+    }
 }
 
 header {
@@ -25,7 +39,7 @@ header {
         border: none;
 
         a {
-            color: rgba(0,0,0,0.87);
+            color: rgba(0, 0, 0, 0.87);
             opacity: 0.8;
 
             @keyframes focus_index {
@@ -64,8 +78,16 @@ main {
     overflow-y: scroll;
 
     #profile {
+
         &.card {
             border-right: #90caf9 solid 10vw;
+        }
+
+        /// スマホ用
+        @media only screen and (max-width: 600px) {
+            &.card {
+                border-right: none;
+            }
         }
 
         .card-content {
@@ -86,11 +108,19 @@ main {
                 #name {
                     flex-shrink: 1;
 
-                    .kanji {
-                    }
-
                     .alphabet {
                         color: #039be5;
+                    }
+                }
+            }
+
+            /// スマホ用
+            @media only screen and (max-width: 600px) {
+                .profile {
+                    flex-direction: column;
+
+                    #face {
+                        width: 88%;
                     }
                 }
             }
@@ -102,7 +132,7 @@ main {
                 }
 
                 a[href] {
-                    color: rgba(0,0,0,0.87);
+                    color: rgba(0, 0, 0, 0.87);
                     font-weight: 500;
                     opacity: 0.8;
                     //text-decoration: underline;
@@ -113,6 +143,7 @@ main {
                             opacity: 1.0;
                         }
                     }
+
                     &:hover {
                         animation: focus 0.3s ease 0s forwards;
                     }
@@ -136,22 +167,22 @@ main {
                 //    margin-left: 5px;
                 //}
             }
+
+            /// スマホ用
+            @media only screen and (max-width: 600px) {
+                .links {
+                    padding-left: 0px;
+                }
+            }
         }
     }
 
-    #affiliations.collection {
-        border: none;
-
-        * {
-            border: none;
-        }
-    }
-
-    #interests.collection, #awards.collection, #job-history.collection {
+    #affiliations.collection, #interests.collection, #awards.collection, #job-history.collection {
         border: none;
 
         > * {
             border: none;
+            background-color: inherit;
         }
     }
 

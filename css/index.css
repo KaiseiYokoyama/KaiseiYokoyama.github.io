@@ -4,14 +4,24 @@ body {
   display: flex;
 }
 
-header {
-  width: 25vw;
-}
+@media only screen and (max-width: 600px) {
+  header {
+    width: 0vw;
+  }
 
-main {
-  width: 75vw;
+  main {
+    width: 100vw;
+  }
 }
+@media only screen and (min-width: 600px) {
+  header {
+    width: 25vw;
+  }
 
+  main {
+    width: 75vw;
+  }
+}
 header {
   display: flex;
   align-items: center;
@@ -48,6 +58,11 @@ main {
 main #profile.card {
   border-right: #90caf9 solid 10vw;
 }
+@media only screen and (max-width: 600px) {
+  main #profile.card {
+    border-right: none;
+  }
+}
 main #profile .card-content {
   display: flex;
   flex-direction: column;
@@ -66,6 +81,14 @@ main #profile .card-content .profile #name {
 }
 main #profile .card-content .profile #name .alphabet {
   color: #039be5;
+}
+@media only screen and (max-width: 600px) {
+  main #profile .card-content .profile {
+    flex-direction: column;
+  }
+  main #profile .card-content .profile #face {
+    width: 88%;
+  }
 }
 main #profile .card-content #affiliations.collection .collection-item:before {
   color: #9e9e9e;
@@ -92,17 +115,17 @@ main #profile .card-content .links a {
   font-size: 18px;
   color: #039be5;
 }
-main #affiliations.collection {
+@media only screen and (max-width: 600px) {
+  main #profile .card-content .links {
+    padding-left: 0px;
+  }
+}
+main #affiliations.collection, main #interests.collection, main #awards.collection, main #job-history.collection {
   border: none;
 }
-main #affiliations.collection * {
+main #affiliations.collection > *, main #interests.collection > *, main #awards.collection > *, main #job-history.collection > * {
   border: none;
-}
-main #interests.collection, main #awards.collection, main #job-history.collection {
-  border: none;
-}
-main #interests.collection > *, main #awards.collection > *, main #job-history.collection > * {
-  border: none;
+  background-color: inherit;
 }
 main #works .card .card-content > * {
   margin-bottom: 10px;
