@@ -25,7 +25,19 @@ header {
         border: none;
 
         a {
-            color: black;
+            color: rgba(0,0,0,0.87);
+            opacity: 0.8;
+
+            @keyframes focus_index {
+                to {
+                    font-weight: bolder;
+                    opacity: 1.0;
+                }
+            }
+
+            &:hover {
+                animation: focus_index 0.3s ease 0s forwards;
+            }
         }
 
         .secondary-content {
@@ -87,6 +99,23 @@ main {
                 .collection-item:before {
                     color: #9e9e9e;
                     content: '- ';
+                }
+
+                a[href] {
+                    color: rgba(0,0,0,0.87);
+                    font-weight: 500;
+                    opacity: 0.8;
+                    //text-decoration: underline;
+
+                    @keyframes focus {
+                        100% {
+                            color: #039be5;
+                            opacity: 1.0;
+                        }
+                    }
+                    &:hover {
+                        animation: focus 0.3s ease 0s forwards;
+                    }
                 }
             }
 
