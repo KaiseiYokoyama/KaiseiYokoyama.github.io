@@ -4,7 +4,7 @@ body {
   display: flex;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 992px) {
   header {
     width: 0vw;
   }
@@ -13,7 +13,7 @@ body {
     width: 100vw;
   }
 }
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 992px) {
   header {
     width: 25vw;
   }
@@ -58,7 +58,7 @@ main {
 main #profile.card {
   border-right: #90caf9 solid 10vw;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 992px) {
   main #profile.card {
     border-right: none;
   }
@@ -82,7 +82,7 @@ main #profile .card-content .profile #name {
 main #profile .card-content .profile #name .alphabet {
   color: #039be5;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 992px) {
   main #profile .card-content .profile {
     flex-direction: column;
   }

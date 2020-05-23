@@ -5,8 +5,8 @@ body {
     display: flex;
 }
 
-/// スマホ用
-@media only screen and (max-width: 600px) {
+/// スマホ, タブレット用
+@media only screen and (max-width: 992px) {
     header {
         width: 0vw;
     }
@@ -16,8 +16,8 @@ body {
     }
 }
 
-/// タブレット, スマホ用
-@media only screen and (min-width: 600px) {
+/// PC用
+@media only screen and (min-width: 992px) {
     header {
         width: 25vw;
     }
@@ -83,8 +83,8 @@ main {
             border-right: #90caf9 solid 10vw;
         }
 
-        /// スマホ用
-        @media only screen and (max-width: 600px) {
+        /// スマホ, タブレット用
+        @media only screen and (max-width: 992px) {
             &.card {
                 border-right: none;
             }
@@ -114,8 +114,8 @@ main {
                 }
             }
 
-            /// スマホ用
-            @media only screen and (max-width: 600px) {
+            /// スマホ, タブレット用
+            @media only screen and (max-width: 992px) {
                 .profile {
                     flex-direction: column;
 
