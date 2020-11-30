@@ -1,6 +1,6 @@
 @import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
 * {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
 }
 
 .card > .card-image > .card-title {
@@ -14,5 +14,4 @@ svg {
 object {
   fill: currentColor;
 }
-
 /*# sourceMappingURL=base.css.map */

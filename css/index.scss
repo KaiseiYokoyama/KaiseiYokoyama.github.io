@@ -186,7 +186,7 @@ main {
         }
     }
 
-    #works {
+    #works, #papers {
         .card {
             .card-content {
                 > * {
@@ -195,6 +195,26 @@ main {
 
                 .awards > .award {
                     display: flex;
+
+                    > *:not(:first-child) {
+                        margin-left: 3px;
+                    }
+                }
+            }
+        }
+    }
+
+    #papers {
+        .card {
+            .card-content {
+                > .description {
+                    margin-top: 30px;
+
+                    &::before {
+                        content: "Abstruct";
+                        font-weight: 900;
+                        font-size: 140%;
+                    }
                 }
             }
         }

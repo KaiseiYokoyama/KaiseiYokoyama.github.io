@@ -1,1 +1,9 @@
-{"version":3,"sourceRoot":"","sources":["base.scss"],"names":[],"mappings":"AACQ;AAER;EACI;;;AAIA;EACI;;;AAIR;EACI;;;AAGJ;EACI","file":"base.css"}
+{
+    "version": 3,
+    "mappings": "AACA,OAAO,CAAC,2DAAI;AAEZ,AAAA,CAAC,CAAC;EACE,WAAW,EAAE,0BAA0B;CAC1C;;AAED,AACI,KADC,GACC,WAAW,GAAG,WAAW,CAAC;EACxB,UAAU,EAAE,kBAAe;CAC9B;;AAGL,AAAA,GAAG,CAAC;EACA,IAAI,EAAE,YAAY;CACrB;;AAED,AAAA,MAAM,CAAC;EACH,IAAI,EAAE,YAAY;CACrB",
+    "sources": [
+        "base.scss"
+    ],
+    "names": [],
+    "file": "base.css"
+}
