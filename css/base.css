@@ -14,4 +14,27 @@ svg {
 object {
   fill: currentColor;
 }
+
+main > .container > h4 {
+  -webkit-margin-before: 2.6em;
+          margin-block-start: 2.6em;
+}
+
+.btn-floating.btn-floating-long {
+  width: auto;
+}
+
+.btn-floating.btn-floating-long.btn-large {
+  padding-left: 28px;
+  padding-right: 28px;
+  border-radius: 28px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.btn-floating.btn-floating-long.btn-large > .title {
+  font-size: 1.6rem;
+  height: 56pt;
+}
 /*# sourceMappingURL=base.css.map */

@@ -18,3 +18,28 @@ svg {
 object {
     fill: currentColor;
 }
+
+main > .container {
+    > h4 {
+        margin-block-start: 2.6em;
+    }
+}
+
+.btn-floating.btn-floating-long {
+    width: auto;
+
+    &.btn-large {
+        padding-left: 28px;
+        padding-right: 28px;
+
+        border-radius: 28px;
+
+        display: flex;
+
+        > .title {
+            font-size: 1.6rem;
+            height: 56pt;
+        }
+    }
+
+}
