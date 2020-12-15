@@ -11,11 +11,11 @@ const src = {
 };
 
 const out = {
-    root: 'out/',
-    html: 'out/',
-    css: 'out/css/',
-    js: 'out/js/',
-    img: 'out/images/',
+    root: 'docs/',
+    html: 'docs/',
+    css: 'docs/css/',
+    js: 'docs/js/',
+    img: 'docs/images/',
 };
 
 // SCSS
