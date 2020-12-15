@@ -1,0 +1,71 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport', content='width=device-width')
+  title K.Yokoyama - Portfolio
+  // font
+  link(rel='stylesheet', href='//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic')
+  // normalize
+  link(rel='stylesheet', href='//cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css')
+  // materialize css
+  link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css')
+  script(src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js')
+  // material icons
+  link(href='https://fonts.googleapis.com/icon?family=Material+Icons', rel='stylesheet')
+  // fontawesome
+  link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css', integrity='sha256-UzFD2WYH2U1dQpKDjjZK72VtPeWP50NoJjd26rnAdUI=', crossorigin='anonymous')
+  // original css
+  link(rel='stylesheet', href='css/base.css')
+  link(rel='stylesheet', href='css/index.css')
+  // original javascript
+  script(src='js/base.js')
+  // SNS
+  meta(property='description', content='Kaisei YOKOYAMA Portfolio')
+  meta(property='og:type', content='website')
+  meta(property='og:title', content='Portfolio of Kaisei YOKOYAMA. Introduce my interests, products, and skills. ')
+  meta(property='og:description', content='Kaisei YOKOYAMA Portfolio')
+  meta(property='og:image', content='https://kaiseiyokoyama.github.io/portfolio/images/face.jpg')
+  meta(property='og:image:alt', content='顔')
+  meta(property='og:url', content='https://kaiseiyokoyama.github.io/portfolio/')
+  meta(property='og:site_name', content='Kaisei YOKOYAMA Portfolio')
+  // twitter card
+  meta(name='twitter:card', content='summary')
+  meta(name='twitter:site', content='@KaiseiYokoyama')
+header.z-depth-1-half
+  .container
+    ul#index.collection
+      li.collection-item.avatar
+        img.circle(src='images/face.jpg')
+        span.title &#x6A2A;&#x5C71; &#x6D77;&#x9752;
+        p Kaisei YOKOYAMA
+      li.collection-item
+        a(href='#profile')
+          | Profile
+          i.material-icons.secondary-content account_box
+      li.collection-item
+        a(href='#interests-header')
+          | Interest in
+          i.material-icons.secondary-content domain
+      li.collection-item
+        a(href='#works-header')
+          | Works
+          i.material-icons.secondary-content widgets
+      li.collection-item
+        a(href='#papers-header')
+          | Papers
+          i.material-icons.secondary-content school
+      li.collection-item
+        a(href='#awards-header')
+          | Awards
+          i.material-icons.secondary-content emoji_events
+      li.collection-item
+        a(href='#job-history-header')
+          | Jobs
+          i.material-icons.secondary-content work
+      li.collection-item
+        a(href='#skills-header')
+          | Skills
+          i.material-icons.secondary-content build
+main
+  .container
+    block container

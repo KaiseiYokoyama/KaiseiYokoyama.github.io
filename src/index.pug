@@ -1,283 +1,215 @@
-doctype html
-head
-  meta(charset='UTF-8')
-  meta(name='viewport', content='width=device-width')
-  title K.Yokoyama - Portfolio
-  // font
-  link(rel='stylesheet', href='//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic')
-  // normalize
-  link(rel='stylesheet', href='//cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css')
-  // materialize css
-  link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css')
-  script(src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js')
-  // material icons
-  link(href='https://fonts.googleapis.com/icon?family=Material+Icons', rel='stylesheet')
-  // fontawesome
-  link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css', integrity='sha256-UzFD2WYH2U1dQpKDjjZK72VtPeWP50NoJjd26rnAdUI=', crossorigin='anonymous')
-  // original css
-  link(rel='stylesheet', href='css/base.css')
-  link(rel='stylesheet', href='css/index.css')
-  // original javascript
-  script(src='js/base.js')
-  // SNS
-  meta(property='description', content='Kaisei YOKOYAMA Portfolio')
-  meta(property='og:type', content='website')
-  meta(property='og:title', content='Portfolio of Kaisei YOKOYAMA. Introduce my interests, products, and skills. ')
-  meta(property='og:description', content='Kaisei YOKOYAMA Portfolio')
-  meta(property='og:image', content='https://kaiseiyokoyama.github.io/portfolio/images/face.jpg')
-  meta(property='og:image:alt', content='顔')
-  meta(property='og:url', content='https://kaiseiyokoyama.github.io/portfolio/')
-  meta(property='og:site_name', content='Kaisei YOKOYAMA Portfolio')
-  // twitter card
-  meta(name='twitter:card', content='summary')
-  meta(name='twitter:site', content='@KaiseiYokoyama')
-header.z-depth-1-half
-  .container
-    ul#index.collection
-      li.collection-item.avatar
-        img.circle(src='images/face.jpg')
-        span.title &#x6A2A;&#x5C71; &#x6D77;&#x9752;
-        p Kaisei YOKOYAMA
-      li.collection-item
-        a(href='#profile')
-          | Profile
-          i.material-icons.secondary-content account_box
-      li.collection-item
-        a(href='#interests-header')
-          | Interest in
-          i.material-icons.secondary-content domain
-      li.collection-item
-        a(href='#works-header')
-          | Works
-          i.material-icons.secondary-content widgets
-      li.collection-item
-        a(href='#papers-header')
-          | Papers
-          i.material-icons.secondary-content school
-      li.collection-item
-        a(href='#awards-header')
-          | Awards
-          i.material-icons.secondary-content emoji_events
-      li.collection-item
-        a(href='#job-history-header')
-          | Jobs
-          i.material-icons.secondary-content work
-      li.collection-item
-        a(href='#skills-header')
-          | Skills
-          i.material-icons.secondary-content build
-main
-  .container
-    #profile.card.horizontal
-      .card-stacked
+extends preludes/_base.pug
+block container
+  #profile.card.horizontal
+    .card-stacked
+      .card-content
+        .profile
+          img#face.materialboxed(src='images/face.jpg', alt='顔')
+          #name
+            h4.kanji &#x6A2A;&#x5C71; &#x6D77;&#x9752;
+            h5.alphabet Kaisei YOKOYAMA
+        ul#affiliations.collection.with-header
+          li.collection-item
+            a(href='https://www.coins.tsukuba.ac.jp/') &#x7B51;&#x6CE2;&#x5927;&#x5B66; &#x60C5;&#x5831;&#x5B66;&#x7FA4; &#x60C5;&#x5831;&#x79D1;&#x5B66;&#x985E; B4
+          li.collection-item
+            a(href='https://www.iplab.cs.tsukuba.ac.jp/') &#x7B51;&#x6CE2;&#x5927;&#x5B66; IPLAB WAVE&#x30C1;&#x30FC;&#x30E0;
+          li.collection-item
+            a(href='https://www.amusement-creators.info/') Amusement Creators &#x6240;&#x5C5E;
+        .links
+          a.btn-flat(href='https://github.com/KaiseiYokoyama')
+            i.fab.fa-github
+            span.hide-on-small-only Github
+          a.btn-flat(href='https://twitter.com/KaiseiYokoyama')
+            i.fab.fa-twitter
+            span.hide-on-small-only Twitter
+          a.btn-flat(href='https://kaiseiyokoyama.github.io/blog/posts/')
+            i.material-icons.left web
+            span.hide-on-small-only Blog
+  h4#interests-header
+    i.material-icons domain
+    |  &#x8208;&#x5473;&#x306E;&#x3042;&#x308B;&#x3053;&#x3068;
+  ul#interests.collection
+    li.collection-item Human-Computer Interaction
+    li.collection-item GUI Application
+    li.collection-item Web Application
+    li.collection-item Rustlang
+    li.collection-item Game (Fortnite / APEX Legends / Mahjong)
+    li.collection-item Black Tea (Earl Grey)
+    li.collection-item Japanese Rice Wine
+  h4#works-header
+    i.material-icons widgets
+    |  &#x30D7;&#x30ED;&#x30C0;&#x30AF;&#x30C8;
+  #works.row
+    .col.m12.l6
+      .card
+        .card-image
+          img(src='https://raw.githubusercontent.com/KaiseiYokoyama/joycon-rs/master/images/joycon-rs.png')
+          span.card-title
+            strong Joycon-rs
+          a.btn-floating.halfway-fab.waves-effect.waves-light.btn-large.blue.lighten-3(href='https://github.com/KaiseiYokoyama/joycon-rs')
+            i.fab.fa-git-alt
         .card-content
-          .profile
-            img#face.materialboxed(src='images/face.jpg', alt='顔')
-            #name
-              h4.kanji &#x6A2A;&#x5C71; &#x6D77;&#x9752;
-              h5.alphabet Kaisei YOKOYAMA
-          ul#affiliations.collection.with-header
-            li.collection-item
-              a(href='https://www.coins.tsukuba.ac.jp/') &#x7B51;&#x6CE2;&#x5927;&#x5B66; &#x60C5;&#x5831;&#x5B66;&#x7FA4; &#x60C5;&#x5831;&#x79D1;&#x5B66;&#x985E; B4
-            li.collection-item
-              a(href='https://www.iplab.cs.tsukuba.ac.jp/') &#x7B51;&#x6CE2;&#x5927;&#x5B66; IPLAB WAVE&#x30C1;&#x30FC;&#x30E0;
-            li.collection-item
-              a(href='https://www.amusement-creators.info/') Amusement Creators &#x6240;&#x5C5E;
-          .links
-            a.btn-flat(href='https://github.com/KaiseiYokoyama')
-              i.fab.fa-github
-              span.hide-on-small-only Github
-            a.btn-flat(href='https://twitter.com/KaiseiYokoyama')
-              i.fab.fa-twitter
-              span.hide-on-small-only Twitter
-            a.btn-flat(href='https://kaiseiyokoyama.github.io/blog/posts/')
-              i.material-icons.left web
-              span.hide-on-small-only Blog
-    h4#interests-header
-      i.material-icons domain
-      |  &#x8208;&#x5473;&#x306E;&#x3042;&#x308B;&#x3053;&#x3068;
-    ul#interests.collection
-      li.collection-item Human-Computer Interaction
-      li.collection-item GUI Application
-      li.collection-item Web Application
-      li.collection-item Rustlang
-      li.collection-item Game (Fortnite / APEX Legends / Mahjong)
-      li.collection-item Black Tea (Earl Grey)
-      li.collection-item Japanese Rice Wine
-    h4#works-header
-      i.material-icons widgets
-      |  &#x30D7;&#x30ED;&#x30C0;&#x30AF;&#x30C8;
-    #works.row
-      .col.m12.l6
-        .card
-          .card-image
-            img(src='https://raw.githubusercontent.com/KaiseiYokoyama/joycon-rs/master/images/joycon-rs.png')
-            span.card-title
-              strong Joycon-rs
-            a.btn-floating.halfway-fab.waves-effect.waves-light.btn-large.blue.lighten-3(href='https://github.com/KaiseiYokoyama/joycon-rs')
-              i.fab.fa-git-alt
-          .card-content
-            .tags
-              span.chip Rust
-              span.chip Joy-Con
-              span.chip HID
-            .badges
-              a(href='https://crates.io/crates/joycon-rs')
-                img(src='https://img.shields.io/crates/d/joycon_rs?style=flat-square&logo=rust')
-              a(href='https://crates.io/crates/joycon-rs')
-                img(src='https://img.shields.io/crates/v/joycon_rs?style=flat-square&logo=rust')
-            p.description Rust&#x8A00;&#x8A9E;&#x3067;Nintendo Switch&#x306E;Joy-Con&#x304A;&#x3088;&#x3073;Pro Controller&#x3092;&#x6271;&#x3046;&#x305F;&#x3081;&#x306E;&#x30E9;&#x30A4;&#x30D6;&#x30E9;&#x30EA;&#x3067;&#x3059;. 
-      .col.m12.l6
-        .card
-          .card-image
-            img(src='https://user-images.githubusercontent.com/8509057/65156816-addf6c80-da6a-11e9-8d16-74ef4a47a90e.png')
-            span.card-title
-              strong repub
-            a.btn-floating.halfway-fab.waves-effect.waves-light.btn-large.blue.lighten-3(href='https://github.com/KaiseiYokoyama/repub_cli')
-              i.fab.fa-git-alt
-          .card-content
-            .tags
-              span.chip Rust
-              span.chip e-Books
-              span.chip EPUB
-            .badges
-              a(href='https://crates.io/crates/repub')
-                img(src='https://img.shields.io/crates/d/repub?logo=rust&style=flat-square')
-              a(href='https://crates.io/crates/repub')
-                img(src='https://img.shields.io/crates/v/repub?logo=rust&style=flat-square')
-            p.description Markdown&#x5F62;&#x5F0F;&#x306E;&#x6587;&#x66F8;&#x3092;&#x96FB;&#x5B50;&#x66F8;&#x7C4D;&#xFF08;EPUB&#xFF09;&#x306B;&#x5909;&#x63DB;&#x3057;&#x307E;&#x3059;. CSS&#x3092;&#x7528;&#x3044;&#x305F;&#x30B9;&#x30BF;&#x30A4;&#x30EA;&#x30F3;&#x30B0;&#x3084;&#x76EE;&#x6B21;&#x306E;&#x751F;&#x6210;&#x3082;&#x53EF;&#x80FD;&#x3067;&#x3059;. 
-      .col.m12.l6
-        .card
-          .card-image
-            img(src='https://user-images.githubusercontent.com/8509057/82355589-62d48980-9a3d-11ea-8896-c72f5174158f.png')
-            span.card-title
-              strong IIIF Archive Depot
-            a.btn-floating.halfway-fab.waves-effect.waves-light.btn-large.blue.lighten-3(href='https://github.com/KaiseiYokoyama/iiif-manga-viewer-frontend')
-              i.fab.fa-git-alt
-          .card-content
-            .tags
-              .chip Web Components
-              .chip Web Assembly
-              .chip Material Design
-              .chip COJT
-            .awards
-              .award
-                i.material-icons emoji_events
-                div
-                  strong COJT 2019 &#x6625;&#x5B66;&#x671F; &#x6700;&#x512A;&#x79C0;&#x8CDE;
-              .award
-                i.material-icons web
-                div
-                  a(href='https://iiif-archive-depot.herokuapp.com/')
-                    strong IIIF Archive Depot
-              .award
-                i.material-icons movie
-                div
-                  a(href='https://youtu.be/gEBGIPR-9dM?t=1213')
-                    strong Youtube
-            .description
-              p IIIF&#x898F;&#x683C;&#x306B;&#x6CBF;&#x3063;&#x3066;&#x516C;&#x958B;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;&#x4E16;&#x754C;&#x5404;&#x5730;&#x306E;&#x535A;&#x7269;&#x9928;&#x30FB;&#x56F3;&#x66F8;&#x9928;&#x306A;&#x3069;&#x306E;&#x753B;&#x50CF;&#x8CC7;&#x6599;&#x3092;&#x95B2;&#x89A7;&#x3067;&#x304D;&#x308B;, &#x30C7;&#x30B8;&#x30BF;&#x30EB;&#x30A2;&#x30FC;&#x30AB;&#x30A4;&#x30D6;&#x7528;&#x306E;&#x753B;&#x50CF;&#x30D3;&#x30E5;&#x30FC;&#x30A2;.
-              p &#x8907;&#x6570;&#x306E;&#x65E2;&#x5B58;&#x306E;&#x30D3;&#x30E5;&#x30FC;&#x30A2;&#x306E;&#x9577;&#x6240;&#x3092;&#x96C6;&#x7D04;&#x3057;, &#x66F4;&#x306B;&#x72EC;&#x81EA;&#x306E;&#x691C;&#x7D22;&#x6A5F;&#x80FD;&#x3092;&#x8FFD;&#x52A0;&#x3057;&#x3066;&#x3044;&#x307E;&#x3059;.
-              p
-                strong &#x30D5;&#x30ED;&#x30F3;&#x30C8;&#x30A8;&#x30F3;&#x30C9;&#x306E;&#x5B9F;&#x88C5;&#x3092;&#x62C5;&#x5F53;. 
-    h4#papers-header
-      i.material-icons school
-      |  &#x8AD6;&#x6587;
-    #papers.row
-      .col.m12.l12
-        .card
-          .card-image
-            img(src='images/joyflick.jpg')
-            span.card-title
-              strong JoyFlick: &#x30D5;&#x30EA;&#x30C3;&#x30AF;&#x5165;&#x529B;&#x306B;&#x57FA;&#x3065;&#x304F;&#x30B2;&#x30FC;&#x30E0;&#x30D1;&#x30C3;&#x30C9;&#x5411;&#x3051;&#x304B;&#x306A;&#x6587;&#x5B57;&#x5165;&#x529B;&#x624B;&#x6CD5;
-            a.btn-floating.halfway-fab.waves-effect.waves-light.btn-large.blue.lighten-3.show-on-small-only(target='_blank', href='https://www.wiss.org/WISS2020Proceedings/data/17.pdf')
+          .tags
+            span.chip Rust
+            span.chip Joy-Con
+            span.chip HID
+          .badges
+            a(href='https://crates.io/crates/joycon-rs')
+              img(src='https://img.shields.io/crates/d/joycon_rs?style=flat-square&logo=rust')
+            a(href='https://crates.io/crates/joycon-rs')
+              img(src='https://img.shields.io/crates/v/joycon_rs?style=flat-square&logo=rust')
+          p.description Rust&#x8A00;&#x8A9E;&#x3067;Nintendo Switch&#x306E;Joy-Con&#x304A;&#x3088;&#x3073;Pro Controller&#x3092;&#x6271;&#x3046;&#x305F;&#x3081;&#x306E;&#x30E9;&#x30A4;&#x30D6;&#x30E9;&#x30EA;&#x3067;&#x3059;. 
+    .col.m12.l6
+      .card
+        .card-image
+          img(src='https://user-images.githubusercontent.com/8509057/65156816-addf6c80-da6a-11e9-8d16-74ef4a47a90e.png')
+          span.card-title
+            strong repub
+          a.btn-floating.halfway-fab.waves-effect.waves-light.btn-large.blue.lighten-3(href='https://github.com/KaiseiYokoyama/repub_cli')
+            i.fab.fa-git-alt
+        .card-content
+          .tags
+            span.chip Rust
+            span.chip e-Books
+            span.chip EPUB
+          .badges
+            a(href='https://crates.io/crates/repub')
+              img(src='https://img.shields.io/crates/d/repub?logo=rust&style=flat-square')
+            a(href='https://crates.io/crates/repub')
+              img(src='https://img.shields.io/crates/v/repub?logo=rust&style=flat-square')
+          p.description Markdown&#x5F62;&#x5F0F;&#x306E;&#x6587;&#x66F8;&#x3092;&#x96FB;&#x5B50;&#x66F8;&#x7C4D;&#xFF08;EPUB&#xFF09;&#x306B;&#x5909;&#x63DB;&#x3057;&#x307E;&#x3059;. CSS&#x3092;&#x7528;&#x3044;&#x305F;&#x30B9;&#x30BF;&#x30A4;&#x30EA;&#x30F3;&#x30B0;&#x3084;&#x76EE;&#x6B21;&#x306E;&#x751F;&#x6210;&#x3082;&#x53EF;&#x80FD;&#x3067;&#x3059;. 
+    .col.m12.l6
+      .card
+        .card-image
+          img(src='https://user-images.githubusercontent.com/8509057/82355589-62d48980-9a3d-11ea-8896-c72f5174158f.png')
+          span.card-title
+            strong IIIF Archive Depot
+          a.btn-floating.halfway-fab.waves-effect.waves-light.btn-large.blue.lighten-3(href='https://github.com/KaiseiYokoyama/iiif-manga-viewer-frontend')
+            i.fab.fa-git-alt
+        .card-content
+          .tags
+            .chip Web Components
+            .chip Web Assembly
+            .chip Material Design
+            .chip COJT
+          .awards
+            .award
+              i.material-icons emoji_events
+              div
+                strong COJT 2019 &#x6625;&#x5B66;&#x671F; &#x6700;&#x512A;&#x79C0;&#x8CDE;
+            .award
+              i.material-icons web
+              div
+                a(href='https://iiif-archive-depot.herokuapp.com/')
+                  strong IIIF Archive Depot
+            .award
+              i.material-icons movie
+              div
+                a(href='https://youtu.be/gEBGIPR-9dM?t=1213')
+                  strong Youtube
+          .description
+            p IIIF&#x898F;&#x683C;&#x306B;&#x6CBF;&#x3063;&#x3066;&#x516C;&#x958B;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;&#x4E16;&#x754C;&#x5404;&#x5730;&#x306E;&#x535A;&#x7269;&#x9928;&#x30FB;&#x56F3;&#x66F8;&#x9928;&#x306A;&#x3069;&#x306E;&#x753B;&#x50CF;&#x8CC7;&#x6599;&#x3092;&#x95B2;&#x89A7;&#x3067;&#x304D;&#x308B;, &#x30C7;&#x30B8;&#x30BF;&#x30EB;&#x30A2;&#x30FC;&#x30AB;&#x30A4;&#x30D6;&#x7528;&#x306E;&#x753B;&#x50CF;&#x30D3;&#x30E5;&#x30FC;&#x30A2;.
+            p &#x8907;&#x6570;&#x306E;&#x65E2;&#x5B58;&#x306E;&#x30D3;&#x30E5;&#x30FC;&#x30A2;&#x306E;&#x9577;&#x6240;&#x3092;&#x96C6;&#x7D04;&#x3057;, &#x66F4;&#x306B;&#x72EC;&#x81EA;&#x306E;&#x691C;&#x7D22;&#x6A5F;&#x80FD;&#x3092;&#x8FFD;&#x52A0;&#x3057;&#x3066;&#x3044;&#x307E;&#x3059;.
+            p
+              strong &#x30D5;&#x30ED;&#x30F3;&#x30C8;&#x30A8;&#x30F3;&#x30C9;&#x306E;&#x5B9F;&#x88C5;&#x3092;&#x62C5;&#x5F53;. 
+  h4#papers-header
+    i.material-icons school
+    |  &#x8AD6;&#x6587;
+  #papers.row
+    .col.m12.l12
+      .card
+        .card-image
+          img(src='images/joyflick.jpg')
+          span.card-title
+            strong JoyFlick: &#x30D5;&#x30EA;&#x30C3;&#x30AF;&#x5165;&#x529B;&#x306B;&#x57FA;&#x3065;&#x304F;&#x30B2;&#x30FC;&#x30E0;&#x30D1;&#x30C3;&#x30C9;&#x5411;&#x3051;&#x304B;&#x306A;&#x6587;&#x5B57;&#x5165;&#x529B;&#x624B;&#x6CD5;
+          a.btn-floating.halfway-fab.waves-effect.waves-light.btn-large.blue.lighten-3.show-on-small-only(target='_blank', href='https://www.wiss.org/WISS2020Proceedings/data/17.pdf')
+            i.material-icons description
+          a.btn-floating.btn-floating-long.halfway-fab.waves-effect.waves-light.btn-large.blue.lighten-3.hide-on-small-only(target='_blank', href='https://www.wiss.org/WISS2020Proceedings/data/17.pdf')
+            i.material-icons description
+            .title &#x4E88;&#x7A3F; PDF
+        .card-content
+          .tags
+            .chip &#x304B;&#x306A;&#x6587;&#x5B57;&#x5165;&#x529B;
+            .chip &#x30D5;&#x30EA;&#x30C3;&#x30AF;&#x5165;&#x529B;
+            .chip &#x30B2;&#x30FC;&#x30E0;&#x30D1;&#x30C3;&#x30C9;
+          .awards.row
+            .award.col.m4
+              i.material-icons school
+              div
+                strong WISS2020: &#x30B7;&#x30E7;&#x30FC;&#x30C8;&#x518D;&#x9332;
+            .award.col.m4
               i.material-icons description
-            a.btn-floating.btn-floating-long.halfway-fab.waves-effect.waves-light.btn-large.blue.lighten-3.hide-on-small-only(target='_blank', href='https://www.wiss.org/WISS2020Proceedings/data/17.pdf')
-              i.material-icons description
-              .title &#x4E88;&#x7A3F; PDF
-          .card-content
-            .tags
-              .chip &#x304B;&#x306A;&#x6587;&#x5B57;&#x5165;&#x529B;
-              .chip &#x30D5;&#x30EA;&#x30C3;&#x30AF;&#x5165;&#x529B;
-              .chip &#x30B2;&#x30FC;&#x30E0;&#x30D1;&#x30C3;&#x30C9;
-            .awards.row
-              .award.col.m4
-                i.material-icons school
-                div
-                  strong WISS2020: &#x30B7;&#x30E7;&#x30FC;&#x30C8;&#x518D;&#x9332;
-              .award.col.m4
-                i.material-icons description
-                div
-                  strong
-                    a(href='https://www.wiss.org/WISS2020Proceedings/data/17.pdf', target='_blank') &#x4E88;&#x7A3F;PDF
-              .award.col.m4
-                i.material-icons movie
-                div
-                  strong
-                    a(href='https://www.wiss.org/WISS2020Proceedings/data/17.mp4', target='_blank') &#x64CD;&#x4F5C;&#x4F8B;&#x30C7;&#x30E2;&#x30E0;&#x30FC;&#x30D3;&#x30FC;
-            .description
-              p
-                | &#x672C;&#x7A3F;&#x3067;&#x306F;&#xFF0C;&#x30CF;&#x30FC;&#x30C9;&#x30A6;&#x30A7;&#x30A2;&#x30AD;&#x30FC;&#x30DC;&#x30FC;&#x30C9;&#x304C;&#x63A5;&#x7D9A;&#x3055;&#x308C;&#x3066;&#x3044;&#x306A;&#x3044;&#x5BB6;&#x5EAD;&#x7528;&#x30B2;&#x30FC;&#x30E0;&#x6A5F;&#x306B;&#x304A;&#x3044;&#x3066;&#xFF0C;&#x30B2;&#x30FC;&#x30E0;&#x30D1;&#x30C3;&#x30C9;&#x3092;&#x7528;&#x3044;&#x3066;&#x304B;&#x306A;&#x6587;&#x5B57;&#x3092;&#x5165;&#x529B;&#x3059;&#x308B;&#x624B;&#x6CD5;&#x3067;&#x3042;&#x308B;JoyFlick&#x3092;&#x793A;&#x3059;&#xFF0E;JoyFlick&#x306F;&#xFF0C;&#x30B9;&#x30DE;&#x30FC;&#x30C8;&#x30D5;&#x30A9;&#x30F3;&#x306E;&#x304B;&#x306A;&#x6587;&#x5B57;&#x5165;&#x529B;&#x624B;&#x6CD5;&#x3068;&#x3057;&#x3066;&#x5229;&#x7528;&#x7387;&#x306E;&#x9AD8;&#x3044;&#x30D5;&#x30EA;&#x30C3;&#x30AF;&#x5165;&#x529B;&#x306B;&#x57FA;&#x3065;&#x304F;&#x3053;&#x3068;&#x306B;&#x3088;&#x308A;&#xFF0C;&#x30E6;&#x30FC;&#x30B6;&#x306E;&#x5B66;&#x7FD2;&#x30B3;&#x30B9;&#x30C8;&#x3092;&#x6291;&#x3048;&#x3066;&#x3044;&#x308B;&#xFF0E;9 &#x540D;&#x3092;&#x53C2;&#x52A0;&#x8005;&#x3068;&#x3057;&#x305F;&#x5B9F;&#x9A13;&#x306B;&#x3088;&#x308A;&#xFF0C;JoyFlick &#x304C;&#x9650;&#x3089;&#x308C;&#x305F;&#x7DF4;&#x7FD2;&#x91CF;&#x306B;&#x304A;&#x3044;&#x3066;&#x73FE;&#x5728;&#x306E;&#x5BB6;&#x5EAD;&#x7528;&#x30B2;&#x30FC;&#x30E0;&#x6A5F;&#x306B;&#x642D;&#x8F09;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;&#x624B;&#x6CD5;&#x3068;&#x540C;&#x7A0B;&#x5EA6;&#x306E;&#x5165;&#x529B;&#x901F;&#x5EA6;&#xFF08;36 CPM&#xFF09;&#x306B;&#x5230;&#x9054;&#x3059;&#x308B;&#x3053;&#x3068;&#xFF0C;&#x307E;&#x305F;&#x30E6;&#x30FC;&#x30B6;&#x306E;&#x30D5;&#x30EA;&#x30C3;&#x30AF;&#x5165;&#x529B;&#x306E;&#x7D4C;&#x9A13;&#x304C; JoyFlick &#x306E;&#x7FD2;&#x719F;&#x306B;&#x826F;&#x3044;&#x5F71;&#x97FF;&#x3092;&#x4E0E;&#x3048;&#x308B;&#x3053;&#x3068;&#x304C;&#x5206;&#x304B;&#x3063;&#x305F;&#xFF0E;
-    h4#awards-header
-      i.material-icons emoji_events
-      |  &#x53D7;&#x8CDE;&#x6B74;
-    ul#awards.collection.with-header
-      li.collection-header
-        h5 2019
-      li.collection-item 8&#x6708;: &#x7B51;&#x6CE2;&#x5927;&#x5B66;COJT &#x6625;&#x5B66;&#x671F; &#x6700;&#x512A;&#x79C0;&#x8CDE; / IIIF&#x306B;&#x52DD;&#x624B;&#x306B;&#x8CA2;&#x732E;&#x3059;&#x308B;&#x4F1A;
-      li.collection-item
-        | 9&#x6708;:
-        a(href='https://www.konicaminolta.com/jp-ja/recruit/internship/archives/20190919.html')
-          | Konika Minolta
-          | Hackathon &#x5BE9;&#x67FB;&#x54E1;&#x7279;&#x5225;&#x8CDE; / Hobbies
-    h4#job-history-header
-      i.material-icons work
-      |  &#x8077;&#x6B74;
-    ul#job-history.collection
-      li.collection-item 2020&#x5E74;1&#x6708;&#x301C;: &#x30B3;&#x30CB;&#x30AB;&#x30DF;&#x30CE;&#x30EB;&#x30BF; PoC&#x958B;&#x767A;&#xFF08;&#x6E96;&#x59D4;&#x4EFB;&#x5951;&#x7D04;&#xFF09; / &#x30D5;&#x30ED;&#x30F3;&#x30C8;&#x30A8;&#x30F3;&#x30C9;&#x30FB;&#x30D0;&#x30C3;&#x30AF;&#x30A8;&#x30F3;&#x30C9;&#x62C5;&#x5F53;
-    h4#skills-header
-      i.material-icons build
-      |  &#x30B9;&#x30AD;&#x30EB;
-    #skills
-      h5 &#x6BD4;&#x8F03;&#x7684;&#x5F97;&#x610F;
-      .row.skills
-        .col.s12.m4
-          a(href='https://www.rust-lang.org/ja')
-            .card.hoverable
-              .card-image
-                img(src='https://raw.githubusercontent.com/rust-lang/rust-artwork/8ac7d25ad1f842ff5daa6786e6d4bd03ad3237b8/logo/rust-logo-blk.svg', alt='rustlang')
-                span.card-title Rustlang
-      h5 &#x3088;&#x304F;&#x4F7F;&#x3046; / &#x73FE;&#x5728;&#x7FD2;&#x5F97;&#x4E2D;
-      .row.skills
-        .col.s12.m4
-          a(href='https://rocket.rs/')
-            .card.hoverable
-              .card-image
-                img(src='https://rocket.rs/v0.4/images/logo-boxed.png', alt='rocket')
-                span.card-title Rocket (Web Framework)
-        .col.s12.m4
-          a(href='https://github.com/hecrj/iced')
-            .card.hoverable
-              .card-image
-                img(src='https://raw.githubusercontent.com/rust-lang/rust-artwork/8ac7d25ad1f842ff5daa6786e6d4bd03ad3237b8/logo/rust-logo-blk.svg', alt='rustlang')
-                span.card-title Iced (GUI library)
-        .col.s12.m4
-          a(href='https://github.com')
-            .card.hoverable
-              .card-image
-                img(src='images/github.svg', alt='github')
-                span.card-title Github
-      h5 &#x305F;&#x307E;&#x306B;&#x4F7F;&#x3046;
-      .row.skills
-        .col.s12.m4
-          a(href='https://developer.mozilla.org/ja/docs/Web/Web_Components')
-            .card.hoverable
-              .card-image
-                img(src='https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/480px-Unofficial_JavaScript_logo_2.svg.png', alt='javascript')
-                span.card-title Web Components
-        .col.s12.m4
-          a(href='https://rustwasm.github.io/docs/book/')
-            .card.hoverable
-              .card-image
-                img(src='https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/WebAssembly_Logo.svg/1200px-WebAssembly_Logo.svg.png', alt='rustwasm')
-                span.card-title Web Assembly with Rust
+              div
+                strong
+                  a(href='https://www.wiss.org/WISS2020Proceedings/data/17.pdf', target='_blank') &#x4E88;&#x7A3F;PDF
+            .award.col.m4
+              i.material-icons movie
+              div
+                strong
+                  a(href='https://www.wiss.org/WISS2020Proceedings/data/17.mp4', target='_blank') &#x64CD;&#x4F5C;&#x4F8B;&#x30C7;&#x30E2;&#x30E0;&#x30FC;&#x30D3;&#x30FC;
+          .description
+            p
+              | &#x672C;&#x7A3F;&#x3067;&#x306F;&#xFF0C;&#x30CF;&#x30FC;&#x30C9;&#x30A6;&#x30A7;&#x30A2;&#x30AD;&#x30FC;&#x30DC;&#x30FC;&#x30C9;&#x304C;&#x63A5;&#x7D9A;&#x3055;&#x308C;&#x3066;&#x3044;&#x306A;&#x3044;&#x5BB6;&#x5EAD;&#x7528;&#x30B2;&#x30FC;&#x30E0;&#x6A5F;&#x306B;&#x304A;&#x3044;&#x3066;&#xFF0C;&#x30B2;&#x30FC;&#x30E0;&#x30D1;&#x30C3;&#x30C9;&#x3092;&#x7528;&#x3044;&#x3066;&#x304B;&#x306A;&#x6587;&#x5B57;&#x3092;&#x5165;&#x529B;&#x3059;&#x308B;&#x624B;&#x6CD5;&#x3067;&#x3042;&#x308B;JoyFlick&#x3092;&#x793A;&#x3059;&#xFF0E;JoyFlick&#x306F;&#xFF0C;&#x30B9;&#x30DE;&#x30FC;&#x30C8;&#x30D5;&#x30A9;&#x30F3;&#x306E;&#x304B;&#x306A;&#x6587;&#x5B57;&#x5165;&#x529B;&#x624B;&#x6CD5;&#x3068;&#x3057;&#x3066;&#x5229;&#x7528;&#x7387;&#x306E;&#x9AD8;&#x3044;&#x30D5;&#x30EA;&#x30C3;&#x30AF;&#x5165;&#x529B;&#x306B;&#x57FA;&#x3065;&#x304F;&#x3053;&#x3068;&#x306B;&#x3088;&#x308A;&#xFF0C;&#x30E6;&#x30FC;&#x30B6;&#x306E;&#x5B66;&#x7FD2;&#x30B3;&#x30B9;&#x30C8;&#x3092;&#x6291;&#x3048;&#x3066;&#x3044;&#x308B;&#xFF0E;9 &#x540D;&#x3092;&#x53C2;&#x52A0;&#x8005;&#x3068;&#x3057;&#x305F;&#x5B9F;&#x9A13;&#x306B;&#x3088;&#x308A;&#xFF0C;JoyFlick &#x304C;&#x9650;&#x3089;&#x308C;&#x305F;&#x7DF4;&#x7FD2;&#x91CF;&#x306B;&#x304A;&#x3044;&#x3066;&#x73FE;&#x5728;&#x306E;&#x5BB6;&#x5EAD;&#x7528;&#x30B2;&#x30FC;&#x30E0;&#x6A5F;&#x306B;&#x642D;&#x8F09;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;&#x624B;&#x6CD5;&#x3068;&#x540C;&#x7A0B;&#x5EA6;&#x306E;&#x5165;&#x529B;&#x901F;&#x5EA6;&#xFF08;36 CPM&#xFF09;&#x306B;&#x5230;&#x9054;&#x3059;&#x308B;&#x3053;&#x3068;&#xFF0C;&#x307E;&#x305F;&#x30E6;&#x30FC;&#x30B6;&#x306E;&#x30D5;&#x30EA;&#x30C3;&#x30AF;&#x5165;&#x529B;&#x306E;&#x7D4C;&#x9A13;&#x304C; JoyFlick &#x306E;&#x7FD2;&#x719F;&#x306B;&#x826F;&#x3044;&#x5F71;&#x97FF;&#x3092;&#x4E0E;&#x3048;&#x308B;&#x3053;&#x3068;&#x304C;&#x5206;&#x304B;&#x3063;&#x305F;&#xFF0E;
+  h4#awards-header
+    i.material-icons emoji_events
+    |  &#x53D7;&#x8CDE;&#x6B74;
+  ul#awards.collection.with-header
+    li.collection-header
+      h5 2019
+    li.collection-item 8&#x6708;: &#x7B51;&#x6CE2;&#x5927;&#x5B66;COJT &#x6625;&#x5B66;&#x671F; &#x6700;&#x512A;&#x79C0;&#x8CDE; / IIIF&#x306B;&#x52DD;&#x624B;&#x306B;&#x8CA2;&#x732E;&#x3059;&#x308B;&#x4F1A;
+    li.collection-item
+      | 9&#x6708;:
+      a(href='https://www.konicaminolta.com/jp-ja/recruit/internship/archives/20190919.html')
+        | Konika Minolta
+        | Hackathon &#x5BE9;&#x67FB;&#x54E1;&#x7279;&#x5225;&#x8CDE; / Hobbies
+  h4#job-history-header
+    i.material-icons work
+    |  &#x8077;&#x6B74;
+  ul#job-history.collection
+    li.collection-item 2020&#x5E74;1&#x6708;&#x301C;: &#x30B3;&#x30CB;&#x30AB;&#x30DF;&#x30CE;&#x30EB;&#x30BF; PoC&#x958B;&#x767A;&#xFF08;&#x6E96;&#x59D4;&#x4EFB;&#x5951;&#x7D04;&#xFF09; / &#x30D5;&#x30ED;&#x30F3;&#x30C8;&#x30A8;&#x30F3;&#x30C9;&#x30FB;&#x30D0;&#x30C3;&#x30AF;&#x30A8;&#x30F3;&#x30C9;&#x62C5;&#x5F53;
+  h4#skills-header
+    i.material-icons build
+    |  &#x30B9;&#x30AD;&#x30EB;
+  #skills
+    h5 &#x6BD4;&#x8F03;&#x7684;&#x5F97;&#x610F;
+    .row.skills
+      .col.s12.m4
+        a(href='https://www.rust-lang.org/ja')
+          .card.hoverable
+            .card-image
+              img(src='https://raw.githubusercontent.com/rust-lang/rust-artwork/8ac7d25ad1f842ff5daa6786e6d4bd03ad3237b8/logo/rust-logo-blk.svg', alt='rustlang')
+              span.card-title Rustlang
+    h5 &#x3088;&#x304F;&#x4F7F;&#x3046; / &#x73FE;&#x5728;&#x7FD2;&#x5F97;&#x4E2D;
+    .row.skills
+      .col.s12.m4
+        a(href='https://rocket.rs/')
+          .card.hoverable
+            .card-image
+              img(src='https://rocket.rs/v0.4/images/logo-boxed.png', alt='rocket')
+              span.card-title Rocket (Web Framework)
+      .col.s12.m4
+        a(href='https://github.com/hecrj/iced')
+          .card.hoverable
+            .card-image
+              img(src='https://raw.githubusercontent.com/rust-lang/rust-artwork/8ac7d25ad1f842ff5daa6786e6d4bd03ad3237b8/logo/rust-logo-blk.svg', alt='rustlang')
+              span.card-title Iced (GUI library)
+      .col.s12.m4
+        a(href='https://github.com')
+          .card.hoverable
+            .card-image
+              img(src='images/github.svg', alt='github')
+              span.card-title Github
+    h5 &#x305F;&#x307E;&#x306B;&#x4F7F;&#x3046;
+    .row.skills
+      .col.s12.m4
+        a(href='https://developer.mozilla.org/ja/docs/Web/Web_Components')
+          .card.hoverable
+            .card-image
+              img(src='https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/480px-Unofficial_JavaScript_logo_2.svg.png', alt='javascript')
+              span.card-title Web Components
+      .col.s12.m4
+        a(href='https://rustwasm.github.io/docs/book/')
+          .card.hoverable
+            .card-image
+              img(src='https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/WebAssembly_Logo.svg/1200px-WebAssembly_Logo.svg.png', alt='rustwasm')
+              span.card-title Web Assembly with Rust
