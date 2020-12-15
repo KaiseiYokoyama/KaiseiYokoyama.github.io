@@ -2,7 +2,8 @@ doctype html
 head
   meta(charset='UTF-8')
   meta(name='viewport', content='width=device-width')
-  title K.Yokoyama - Portfolio
+  block title
+    title K.Yokoyama - Portfolio
   // font
   link(rel='stylesheet', href='//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic')
   // normalize
@@ -15,10 +16,10 @@ head
   // fontawesome
   link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css', integrity='sha256-UzFD2WYH2U1dQpKDjjZK72VtPeWP50NoJjd26rnAdUI=', crossorigin='anonymous')
   // original css
-  link(rel='stylesheet', href='css/base.css')
-  link(rel='stylesheet', href='css/index.css')
+  link(rel='stylesheet', href='/css/base.css')
+  link(rel='stylesheet', href='/css/index.css')
   // original javascript
-  script(src='js/base.js')
+  script(src='/js/base.js')
   // SNS
   meta(property='description', content='Kaisei YOKOYAMA Portfolio')
   meta(property='og:type', content='website')
@@ -35,7 +36,7 @@ header.z-depth-1-half
   .container
     ul#index.collection
       li.collection-item.avatar
-        img.circle(src='images/face.jpg')
+        img.circle(src='/images/face.jpg')
         span.title &#x6A2A;&#x5C71; &#x6D77;&#x9752;
         p Kaisei YOKOYAMA
       li.collection-item

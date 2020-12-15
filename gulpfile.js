@@ -4,7 +4,7 @@ let pug = require('gulp-pug');
 const browserSync = require('browser-sync');
 
 const src = {
-    pug: ['src/**/*.pug', '!src/**/_*.pug'],
+    pug: ['src/pugs/**/*.pug', '!src/pugs/**/_*.pug'],
     scss: 'src/scss/**/*.scss',
     js: 'src/js/**/*.js',
     img: 'src/img/*',
