@@ -16,8 +16,7 @@ object {
 }
 
 main > .container > h4 {
-  -webkit-margin-before: 2.6em;
-          margin-block-start: 2.6em;
+  margin-block-start: 2.6em;
 }
 
 .btn-floating.btn-floating-long {
@@ -28,8 +27,6 @@ main > .container > h4 {
   padding-left: 28px;
   padding-right: 28px;
   border-radius: 28px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -37,4 +34,3 @@ main > .container > h4 {
   font-size: 1.6rem;
   height: 56pt;
 }
-/*# sourceMappingURL=base.css.map */
