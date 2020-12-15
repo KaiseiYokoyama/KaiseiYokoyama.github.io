@@ -5,9 +5,9 @@ const browserSync = require('browser-sync');
 
 const src = {
     pug: ['src/pugs/**/*.pug', '!src/pugs/**/_*.pug'],
-    scss: 'src/scss/**/*.scss',
-    js: 'src/js/**/*.js',
-    img: 'src/img/*',
+    scss: 'src/assets/scss/**/*.scss',
+    js: 'src/assets/js/**/*.js',
+    img: 'src/assets/img/*',
 };
 
 const out = {
@@ -17,6 +17,13 @@ const out = {
     js: 'docs/js/',
     img: 'docs/images/',
 };
+
+// ブラウザ同期
+let sync = (done) => {
+    browserSync.reload();
+    done();
+};
+exports.sync = sync;
 
 // SCSS
 let scss = () => {
@@ -29,7 +36,7 @@ let scss = () => {
         .pipe(browserSync.reload({stream:true}));
 };
 exports.scss = scss;
-gulp.watch(src.scss, scss);
+gulp.watch(src.scss, gulp.series(scss,sync));
 
 // PUG
 let compileHTML = () => {
@@ -42,7 +49,7 @@ let compileHTML = () => {
         .pipe(browserSync.reload({stream:true}));
 };
 exports.pug = compileHTML;
-gulp.watch(src.pug, compileHTML);
+gulp.watch(src.pug, gulp.series(compileHTML,sync));
 
 // Javascript
 let js = () => {
@@ -51,7 +58,7 @@ let js = () => {
         .pipe(browserSync.reload({stream:true}));
 };
 exports.js = js;
-gulp.watch(src.js, js);
+gulp.watch(src.js, gulp.series(js,sync));
 
 // Image
 let image = () => {
@@ -60,7 +67,7 @@ let image = () => {
         .pipe(browserSync.reload({stream:true}));
 };
 exports.image = image;
-gulp.watch(src.img, image);
+gulp.watch(src.img, gulp.series(image,sync));
 
 // サーバ
 let serve = (done) => {
@@ -69,7 +76,8 @@ let serve = (done) => {
         port : 3010,
         server: {
             baseDir: out.root
-        }
+        },
+        reloadOnRestart: true,
     });
 
     done();
