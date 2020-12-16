@@ -1,0 +1,85 @@
+extends ../preludes/_base.pug
+block additional-css
+    link(rel="stylesheet", href="/css/works/joyflick.css")
+block title
+    title JoyFlick Kaisei Yokoyama - portfolio
+block container
+    h1#pagetitle
+        span.title JoyFlick
+        span.version 0.5.1-alpha-1
+    .divider
+    section.row#app-images
+        .col.s12.m6
+            img.responsive-img(src='/images/joyflick_wiss_demo_0.png')
+        .col.s12.m6
+            img.responsive-img(src='/images/joyflick_wiss_demo_1.png')
+    section#downloads
+        h2 ダウンロード
+        .row
+            .col.s12.m6
+                a.waves-effect.waves-light.btn-large
+                    i.fab.fa-apple.left
+                    | Download for macOS
+            .col.s12.m6
+                a.waves-effect.waves-light.btn-large
+                    i.fab.fa-windows.left
+                    | Download for Windows
+    section#hardware
+        h2 対応コントローラ
+        .row
+            .col.s12.m6.hardware
+                i.material-icons sports_esports
+                .hardware-name
+                    .subtitle Nintendo Switch
+                    .title Pro コントローラー
+            .col.s12.m6.hardware
+                i.material-icons videogame_asset
+                .hardware-name
+                    .subtitle Nintendo Switch
+                    .title Joy-Con L & R
+    section#readme
+        h2 Readme
+        section#usage
+            h3 使用方法
+            section#setup-connection
+                h4 コントローラの接続
+                p 
+                    | コントローラのシンクロボタン（
+                    a(href="https://support.nintendo.co.jp/app/answers/detail/a_id/34181") ボタンの位置
+                    | ）を押し，コンピュータにコントローラを接続してください．
+                section#setup-connection-for-windows
+                    h4 Windows
+                    p 
+                        | Windowsと本アプリケーションの両方がコントローラのモードを設定しようとするため，一手間かける必要があります．
+                    p
+                        | より具体的には，コントローラの接続が済み，
+                        strong デバイスのセットアップ
+                        | のバルーンが表示されてから，
+                        strong デバイスの準備ができました
+                        | と表示されるまで，本アプリケーションの起動を控えてください．
+                    .row
+                        img(src="/images/works/joyflick/win0.png", alt="コントローラの接続後，出現するバルーンその1").col.s12.m6
+                        img(src="/images/works/joyflick/win1.png", alt="コントローラの接続後，出現するバルーンその2").col.s12.m6
+            section#execute
+                h4 アプリケーションの実行
+                p 
+                    | ダウンロードした
+                    code .zip
+                    | ファイルを解凍し，実行ファイルをダブルクリックしてください．
+                section#execute-macos
+                    h5 macOS
+                    p 
+                        | 開発元不明のアプリケーションとして実行がブロックされることがあります．その場合，
+                        strong 「システム環境設定」 -> 「セキュリティとプライバシー」 -> 「一般」
+                        | からアプリケーションを実行してください．
+                    .row
+                        img(src="/images/works/joyflick/mac0.png", alt="macOS 実行ブロック").col.s12.m6.offset-m3
+                section#execute-windows
+                    h5 Windows
+                    p
+                        | 発行元不明のアプリケーションとして実行がブロックされることがあります．その場合，
+                        strong 「詳細情報」
+                        | からアプリケーションを実行してください．
+                    .row
+                        img(src="/images/works/joyflick/win2.png", alt="windows 実行ブロック1").col.s12.m6
+                        img(src="/images/works/joyflick/win3.png", alt="windows 実行ブロック2").col.s12.m6
