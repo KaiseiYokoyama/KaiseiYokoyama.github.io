@@ -1,0 +1,119 @@
+extends ../preludes/_base.pug
+block additional-css
+    link(rel="stylesheet", href="/css/works/joyflick.css")
+block title
+    title JoyFlick Kaisei Yokoyama - portfolio
+block container
+    h1#pagetitle
+        span.title JoyFlick
+        span.version 0.5.1-alpha-1
+    .divider
+    section.row#app-images
+        .col.s12.m6
+            img.responsive-img(src='/images/joyflick_wiss_demo_0.png')
+        .col.s12.m6
+            img.responsive-img(src='/images/joyflick_wiss_demo_1.png')
+    section#downloads
+        h2 ダウンロード
+        .row
+            .col.s12.m6
+                a.waves-effect.waves-light.btn-large
+                    i.fab.fa-apple.left
+                    | Download for macOS
+            .col.s12.m6
+                a.waves-effect.waves-light.btn-large
+                    i.fab.fa-windows.left
+                    | Download for Windows
+    section#hardware
+        h2 対応コントローラ
+        .row
+            .col.s12.m6.hardware
+                i.material-icons sports_esports
+                .hardware-name
+                    .subtitle Nintendo Switch
+                    .title Pro コントローラー
+            .col.s12.m6.hardware
+                i.material-icons videogame_asset
+                .hardware-name
+                    .subtitle Nintendo Switch
+                    .title Joy-Con L & R
+    section#readme
+        h2 Readme
+        section#operation
+            h3 JoyFlick 操作方法
+            section#operation-consonant-selection
+                h4 子音選択
+                p コントローラのRスティックを操作し（倒す，あるいは押し込む），子音を選択します．
+                .row
+                    img(src="https://user-images.githubusercontent.com/8509057/102309815-032b6600-3fad-11eb-8125-8ce275c0380b.gif", alt="子音選択").col.s12.m6.offset-m3
+            section#operation-vowel-selection
+                h4 母音選択
+                p Rスティックを操作したまま，Lスティックを操作し，母音を選択します．
+                .row
+                    img(src="https://user-images.githubusercontent.com/8509057/102310124-b1cfa680-3fad-11eb-99d1-0691a7d52101.gif", alt="母音選択").col.s12.m6.offset-m3
+            section#operation-input
+                h4 文字入力
+                p Lスティックから指を離し，文字を入力します．
+                .row
+                    img(src="https://user-images.githubusercontent.com/8509057/102310240-f1968e00-3fad-11eb-95f5-7163e4397e6e.gif", alt="文字入力").col.s12.m6.offset-m3
+            section#operation-special
+                h4 特殊入力
+                p
+                    strong ZR
+                    | もしくは
+                    strong ZL
+                    | ボタンを押して，最後に入力した文字を濁音->半濁音->小音->清音の順に変換することができます．
+                p
+                    | また，
+                    strong B
+                    | ボタンを押して，最後に入力した文字を削除することができます．
+        section#usage
+            h3 アプリケーション使用方法
+            section#setup-connection
+                h4 コントローラの接続
+                p 
+                    | コントローラのシンクロボタン（
+                    a(href="https://support.nintendo.co.jp/app/answers/detail/a_id/34181") ボタンの位置はこちら
+                    | ）を押し，コンピュータにコントローラを接続してください．
+                section#setup-connection-for-windows
+                    h4 Windows
+                    p 
+                        | Windowsと本アプリケーションの両方がコントローラのモードを設定しようとするため，一手間かける必要があります．
+                    p
+                        | より具体的には，コントローラの接続が済み，
+                        strong デバイスのセットアップ
+                        | のバルーンが表示されてから，
+                        strong デバイスの準備ができました
+                        | と表示されるまで，本アプリケーションの起動を控えてください．
+                    .row
+                        img(src="/images/works/joyflick/win0.png", alt="コントローラの接続後，出現するバルーンその1").col.s12.m6
+                        img(src="/images/works/joyflick/win1.png", alt="コントローラの接続後，出現するバルーンその2").col.s12.m6
+            section#execute
+                h4 アプリケーションの実行
+                p 
+                    | ダウンロードした
+                    code .zip
+                    | ファイルを解凍し，実行ファイルをダブルクリックしてください．
+                section#execute-macos
+                    h5 macOS
+                    p 
+                        | 開発元不明のアプリケーションとして実行がブロックされることがあります．その場合，
+                        strong 「システム環境設定」 -> 「セキュリティとプライバシー」 -> 「一般」
+                        | からアプリケーションを実行してください．
+                    .row
+                        img(src="/images/works/joyflick/mac0.png", alt="macOS 実行ブロック").col.s12.m6.offset-m3
+                section#execute-windows
+                    h5 Windows
+                    p
+                        | 発行元不明のアプリケーションとして実行がブロックされることがあります．その場合，
+                        strong 「詳細情報」
+                        | からアプリケーションを実行してください．
+                    .row
+                        img(src="/images/works/joyflick/win2.png", alt="windows 実行ブロック1").col.s12.m6
+                        img(src="/images/works/joyflick/win3.png", alt="windows 実行ブロック2").col.s12.m6
+            section#recognize-hardware
+                h4 コントローラの認識
+                p アプリケーションがコントローラを認識していることを確認してください．
+                .row
+                    img(src="/images/works/joyflick/app0.png", alt="JoyCon使用時 macOS").col.s12.m6
+                    img(src="/images/works/joyflick/app1.png", alt="Pro コントローラー使用時 macOS").col.s12.m6

@@ -7,7 +7,7 @@ const src = {
     pug: ['src/pugs/**/*.pug', '!src/pugs/**/_*.pug'],
     scss: 'src/assets/scss/**/*.scss',
     js: 'src/assets/js/**/*.js',
-    img: 'src/assets/img/*',
+    img: 'src/assets/img/**/*',
 };
 
 const out = {
