@@ -55,3 +55,14 @@ h5 {
         }
     }
 }
+
+#readme {
+    #operation {
+        counter-reset: h4;
+
+        h4::before {
+            counter-increment: h4;
+            content: counter(h4) '. '
+        }
+    }
+}
