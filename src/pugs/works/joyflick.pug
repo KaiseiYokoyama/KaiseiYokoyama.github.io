@@ -141,3 +141,30 @@ block container
                     | のJoyFlickの測定に挑戦できます．
                 .row
                     img(src="/images/works/joyflick/app2.png", alt="JoyFlick TouchType").col.s12.m6.offset-m3
+        section#trouble-shooting
+            h3 トラブルシューティング
+            section#trouble-shooting-0
+                h4 コントローラが認識されません
+                p
+                    strong Windows
+                    | をお使いの場合，一度コントローラとコンピュータのペアリングを解除し，
+                    a(href="#setup-connection-for-windows") 手順
+                    | を見ながらもう一度ペアリングをしてみてください．
+                p
+                    strong Joy-Con
+                    | をお使いの場合，一度コントローラとコンピュータのペアリングを解除し，
+                    a(href="#setup-connection") 手順
+                    | を見ながらもう一度ペアリングをしてみてください．
+                    | ソフトウェアを再起動した場合に，コントローラが認識されない問題が発生する場合があります．
+            section#trouble-shooting-1
+                h4 アプリケーションが不正に終了します
+                p
+                    strong Windows
+                    | をお使いの場合，アプリケーションのウインドウを最小化する，
+                    | コマンドプロンプトの画面を動かすなどのインタラクションによって，
+                    | アプリケーションが不正に終了するケースがあるようです．
+                p
+                    | 本不具合は
+                    a(href="https://github.com/hecrj/iced/issues/603") 使用しているライブラリの不具合
+                    | によるもののようです．
+                    strong 皆様（特にVulkanを完全に理解した皆様）のコントリビューションを心よりお待ちしています．
