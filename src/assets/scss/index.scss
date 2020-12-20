@@ -186,11 +186,69 @@ main {
         }
     }
 
-    #works, #papers {
+    #products, #works, #papers {
+        ul.collapsible li {
+            .collapsible-header {
+                flex-direction: column;
+
+                .title {
+                    font-size: 130%;
+                    font-weight: 600;
+                }
+
+                .authors {
+                    display: flex;
+
+                    > .author {
+                        &.me {
+                            font-weight: 800;
+                        }
+
+                        &:not(:first-child)::before {
+                            content: '，';
+                        }
+                    }
+                }
+
+                .tags > .chip {
+                    height: auto;
+                    background-color: inherit;
+
+                    padding: 0;
+                    margin:0;
+
+                    &:not(:first-child)::before {
+                        content: ' / ';
+                    }
+                }
+            }
+
+            .collapsible-body {
+                > .abstruct {
+                    &::before {
+                        content: "Abstruct";
+                        font-weight: 900;
+                        font-size: 140%;
+                    }
+                }
+            }
+        }
         .card {
             .card-content {
                 > * {
                     margin-bottom: 10px;
+                }
+
+                .tags > .chip {
+                    height: auto;
+                    background-color: inherit;
+
+                    padding: 0;
+                    margin:0;
+
+                    &:not(:first-child)::before {
+                        content: ' / ';
+                    }
                 }
 
                 .awards > .award {

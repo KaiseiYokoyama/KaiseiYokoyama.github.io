@@ -43,3 +43,21 @@ main > .container {
     }
 
 }
+
+.btn {
+    background-color: #90CBF9;
+    font-weight: 600;
+
+    &:hover {
+        background-color: #90CBF9;
+        filter: brightness(105%) opacity(0.8);
+    }
+}
+
+.btn-flat {
+    color: #039be5 !important;
+
+    &:hover {
+        background-color: rgba($color: #039be5, $alpha: 0.3);
+    }
+}

@@ -34,3 +34,21 @@ main > .container > h4 {
   font-size: 1.6rem;
   height: 56pt;
 }
+
+.btn {
+  background-color: #90CBF9;
+  font-weight: 600;
+}
+
+.btn:hover {
+  background-color: #90CBF9;
+  filter: brightness(105%) opacity(0.8);
+}
+
+.btn-flat {
+  color: #039be5 !important;
+}
+
+.btn-flat:hover {
+  background-color: rgba(3, 155, 229, 0.3);
+}

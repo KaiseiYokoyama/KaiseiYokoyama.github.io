@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   width: 100vw;
   height: 100vh;
@@ -151,15 +152,64 @@ main #affiliations.collection > *, main #interests.collection > *, main #awards.
   background-color: inherit;
 }
 
-main #works .card .card-content > *, main #papers .card .card-content > * {
-  margin-bottom: 10px;
+main #products ul.collapsible li .collapsible-header, main #works ul.collapsible li .collapsible-header, main #papers ul.collapsible li .collapsible-header {
+  flex-direction: column;
 }
 
-main #works .card .card-content .awards > .award, main #papers .card .card-content .awards > .award {
+main #products ul.collapsible li .collapsible-header .title, main #works ul.collapsible li .collapsible-header .title, main #papers ul.collapsible li .collapsible-header .title {
+  font-size: 130%;
+  font-weight: 600;
+}
+
+main #products ul.collapsible li .collapsible-header .authors, main #works ul.collapsible li .collapsible-header .authors, main #papers ul.collapsible li .collapsible-header .authors {
   display: flex;
 }
 
-main #works .card .card-content .awards > .award > *:not(:first-child), main #papers .card .card-content .awards > .award > *:not(:first-child) {
+main #products ul.collapsible li .collapsible-header .authors > .author.me, main #works ul.collapsible li .collapsible-header .authors > .author.me, main #papers ul.collapsible li .collapsible-header .authors > .author.me {
+  font-weight: 800;
+}
+
+main #products ul.collapsible li .collapsible-header .authors > .author:not(:first-child)::before, main #works ul.collapsible li .collapsible-header .authors > .author:not(:first-child)::before, main #papers ul.collapsible li .collapsible-header .authors > .author:not(:first-child)::before {
+  content: '，';
+}
+
+main #products ul.collapsible li .collapsible-header .tags > .chip, main #works ul.collapsible li .collapsible-header .tags > .chip, main #papers ul.collapsible li .collapsible-header .tags > .chip {
+  height: auto;
+  background-color: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+main #products ul.collapsible li .collapsible-header .tags > .chip:not(:first-child)::before, main #works ul.collapsible li .collapsible-header .tags > .chip:not(:first-child)::before, main #papers ul.collapsible li .collapsible-header .tags > .chip:not(:first-child)::before {
+  content: ' / ';
+}
+
+main #products ul.collapsible li .collapsible-body > .abstruct::before, main #works ul.collapsible li .collapsible-body > .abstruct::before, main #papers ul.collapsible li .collapsible-body > .abstruct::before {
+  content: "Abstruct";
+  font-weight: 900;
+  font-size: 140%;
+}
+
+main #products .card .card-content > *, main #works .card .card-content > *, main #papers .card .card-content > * {
+  margin-bottom: 10px;
+}
+
+main #products .card .card-content .tags > .chip, main #works .card .card-content .tags > .chip, main #papers .card .card-content .tags > .chip {
+  height: auto;
+  background-color: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+main #products .card .card-content .tags > .chip:not(:first-child)::before, main #works .card .card-content .tags > .chip:not(:first-child)::before, main #papers .card .card-content .tags > .chip:not(:first-child)::before {
+  content: ' / ';
+}
+
+main #products .card .card-content .awards > .award, main #works .card .card-content .awards > .award, main #papers .card .card-content .awards > .award {
+  display: flex;
+}
+
+main #products .card .card-content .awards > .award > *:not(:first-child), main #works .card .card-content .awards > .award > *:not(:first-child), main #papers .card .card-content .awards > .award > *:not(:first-child) {
   margin-left: 3px;
 }
 
