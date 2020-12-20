@@ -193,6 +193,18 @@ main {
                     margin-bottom: 10px;
                 }
 
+                .tags > .chip {
+                    height: auto;
+                    background-color: inherit;
+
+                    padding: 0;
+                    margin:0;
+
+                    &:not(:first-child)::before {
+                        content: ' / ';
+                    }
+                }
+
                 .awards > .award {
                     display: flex;
 

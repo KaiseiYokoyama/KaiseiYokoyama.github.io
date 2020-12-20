@@ -155,6 +155,17 @@ main #products .card .card-content > *, main #works .card .card-content > *, mai
   margin-bottom: 10px;
 }
 
+main #products .card .card-content .tags > .chip, main #works .card .card-content .tags > .chip, main #papers .card .card-content .tags > .chip {
+  height: auto;
+  background-color: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+main #products .card .card-content .tags > .chip:not(:first-child)::before, main #works .card .card-content .tags > .chip:not(:first-child)::before, main #papers .card .card-content .tags > .chip:not(:first-child)::before {
+  content: ' / ';
+}
+
 main #products .card .card-content .awards > .award, main #works .card .card-content .awards > .award, main #papers .card .card-content .awards > .award {
   display: flex;
 }
