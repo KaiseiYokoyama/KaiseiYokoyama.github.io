@@ -151,15 +151,15 @@ main #affiliations.collection > *, main #interests.collection > *, main #awards.
   background-color: inherit;
 }
 
-main #products .card .card-content > *, main #papers .card .card-content > * {
+main #products .card .card-content > *, main #works .card .card-content > *, main #papers .card .card-content > * {
   margin-bottom: 10px;
 }
 
-main #products .card .card-content .awards > .award, main #papers .card .card-content .awards > .award {
+main #products .card .card-content .awards > .award, main #works .card .card-content .awards > .award, main #papers .card .card-content .awards > .award {
   display: flex;
 }
 
-main #products .card .card-content .awards > .award > *:not(:first-child), main #papers .card .card-content .awards > .award > *:not(:first-child) {
+main #products .card .card-content .awards > .award > *:not(:first-child), main #works .card .card-content .awards > .award > *:not(:first-child), main #papers .card .card-content .awards > .award > *:not(:first-child) {
   margin-left: 3px;
 }
 
