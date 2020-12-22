@@ -173,6 +173,11 @@ main #products ul.collapsible li .collapsible-header .authors > .author:not(:fir
   content: '，';
 }
 
+main #products ul.collapsible li .collapsible-header .authors > .date, main #products ul.collapsible li .collapsible-header .authors .pages, main #works ul.collapsible li .collapsible-header .authors > .date, main #works ul.collapsible li .collapsible-header .authors .pages, main #papers ul.collapsible li .collapsible-header .authors > .date, main #papers ul.collapsible li .collapsible-header .authors .pages {
+  margin-left: 20px;
+  color: #616161;
+}
+
 main #products ul.collapsible li .collapsible-header .tags > .chip, main #works ul.collapsible li .collapsible-header .tags > .chip, main #papers ul.collapsible li .collapsible-header .tags > .chip {
   height: auto;
   background-color: inherit;

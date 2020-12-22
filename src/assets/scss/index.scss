@@ -208,6 +208,11 @@ main {
                             content: '，';
                         }
                     }
+
+                    > .date, .pages {
+                        margin-left: 20px;
+                        color: #616161;
+                    }
                 }
 
                 .tags > .chip {
