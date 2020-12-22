@@ -61,3 +61,22 @@ main > .container {
         background-color: rgba($color: #039be5, $alpha: 0.3);
     }
 }
+
+.tabs {
+    .indicator {
+        background-color: #039be5;
+    }
+
+    .tab a {
+        color: #90CBF9;
+
+        &.active, &:hover {
+            background-color: transparent;
+            color: #039be5;
+        }
+
+        &:focus, &:focus.active {
+            background-color: rgba($color: #039be5, $alpha: 0.2);
+        }
+    }
+}

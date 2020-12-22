@@ -52,3 +52,20 @@ main > .container > h4 {
 .btn-flat:hover {
   background-color: rgba(3, 155, 229, 0.3);
 }
+
+.tabs .indicator {
+  background-color: #039be5;
+}
+
+.tabs .tab a {
+  color: #90CBF9;
+}
+
+.tabs .tab a.active, .tabs .tab a:hover {
+  background-color: transparent;
+  color: #039be5;
+}
+
+.tabs .tab a:focus, .tabs .tab a:focus.active {
+  background-color: rgba(3, 155, 229, 0.2);
+}

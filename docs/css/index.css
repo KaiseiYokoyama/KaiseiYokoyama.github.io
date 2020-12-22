@@ -184,10 +184,26 @@ main #products ul.collapsible li .collapsible-header .tags > .chip:not(:first-ch
   content: ' / ';
 }
 
-main #products ul.collapsible li .collapsible-body > .abstruct::before, main #works ul.collapsible li .collapsible-body > .abstruct::before, main #papers ul.collapsible li .collapsible-body > .abstruct::before {
-  content: "Abstruct";
-  font-weight: 900;
-  font-size: 140%;
+main #products ul.collapsible li .collapsible-body > .citation .title, main #works ul.collapsible li .collapsible-body > .citation .title, main #papers ul.collapsible li .collapsible-body > .citation .title {
+  font-weight: 600;
+  font-size: 120%;
+}
+
+main #products ul.collapsible li .collapsible-body > .citation > :not(.title), main #works ul.collapsible li .collapsible-body > .citation > :not(.title), main #papers ul.collapsible li .collapsible-body > .citation > :not(.title) {
+  margin-left: 20px;
+}
+
+main #products ul.collapsible li .collapsible-body > .citation .citation-item, main #works ul.collapsible li .collapsible-body > .citation .citation-item, main #papers ul.collapsible li .collapsible-body > .citation .citation-item {
+  padding: 5px;
+  background-color: rgba(158, 158, 158, 0.2);
+}
+
+main #products ul.collapsible li .collapsible-body > .citation pre.citation-item, main #works ul.collapsible li .collapsible-body > .citation pre.citation-item, main #papers ul.collapsible li .collapsible-body > .citation pre.citation-item {
+  white-space: pre-wrap;
+}
+
+main #products ul.collapsible li .collapsible-body > .citation .warning > i.material-icons.left, main #works ul.collapsible li .collapsible-body > .citation .warning > i.material-icons.left, main #papers ul.collapsible li .collapsible-body > .citation .warning > i.material-icons.left {
+  padding-left: 20px;
 }
 
 main #products .card .card-content > *, main #works .card .card-content > *, main #papers .card .card-content > * {

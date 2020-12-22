@@ -225,11 +225,42 @@ main {
 
             .collapsible-body {
                 > .abstruct {
-                    &::before {
-                        content: "Abstruct";
-                        font-weight: 900;
-                        font-size: 140%;
+                    // &::before {
+                    //     content: "Abstruct";
+                    //     font-weight: 900;
+                    //     font-size: 140%;
+                    // }
+                }
+
+                > .citation {
+                    .title {
+                        font-weight: 600;
+                        font-size: 120%;
                     }
+
+                    > :not(.title) {
+                        margin-left: 20px;
+                    }
+
+                    .citation-item {
+                        padding: 5px;
+                        background-color: rgba($color: #9e9e9e, $alpha: 0.2);
+                    }
+
+                    pre.citation-item {
+                        white-space: pre-wrap;
+                    }
+
+                    .warning {
+                        > i.material-icons.left {
+                            padding-left: 20px;
+                        }
+                    }
+                    // &::before {
+                    //     content: "Citation";
+                    //     font-weight: 900;
+                    //     font-size: 140%;
+                    // }
                 }
             }
         }

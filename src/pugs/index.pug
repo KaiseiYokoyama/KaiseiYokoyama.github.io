@@ -156,9 +156,35 @@ block container
                 a(target='_blank', href='https://www.wiss.org/WISS2020Proceedings/data/17.pdf') （予稿PDF）
               .chip 登壇発表
                 a(target='_blank', href='https://youtu.be/JDWQJcLl8ek?t=17706') （Youtube）
-          .collapsible-body
-            .abstruct
+          .collapsible-body.row
+            .col.s12
+              ul.tabs
+                li.tab.col.s6
+                  a(href='#wiss2020-abstruct').active Abstruct
+                li.tab.col.s6
+                  a(href='#wiss2020-citation') Citation
+            #wiss2020-abstruct.col.s12.abstruct
               p 本稿では，ハードウェアキーボードが接続されていない家庭用ゲーム機において，ゲームパッドを用いてかな文字を入力する手法であるJoyFlickを示す．JoyFlickは，スマートフォンのかな文字入力手法として利用率の高いフリック入力に基づくことにより，ユーザの学習コストを抑えている．9 名を参加者とした実験により，JoyFlick が限られた練習量において現在の家庭用ゲーム機に搭載されている手法と同程度の入力速度（36 CPM）に到達すること，またユーザのフリック入力の経験が JoyFlick の習熟に良い影響を与えることが分かった．
+            #wiss2020-citation.col.s12.citation
+              .title 平文
+              p.citation-item 横山海青，髙倉礼，志筑文太郎．JoyFlick: フリック入力に基づくゲームパッド向けかな文字入力手法．第28回インタラクティブシステムとソフトウェアに関するワークショップ（WISS2020），pp. 97–102，日本ソフトウェア科学会，2020年12月
+              .title Bibtex
+              pre.citation-item
+                | @article{joyflick,
+                |   author    = {{横山海青，\UTF{9AD9}倉礼，志筑文太郎}},
+                |   title     = {片手持ちVRコントローラのための日本語入力UIの提案},
+                |   journal   = {第28回インタラクティブシステムとソフトウェアに関するワークショップ},
+                |   series    = {WISS2020},
+                |   publisher = {日本ソフトウェア科学会},
+                |   year      = {2020},
+                |   month     = {12},
+                |   pages     = {97--102},
+                |   URL       = {https://www.wiss.org/WISS2020Proceedings/data/17.pdf},
+                | }
+              span.warning
+                i.material-icons.red-text.left warning
+                span.left 以下のコマンドをプリアンブルに書き足す必要があります．
+                code.left \usepackage{otf}
   h4#awards-header
     i.material-icons emoji_events
     |  受賞歴
