@@ -78,10 +78,27 @@ main {
     overflow-y: scroll;
 
     #profile {
+        .card-stacked {
+            display: flex;
+            flex-direction: row;
 
-        &.card {
-            border-right: #90caf9 solid 10vw;
+            .left {
+                flex: 70%;
+            }
+
+            .right {
+                flex: 30%;
+                
+                background-color: #90caf9;
+                display: flex;
+                justify-content: center;
+            }
         }
+        // &.card {
+        //     border-right: #90caf9 solid 10vw;
+        // }
+
+
 
         /// スマホ, タブレット用
         @media only screen and (max-width: 992px) {
@@ -99,7 +116,8 @@ main {
                 justify-items: center;
 
                 #face {
-                    width: 100px;
+                    // width: 100px;
+                    height: 110px;
                     object-fit: scale-down;
 
                     margin: 20px;
@@ -107,9 +125,18 @@ main {
 
                 #name {
                     flex-shrink: 1;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+
+                    > h4 {
+                        margin-top: 0rem;
+                        margin-bottom: 0.456rem;
+                    }
 
                     .alphabet {
                         color: #039be5;
+                        font-size: 1.64rem;
                     }
                 }
             }
@@ -126,9 +153,14 @@ main {
             }
 
             #affiliations.collection {
-                .collection-item:before {
-                    color: #9e9e9e;
-                    content: '- ';
+                .collection-item {
+                    padding-bottom: 5px;
+
+                    &:before {
+                        color: #039be5;
+                        font-weight: 900;
+                        content: '- ';
+                    }
                 }
 
                 a[href] {
@@ -150,17 +182,26 @@ main {
                 }
             }
 
-            .links {
-                padding-left: 30px;
+            ul.links.collection {
+                background: none;
+                border: none;
+
+                li.collection-item {
+                    background: none;
+                    border: none;
+
+                    padding-left: 0;
+                    padding-right: 0;
+                }
+
+                i {
+                    margin-right: 10px;
+                    color: white;
+                }
 
                 a {
                     font-size: 18px;
-                    color: #039be5;
-                    //
-                    //i.material-icons {
-                    //    font-size: 22px;
-                    //    line-height: 1;
-                    //}
+                    color: white;
                 }
 
                 //:not(*:first-child) {

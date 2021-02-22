@@ -2,12 +2,14 @@ extends preludes/_base.pug
 block container
   #profile.card.horizontal
     .card-stacked
-      .card-content
+      .card-content.left
         .profile
           img#face.materialboxed(src='images/face.jpg', alt='顔')
           #name
-            h4.kanji 横山 海青
-            h5.alphabet Kaisei YOKOYAMA
+            h4
+              .kanji 横山 海青
+              .alphabet Kaisei YOKOYAMA
+            .email kyokoyama (at) iplab.cs.tsukuba.ac.jp
         ul#affiliations.collection.with-header
           li.collection-item
             a(href='https://www.coins.tsukuba.ac.jp/') 筑波大学 情報学群 情報科学類 B4
@@ -15,16 +17,16 @@ block container
             a(href='https://www.iplab.cs.tsukuba.ac.jp/') 筑波大学 IPLAB WAVEチーム
           li.collection-item
             a(href='https://www.amusement-creators.info/') Amusement Creators 所属
-        .links
-          a.btn-flat(href='https://github.com/KaiseiYokoyama')
-            i.fab.fa-github
-            span.hide-on-small-only Github
-          a.btn-flat(href='https://twitter.com/KaiseiYokoyama')
-            i.fab.fa-twitter
-            span.hide-on-small-only Twitter
-          a.btn-flat(href='https://kaiseiyokoyama.github.io/blog/posts/')
-            i.material-icons.left web
-            span.hide-on-small-only Blog
+      .card-content.right
+        ul.links.collection
+          li.collection-item
+            a(href='https://github.com/KaiseiYokoyama')
+              i.fab.fa-github
+              span.hide-on-small-only KaiseiYokoyama
+          li.collection-item
+            a(href='https://twitter.com/KaiseiYokoyama')
+              i.fab.fa-twitter
+              span.hide-on-small-only KaiseiYokoyama
   h4#interests-header
     i.material-icons domain
     |  興味のあること

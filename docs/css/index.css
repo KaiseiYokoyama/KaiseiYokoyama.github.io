@@ -63,8 +63,20 @@ main {
   overflow-y: scroll;
 }
 
-main #profile.card {
-  border-right: #90caf9 solid 10vw;
+main #profile .card-stacked {
+  display: flex;
+  flex-direction: row;
+}
+
+main #profile .card-stacked .left {
+  flex: 70%;
+}
+
+main #profile .card-stacked .right {
+  flex: 30%;
+  background-color: #90caf9;
+  display: flex;
+  justify-content: center;
 }
 
 @media only screen and (max-width: 992px) {
@@ -84,17 +96,26 @@ main #profile .card-content .profile {
 }
 
 main #profile .card-content .profile #face {
-  width: 100px;
+  height: 110px;
   object-fit: scale-down;
   margin: 20px;
 }
 
 main #profile .card-content .profile #name {
   flex-shrink: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+main #profile .card-content .profile #name > h4 {
+  margin-top: 0rem;
+  margin-bottom: 0.456rem;
 }
 
 main #profile .card-content .profile #name .alphabet {
   color: #039be5;
+  font-size: 1.64rem;
 }
 
 @media only screen and (max-width: 992px) {
@@ -106,8 +127,13 @@ main #profile .card-content .profile #name .alphabet {
   }
 }
 
+main #profile .card-content #affiliations.collection .collection-item {
+  padding-bottom: 5px;
+}
+
 main #profile .card-content #affiliations.collection .collection-item:before {
-  color: #9e9e9e;
+  color: #039be5;
+  font-weight: 900;
   content: '- ';
 }
 
@@ -128,13 +154,26 @@ main #profile .card-content #affiliations.collection a[href]:hover {
   animation: focus 0.3s ease 0s forwards;
 }
 
-main #profile .card-content .links {
-  padding-left: 30px;
+main #profile .card-content ul.links.collection {
+  background: none;
+  border: none;
 }
 
-main #profile .card-content .links a {
+main #profile .card-content ul.links.collection li.collection-item {
+  background: none;
+  border: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+main #profile .card-content ul.links.collection i {
+  margin-right: 10px;
+  color: white;
+}
+
+main #profile .card-content ul.links.collection a {
   font-size: 18px;
-  color: #039be5;
+  color: white;
 }
 
 @media only screen and (max-width: 600px) {
