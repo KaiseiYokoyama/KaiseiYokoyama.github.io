@@ -78,20 +78,37 @@ main {
     overflow-y: scroll;
 
     #profile {
+        max-width: 620px;
+
         .card-stacked {
             display: flex;
             flex-direction: row;
 
             .left {
-                flex: 70%;
+                flex: 90%;
+
+                > .card-action {
+                    padding-bottom: 0;
+
+                    a {
+                        color: #039be5;;
+                    }
+                }
             }
 
             .right {
-                flex: 30%;
+                flex: 10%;
                 
                 background-color: #90caf9;
                 display: flex;
                 justify-content: center;
+
+                i.fab {
+                    &.fa-github, &.fa-twitter {
+                        margin: 0;
+                        font-size: 36px;
+                    }
+                }
             }
         }
         // &.card {

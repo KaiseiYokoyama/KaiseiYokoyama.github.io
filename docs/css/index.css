@@ -63,20 +63,37 @@ main {
   overflow-y: scroll;
 }
 
+main #profile {
+  max-width: 620px;
+}
+
 main #profile .card-stacked {
   display: flex;
   flex-direction: row;
 }
 
 main #profile .card-stacked .left {
-  flex: 70%;
+  flex: 90%;
+}
+
+main #profile .card-stacked .left > .card-action {
+  padding-bottom: 0;
+}
+
+main #profile .card-stacked .left > .card-action a {
+  color: #039be5;
 }
 
 main #profile .card-stacked .right {
-  flex: 30%;
+  flex: 10%;
   background-color: #90caf9;
   display: flex;
   justify-content: center;
+}
+
+main #profile .card-stacked .right i.fab.fa-github, main #profile .card-stacked .right i.fab.fa-twitter {
+  margin: 0;
+  font-size: 36px;
 }
 
 @media only screen and (max-width: 992px) {
