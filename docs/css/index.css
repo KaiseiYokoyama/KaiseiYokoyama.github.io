@@ -238,11 +238,6 @@ main #products ul.collapsible li .collapsible-header .tags > .chip, main #works 
   height: auto;
   background-color: inherit;
   padding: 0;
-  margin: 0;
-}
-
-main #products ul.collapsible li .collapsible-header .tags > .chip:not(:first-child)::before, main #works ul.collapsible li .collapsible-header .tags > .chip:not(:first-child)::before, main #papers ul.collapsible li .collapsible-header .tags > .chip:not(:first-child)::before {
-  content: ' / ';
 }
 
 main #products ul.collapsible li .collapsible-body > .citation .title, main #works ul.collapsible li .collapsible-body > .citation .title, main #papers ul.collapsible li .collapsible-body > .citation .title {
@@ -274,12 +269,12 @@ main #products .card .card-content > *, main #works .card .card-content > *, mai
 main #products .card .card-content .tags > .chip, main #works .card .card-content .tags > .chip, main #papers .card .card-content .tags > .chip {
   height: auto;
   background-color: inherit;
-  padding: 0;
+  padding: 0 5px;
   margin: 0;
 }
 
-main #products .card .card-content .tags > .chip:not(:first-child)::before, main #works .card .card-content .tags > .chip:not(:first-child)::before, main #papers .card .card-content .tags > .chip:not(:first-child)::before {
-  content: ' / ';
+main #products .card .card-content .tags > .chip:not(:last-child)::after, main #works .card .card-content .tags > .chip:not(:last-child)::after, main #papers .card .card-content .tags > .chip:not(:last-child)::after {
+  content: ', ';
 }
 
 main #products .card .card-content .awards > .award, main #works .card .card-content .awards > .award, main #papers .card .card-content .awards > .award {
