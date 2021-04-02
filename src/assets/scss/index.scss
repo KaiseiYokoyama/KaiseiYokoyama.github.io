@@ -252,6 +252,8 @@ main {
                 .title {
                     font-size: 130%;
                     font-weight: 600;
+
+                    margin-bottom: 5px;
                 }
 
                 .authors {
@@ -267,11 +269,16 @@ main {
                         }
                     }
 
-                    > .date, .pages {
-                        margin-left: 20px;
-                        color: #616161;
+                    @media only screen and (max-width: 992px) {
+                        justify-content: space-between;
+
+                        > .author {    
+                            &:not(:first-child)::before {
+                                content: '';
+                            }
+                        }
                     }
-                }
+            }
 
                 .tags > .chip {
                     height: auto;
@@ -282,10 +289,32 @@ main {
                     // &:not(:first-child)::before {
                     //     content: '/';
                     // }
+
+                    &.pages {
+                        &::after {
+                            content: 'pages';
+                        }
+                    }
+
+                    &.rate {
+                        font-weight: 900;
+        
+                        &::before {
+                            content: '採択率';
+                        }
+        
+                        &::after {
+                            content: '%';
+                        }
+                    }
                 }
             }
 
             .collapsible-body {
+                @media only screen and (max-width: 992px) {
+                    padding: 0.5rem;
+                }
+
                 > .abstruct {
                     // &::before {
                     //     content: "Abstruct";
@@ -366,28 +395,6 @@ main {
                         font-weight: 900;
                         font-size: 140%;
                     }
-                }
-            }
-        }
-
-        .authors {
-            .pages {
-                &::after {
-                    content: 'pages';
-                }
-            }
-        }
-
-        .chip {
-            &.rate {
-                font-weight: 900;
-
-                &::before {
-                    content: '採択率';
-                }
-
-                &::after {
-                    content: '%';
                 }
             }
         }

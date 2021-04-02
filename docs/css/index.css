@@ -215,6 +215,7 @@ main #products ul.collapsible li .collapsible-header, main #works ul.collapsible
 main #products ul.collapsible li .collapsible-header .title, main #works ul.collapsible li .collapsible-header .title, main #papers ul.collapsible li .collapsible-header .title {
   font-size: 130%;
   font-weight: 600;
+  margin-bottom: 5px;
 }
 
 main #products ul.collapsible li .collapsible-header .authors, main #works ul.collapsible li .collapsible-header .authors, main #papers ul.collapsible li .collapsible-header .authors {
@@ -229,15 +230,41 @@ main #products ul.collapsible li .collapsible-header .authors > .author:not(:fir
   content: '，';
 }
 
-main #products ul.collapsible li .collapsible-header .authors > .date, main #products ul.collapsible li .collapsible-header .authors .pages, main #works ul.collapsible li .collapsible-header .authors > .date, main #works ul.collapsible li .collapsible-header .authors .pages, main #papers ul.collapsible li .collapsible-header .authors > .date, main #papers ul.collapsible li .collapsible-header .authors .pages {
-  margin-left: 20px;
-  color: #616161;
+@media only screen and (max-width: 992px) {
+  main #products ul.collapsible li .collapsible-header .authors, main #works ul.collapsible li .collapsible-header .authors, main #papers ul.collapsible li .collapsible-header .authors {
+    justify-content: space-between;
+  }
+  main #products ul.collapsible li .collapsible-header .authors > .author:not(:first-child)::before, main #works ul.collapsible li .collapsible-header .authors > .author:not(:first-child)::before, main #papers ul.collapsible li .collapsible-header .authors > .author:not(:first-child)::before {
+    content: '';
+  }
 }
 
 main #products ul.collapsible li .collapsible-header .tags > .chip, main #works ul.collapsible li .collapsible-header .tags > .chip, main #papers ul.collapsible li .collapsible-header .tags > .chip {
   height: auto;
   background-color: inherit;
   padding: 0;
+}
+
+main #products ul.collapsible li .collapsible-header .tags > .chip.pages::after, main #works ul.collapsible li .collapsible-header .tags > .chip.pages::after, main #papers ul.collapsible li .collapsible-header .tags > .chip.pages::after {
+  content: 'pages';
+}
+
+main #products ul.collapsible li .collapsible-header .tags > .chip.rate, main #works ul.collapsible li .collapsible-header .tags > .chip.rate, main #papers ul.collapsible li .collapsible-header .tags > .chip.rate {
+  font-weight: 900;
+}
+
+main #products ul.collapsible li .collapsible-header .tags > .chip.rate::before, main #works ul.collapsible li .collapsible-header .tags > .chip.rate::before, main #papers ul.collapsible li .collapsible-header .tags > .chip.rate::before {
+  content: '採択率';
+}
+
+main #products ul.collapsible li .collapsible-header .tags > .chip.rate::after, main #works ul.collapsible li .collapsible-header .tags > .chip.rate::after, main #papers ul.collapsible li .collapsible-header .tags > .chip.rate::after {
+  content: '%';
+}
+
+@media only screen and (max-width: 992px) {
+  main #products ul.collapsible li .collapsible-body, main #works ul.collapsible li .collapsible-body, main #papers ul.collapsible li .collapsible-body {
+    padding: 0.5rem;
+  }
 }
 
 main #products ul.collapsible li .collapsible-body > .citation .title, main #works ul.collapsible li .collapsible-body > .citation .title, main #papers ul.collapsible li .collapsible-body > .citation .title {
@@ -293,20 +320,4 @@ main #papers .card .card-content > .description::before {
   content: "Abstruct";
   font-weight: 900;
   font-size: 140%;
-}
-
-main #papers .authors .pages::after {
-  content: 'pages';
-}
-
-main #papers .chip.rate {
-  font-weight: 900;
-}
-
-main #papers .chip.rate::before {
-  content: '採択率';
-}
-
-main #papers .chip.rate::after {
-  content: '%';
 }
