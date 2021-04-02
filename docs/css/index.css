@@ -294,3 +294,15 @@ main #papers .card .card-content > .description::before {
   font-weight: 900;
   font-size: 140%;
 }
+
+main #papers .chip.rate {
+  font-weight: 900;
+}
+
+main #papers .chip.rate::before {
+  content: '採択率';
+}
+
+main #papers .chip.rate::after {
+  content: '%';
+}

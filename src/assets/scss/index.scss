@@ -369,5 +369,18 @@ main {
                 }
             }
         }
+        .chip {
+            &.rate {
+                font-weight: 900;
+
+                &::before {
+                    content: '採択率';
+                }
+
+                &::after {
+                    content: '%';
+                }
+            }
+        }
     }
 }
