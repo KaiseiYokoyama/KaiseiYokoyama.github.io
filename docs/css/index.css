@@ -295,6 +295,10 @@ main #papers .card .card-content > .description::before {
   font-size: 140%;
 }
 
+main #papers .authors .pages::after {
+  content: 'pages';
+}
+
 main #papers .chip.rate {
   font-weight: 900;
 }

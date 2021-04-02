@@ -369,6 +369,15 @@ main {
                 }
             }
         }
+
+        .authors {
+            .pages {
+                &::after {
+                    content: 'pages';
+                }
+            }
+        }
+
         .chip {
             &.rate {
                 font-weight: 900;
