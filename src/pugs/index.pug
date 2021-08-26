@@ -142,8 +142,8 @@ block container
     i.material-icons description
     |  論文
   #papers
-    h5#papers-reviewed-domestic-header 査読あり/国内会議
-    #papers-reviewed-domestic
+    h5#papers-reviewed-domestic-conf-header 査読あり/国内会議
+    #papers-reviewed-domestic-conf
       ul.collapsible.expandable
         li
           .collapsible-header
@@ -192,6 +192,29 @@ block container
                 i.material-icons.red-text.left warning
                 span.left 以下のコマンドをプリアンブルに書き足す必要があります．
                 code.left \usepackage{otf}
+    h5#papers-reviewed-domestic-journal-header 査読あり/国内論文誌
+    #papers-reviewed-domestic-journal
+      ul.collapsible.expandable
+        li
+          .collapsible-header
+            .title フリック入力に基づく2本の押し込み機能付きジョイスティックを用いたテキスト入力手法
+            .authors
+              .author.me 横山海青
+              .author 
+                a(href='https://www.iplab.cs.tsukuba.ac.jp/~takakura/') 髙倉礼
+              .author
+                a(href='https://www.iplab.cs.tsukuba.ac.jp/~shizuki/') 志築文太郎
+              .author
+                a(href='https://sites.google.com/view/ikkakukawaguchi/home') 川口一画
+            .tags
+              .chip ヒューマンインタフェース学会
+                //- a(href='') （論文PDF）
+              //- .chip.rate 67.6
+              .chip 原著論文
+              .chip.date 
+                time(datetime='2020-12-17') Nov. 2021
+              .chip.pages 12
+              .chip.red-text To Appear
     h5#papers-reviewed-international-header 査読あり/国際会議
     #papers-reviewed-international
       ul.collapsible.expandable
