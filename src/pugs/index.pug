@@ -230,39 +230,46 @@ block container
             .tags
               .chip
                 a(href="https://www.interact2021.org/") INTERACT2021 
-                | Full Paper Track / 
-                a(href="https://www.springer.com/gp/computer-science/lncs") Springer LNCS series
+                | Full Paper Track / Springer LNCS series
+                a(href='https://doi.org/10.1007/978-3-030-85613-7_8') （PDF）
               .chip.rate 27.0
               .chip 登壇発表
               .chip.date 
                 time(datetime='2021-9-30') Sep. 2021
               .chip.pages 18
-              .chip.red-text To Appear
-          //- .collapsible-body.row
-          //-   .col.s12
-          //-     ul.tabs
-          //-       li.tab.col.s6
-          //-         a(href='#wiss2020-abstruct').active Abstruct
-          //-       li.tab.col.s6
-          //-         a(href='#wiss2020-citation') Citation
-          //-   #interact2021-abstruct.col.s12.abstruct
-          //-     p 本稿では，ハードウェアキーボードが接続されていない家庭用ゲーム機において，ゲームパッドを用いてかな文字を入力する手法であるJoyFlickを示す．JoyFlickは，スマートフォンのかな文字入力手法として利用率の高いフリック入力に基づくことにより，ユーザの学習コストを抑えている．9 名を参加者とした実験により，JoyFlick が限られた練習量において現在の家庭用ゲーム機に搭載されている手法と同程度の入力速度（36 CPM）に到達すること，またユーザのフリック入力の経験が JoyFlick の習熟に良い影響を与えることが分かった．
-          //-   #interact2021-citation.col.s12.citation
-          //-     .title 平文
-          //-     p.citation-item 横山海青，髙倉礼，志築文太郎．JoyFlick: フリック入力に基づくゲームパッド向けかな文字入力手法．第28回インタラクティブシステムとソフトウェアに関するワークショップ（WISS2020），pp. 97–102，日本ソフトウェア科学会，2020年12月
-          //-     .title Bibtex
-          //-     pre.citation-item
-          //-       | @article{joyflick,
-          //-       |   author    = {{横山海青，\UTF{9AD9}倉礼，志築文太郎}},
-          //-       |   title     = {{JoyFlick: フリック入力に基づくゲームパッド向けかな文字入力手法}},
-          //-       |   journal   = {第28回インタラクティブシステムとソフトウェアに関するワークショップ},
-          //-       |   series    = {WISS2020},
-          //-       |   publisher = {日本ソフトウェア科学会},
-          //-       |   year      = {2020},
-          //-       |   month     = {12},
-          //-       |   pages     = {97--102},
-          //-       |   URL       = {https://www.wiss.org/WISS2020Proceedings/data/17.pdf},
-          //-       | }
+          .collapsible-body.row
+            .col.s12
+              ul.tabs
+                li.tab.col.s6
+                  a(href='#interact2021-abstruct').active Abstruct
+                li.tab.col.s6
+                  a(href='#interact2021-citation') Citation
+            #interact2021-abstruct.col.s12.abstruct
+              p We show JoyFlick: A Japanese text entry method on game consoles with dual joysticks for flick-input users. To reduce the learning cost, the procedure of JoyFlick is designed based on a flick-input, which is a Japanese text entry method that approximately 80% of young Japanese people use daily on smartphones. The user using JoyFlick is able to enter a Japanese basic phonetic character with two joystick operations. In addition, JoyFlick’s widgets spend a little amount of real estate on a screen, making it easy for developers to allocate space for other content. We conducted user studies that compared the performance of JoyFlick with a Kana syllabary keyboard, the de-facto standard for the Japanese text entry method on game consoles. The results showed the followings: (1) after training employing 28 phrases (289 characters, mean entry time = 373s), the flick-input users using JoyFlick can enter texts faster than using the Kana syllabary keyboard; (2) the flick-input users can enter text using JoyFlick 1.53-fold faster (60.1 CPM) than the Kana syllabary keyboard (39.2 CPM) after one-week training in which the users enter texts less than 140 (M=135) characters per day. These results show that JoyFlick provides a fast and easy Japanese text entry method to the flick-input users using the game controllers and yet spends a little amount of real estate on a screen.
+            #interact2021-citation.col.s12.citation
+              .title 平文
+              p.citation-item Yokoyama K., Takakura R., Shizuki B. (2021) JoyFlick: Japanese Text Entry Using Dual Joysticks for Flick Input Users. In: Ardito C. et al. (eds) Human-Computer Interaction – INTERACT 2021. INTERACT 2021. Lecture Notes in Computer Science, vol 12934. Springer, Cham. https://doi.org/10.1007/978-3-030-85613-7_8
+              .title Bibtex
+              pre.citation-item
+                | @InProceedings{10.1007/978-3-030-85613-7_8,
+                |   author="Yokoyama, Kaisei
+                |   and Takakura, Rei
+                |   and Shizuki, Buntarou",
+                |   editor="Ardito, Carmelo
+                |   and Lanzilotti, Rosa
+                |   and Malizia, Alessio
+                |   and Petrie, Helen
+                |   and Piccinno, Antonio
+                |   and Desolda, Giuseppe
+                |   and Inkpen, Kori",
+                |   title="JoyFlick: Japanese Text Entry Using Dual Joysticks for Flick Input Users",
+                |   booktitle="Human-Computer Interaction -- INTERACT 2021",
+                |   year="2021",
+                |   publisher="Springer International Publishing",
+                |   address="Cham",
+                |   pages="107--125",
+                |   isbn="978-3-030-85613-7"
+                | }
   h4#awards-header
     i.material-icons emoji_events
     |  受賞歴
