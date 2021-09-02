@@ -8,6 +8,7 @@ const src = {
     scss: 'src/assets/scss/**/*.scss',
     js: 'src/assets/js/**/*.js',
     img: 'src/assets/img/**/*',
+    movie: 'src/assets/movie/**/*',
 };
 
 const out = {
@@ -16,6 +17,7 @@ const out = {
     css: 'docs/css/',
     js: 'docs/js/',
     img: 'docs/images/',
+    movie: 'docs/movie/',
 };
 
 // ブラウザ同期
@@ -69,6 +71,15 @@ let image = () => {
 exports.image = image;
 gulp.watch(src.img, gulp.series(image,sync));
 
+// Movie
+let movie = () => {
+    return gulp.src(src.movie)
+        .pipe(gulp.dest(out.movie))
+        .pipe(browserSync.reload({stream:true}));
+};
+exports.movie = movie;
+gulp.watch(src.img, gulp.series(movie,sync));
+
 // サーバ
 let serve = (done) => {
     browserSync({
@@ -86,7 +97,7 @@ exports.serve = serve;
 
 // ファイル監視
 exports.default = gulp.series(
-    gulp.parallel(compileHTML,scss,js,image),
+    gulp.parallel(compileHTML,scss,js,image,movie),
     serve,
 );
 
