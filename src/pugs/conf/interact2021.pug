@@ -1,0 +1,27 @@
+extends ../preludes/_base.pug
+block container
+    h3.title Information about our work
+    h6 in INTERACT 2021
+    // muted属性がないと一部ブラウザでは自動再生されない
+    video(style = "max-width: 100%", autoplay, loop, muted)
+        source(src="/movie/interact2021.mp4", type="video/mp4")
+    // 論文について
+    h4 Paper
+    h5 Title
+    span JoyFlick: Japanese Text Entry Using Dual Joysticks for Flick Input Users
+    h5 Details
+    a(href="https://link.springer.com/chapter/10.1007%2F978-3-030-85613-7_8") JoyFlick: Japanese Text Entry Using Dual Joysticks for Flick Input Users | SpringerLink
+    // スライドPDF
+    // 副産物
+    h4 Spin-off
+    h5 Joycon-rs [
+        a(href="https://github.com/KaiseiYokoyama/joycon-rs") github
+        |]
+        a(href='https://crates.io/crates/joycon-rs')
+            img(src='https://img.shields.io/crates/v/joycon_rs?logo=rust')
+        | 
+        a(href='https://docs.rs/joycon-rs/')
+            img(src='https://img.shields.io/badge/docs-latest-blue.svg?style=flat&logo=rust')
+    .row
+        img.col.s12.m3(src="https://raw.githubusercontent.com/KaiseiYokoyama/joycon-rs/master/images/logo.png", alt="Joycon-rs logo")
+        span.col.s12.m9 A framework for dealing with Nintendo Switch Joy-Con on Rust easily and efficiently via Bluetooth.
