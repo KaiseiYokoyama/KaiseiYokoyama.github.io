@@ -235,7 +235,7 @@ main {
         }
     }
 
-    #affiliations.collection, #interests.collection, #awards.collection, #job-history.collection {
+    #affiliations.collection, #interests.collection, #awards.collection, #history.collection {
         border: none;
 
         > * {
@@ -396,6 +396,21 @@ main {
                         font-size: 140%;
                     }
                 }
+            }
+        }
+    }
+
+    #history {
+        // インターンの詳細
+        table.intern-detail {
+            margin-left: 20px;
+
+            td:first-child {
+                color: rgba(0, 0, 0, 0.8);
+            }
+
+            * {
+                border: none;
             }
         }
     }

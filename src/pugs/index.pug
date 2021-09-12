@@ -288,35 +288,69 @@ block container
       a(href='https://www.konicaminolta.com/jp-ja/recruit/internship/archives/20190919.html')
         | Konika Minolta
         | Hackathon 審査員特別賞 / Hobbies
-  h4#job-history-header
+  h4#history-header
     i.material-icons history_edu
     |  経歴
-  ul#job-history.collection
+  ul#history.collection.with-header
+    li.collection-header
+      h5 学歴
     li.collection-item 2017年3月: 
       a(href="http://www.rokkogakuin.ed.jp/public_html/") 六甲中学校・高等学校
       |  卒業
-      span.badge.white-text.blue 学歴
     li.collection-item 2017年4月: 
       a(href="https://www.coins.tsukuba.ac.jp/") 筑波大学 情報学群 情報科学類
       |  入学
-      span.badge.white-text.blue 学歴
-    li.collection-item 2020年1月-12月: コニカミノルタ PoC開発（個人・準委任契約）
-      span.badge.white-text.teal 職歴
     li.collection-item 2020年3月: enpit 修了
-      span.badge.white-text.blue 学歴
     li.collection-item 2021年3月: 
       a(href="https://www.coins.tsukuba.ac.jp/") 筑波大学 情報学群 情報科学類
       |  卒業（
       a(href="https://www.coins.tsukuba.ac.jp/award/") 情報学群長表彰
       | ）
-      span.badge.white-text.blue 学歴
     li.collection-item 2021年4月: 
       a(href="https://www.cs.tsukuba.ac.jp/") 筑波大学 大学院 情報理工学位プログラム
       |  入学
-      span.badge.white-text.blue 学歴
-    li.collection-item 2021年9月5日-10日: 
-     a(href="https://recruit.monotaro.com/new/internship/") MonotaRO SUMMER 2021 Engineering Internship
-     span.badge.white-text.teal 職歴
+    li.collection-header
+      h5 インターン
+    li.collection-item 
+      h6 2020年1月-12月: コニカミノルタ PoC開発（個人・準委任契約）
+      table.intern-detail
+        tbody
+          tr.role
+            td 役職
+            td 
+              div フロントエンドエンジニア
+              div サーバーサイドエンジニア
+          tr.tech
+            td 使用技術
+            td 
+              div フロント: html, scss, Vanilla JS
+              div サーバー: Rust, Rocket, PostgreSQL
+    li.collection-item 
+      h6 2021年9月5日-10日: 
+        a(href="https://recruit.monotaro.com/new/internship/") MonotaRO SUMMER 2021 Engineering Internship
+      table.intern-detail
+        tbody
+          tr.role
+            td 役職
+            td フロントエンドエンジニア
+          tr.tech
+            td 使用技術
+            td React, Storybook, Jest
+    li.collection-item 
+      h6 2021年9月13日-24日: ゆめみ 秋のサーバーサイドインターン
+      table.intern-detail
+        tbody
+          tr.role
+            td 役職
+            td サーバーサイドエンジニア
+          tr.tech
+            td 使用技術
+            td PHP, Laravel
+    li.collection-header
+      h5 ティーチングアシスタント（TA）
+    li.collection-item 2021年4月-8月: ソフトウェアサイエンス実験A・情報メディア実験A「JavaによるGUIの記述」
+
+
   h4#skills-header
     i.material-icons build
     |  スキル
