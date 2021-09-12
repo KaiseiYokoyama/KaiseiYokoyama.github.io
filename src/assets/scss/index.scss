@@ -399,4 +399,19 @@ main {
             }
         }
     }
+
+    #history {
+        // インターンの詳細
+        table.intern-detail {
+            margin-left: 20px;
+
+            td:first-child {
+                color: rgba(0, 0, 0, 0.8);
+            }
+
+            * {
+                border: none;
+            }
+        }
+    }
 }

@@ -321,3 +321,15 @@ main #papers .card .card-content > .description::before {
   font-weight: 900;
   font-size: 140%;
 }
+
+main #history table.intern-detail {
+  margin-left: 20px;
+}
+
+main #history table.intern-detail td:first-child {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+main #history table.intern-detail * {
+  border: none;
+}
