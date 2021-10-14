@@ -386,6 +386,7 @@ main {
 
     #papers {
         .card {
+            box-shadow: none;
             .card-content {
                 > .description {
                     margin-top: 30px;

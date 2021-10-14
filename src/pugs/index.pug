@@ -145,7 +145,7 @@ block container
     h5#papers-reviewed-domestic-conf-header 査読あり/国内会議
     #papers-reviewed-domestic-conf
       ul.collapsible.expandable
-        li
+        li.card
           .collapsible-header
             .title JoyFlick: フリック入力に基づくゲームパッド向けかな文字入力手法
             .authors
@@ -155,14 +155,16 @@ block container
               .author
                 a(href='https://www.iplab.cs.tsukuba.ac.jp/~shizuki/') 志築文太郎
             .tags
-              .chip WISS2020 ショート再録
-                a(href='https://www.wiss.org/WISS2020Proceedings/data/17.pdf') （予稿PDF）
+              .chip
+                a(href="https://www.wiss.org/WISS2020/") WISS2020
               .chip.rate 67.6
               .chip 登壇発表
                 a(href='https://youtu.be/JDWQJcLl8ek?t=17706') （Youtube）
               .chip.date 
                 time(datetime='2020-12-17') Dec. 2020
               .chip.pages 6
+          a.btn-floating.halfway-fab.waves-effect.btn-large.blue.lighten-3(href='https://www.wiss.org/WISS2020Proceedings/data/17.pdf')
+            i.material-icons description
           .collapsible-body.row
             .col.s12
               ul.tabs
@@ -195,7 +197,7 @@ block container
     h5#papers-reviewed-domestic-journal-header 査読あり/国内論文誌
     #papers-reviewed-domestic-journal
       ul.collapsible.expandable
-        li
+        li.card
           .collapsible-header
             .title フリック入力に基づく2本の押し込み機能付きジョイスティックを用いたテキスト入力手法
             .authors
@@ -207,18 +209,52 @@ block container
               .author
                 a(href='https://sites.google.com/view/ikkakukawaguchi/home') 川口一画
             .tags
-              .chip ヒューマンインタフェース学会
-                //- a(href='') （論文PDF）
-              //- .chip.rate 67.6
+              .chip 
+                a(href="https://jp.his.gr.jp/") ヒューマンインタフェース学会
               .chip 原著論文
               .chip.date 
                 time(datetime='2020-12-17') Nov. 2021
               .chip.pages 12
-              .chip.red-text To Appear
+              .chip.red-text 採録決定済
+          a.btn-floating.halfway-fab.waves-effect.btn-large.blue.lighten-3.disabled(href='')
+            i.material-icons description
+          .collapsible-body.row
+            .col.s12
+              ul.tabs
+                li.tab.col.s6
+                  a(href='#hiwakate3-abstruct').active Abstruct
+                li.tab.col.s6
+                  a(href='#hiwakate3-citation') Citation
+            #hiwakate3-abstruct.col.s12.abstruct
+              p A Japanese software keyboard for game consoles has a problem with the entry speed and widget size. In this article, we show JoyFlick that is a text entry method for an improved Japanese software keyboard. We evaluated the text entry speed and accuracy of JoyFlick. Also, we conducted an analysis of the user's operations to study the tendency of the operations and verify the design of JoyFlick. The results showed the following tendencies: the user tends to tilt the stick to select the keys on the outer edge; the user tends to restore the stick to the neutral position between selections; the user tends to restore both sticks to the neutral position at the same time (M=15.5 * 10^-2s) at the entry of a character. Also, the results showed that the design of JoyFlick, which restricts the order of consonant and vowel selection prevents a part of mistaken entries. Moreover, we show the outlook of the application and the necessity of	study in actual and several environments. 
+            #hiwakate3-citation.col.s12.citation
+              .title 平文
+              p.citation-item 横山海青， 高倉礼, 志築文太郎. フリック入力に基づく2本の押し込み機能付きジョイスティックを用いたテキスト入力手法, ヒューマンインタフェース学会論文誌, 23巻, 4号, 2021年11月. （採録決定済）
+              //- .title Bibtex
+              //- pre.citation-item
+              //-   | @InProceedings{10.1007/978-3-030-85613-7_8,
+              //-   |   author="Yokoyama, Kaisei
+              //-   |   and Takakura, Rei
+              //-   |   and Shizuki, Buntarou",
+              //-   |   editor="Ardito, Carmelo
+              //-   |   and Lanzilotti, Rosa
+              //-   |   and Malizia, Alessio
+              //-   |   and Petrie, Helen
+              //-   |   and Piccinno, Antonio
+              //-   |   and Desolda, Giuseppe
+              //-   |   and Inkpen, Kori",
+              //-   |   title="JoyFlick: Japanese Text Entry Using Dual Joysticks for Flick Input Users",
+              //-   |   booktitle="Human-Computer Interaction -- INTERACT 2021",
+              //-   |   year="2021",
+              //-   |   publisher="Springer International Publishing",
+              //-   |   address="Cham",
+              //-   |   pages="107--125",
+              //-   |   isbn="978-3-030-85613-7"
+              //-   | }
     h5#papers-reviewed-international-header 査読あり/国際会議
     #papers-reviewed-international
       ul.collapsible.expandable
-        li.coming-soon
+        li.card
           .collapsible-header
             .title JoyFlick: Japanese Text Entry Using Dual Joysticks for Flick Input Users
             .authors
@@ -229,14 +265,15 @@ block container
                 a(href='https://www.iplab.cs.tsukuba.ac.jp/~shizuki/') Buntarou Shizuki
             .tags
               .chip
-                a(href="https://www.interact2021.org/") INTERACT2021 
-                | Full Paper Track / Springer LNCS series
-                a(href='https://doi.org/10.1007/978-3-030-85613-7_8') （PDF）
+                a(href="https://www.interact2021.org/") INTERACT2021
+              .chip Full Paper Track
               .chip.rate 29
               .chip 登壇発表
               .chip.date 
                 time(datetime='2021-9-30') Sep. 2021
               .chip.pages 18
+          a.btn-floating.halfway-fab.waves-effect.btn-large.blue.lighten-3(href='https://www.iplab.cs.tsukuba.ac.jp/paper/international/kyokoyama_interact2021.pdf')
+            i.material-icons description
           .collapsible-body.row
             .col.s12
               ul.tabs
@@ -310,6 +347,22 @@ block container
       a(href="https://www.cs.tsukuba.ac.jp/") 筑波大学 大学院 情報理工学位プログラム
       |  入学
     li.collection-header
+      h5 アルバイト
+    li.collection-item
+      h6 
+        a(href="https://www.softether.jp/") ソフトイーサ
+      table
+        tbody 
+          tr
+            td 在籍時期
+            td 在籍中（2021/10-）
+          tr 
+            td 役職
+            td アルバイト（プログラマー）
+          tr
+            td 使用技術
+            td Unity, HTC VIVE Pro Eye, G29（ハンドルコントローラー）
+    li.collection-header
       h5 インターン
     li.collection-item 
       h6 2020年1月-12月: コニカミノルタ PoC開発（個人・準委任契約）
@@ -345,11 +398,27 @@ block container
             td サーバーサイドエンジニア
           tr.tech
             td 使用技術
-            td PHP, Laravel
+            td PHP, Laravel, MySQL
     li.collection-header
       h5 ティーチングアシスタント（TA）
-    li.collection-item 2021年4月-8月: ソフトウェアサイエンス実験A・情報メディア実験A「JavaによるGUIの記述」
-
+      table 
+        tbody 
+          tr 
+            td 2021年4月-8月
+            td
+              a(href="https://kdb.tsukuba.ac.jp/syllabi/2021/GB26403/jpn/0") ソフトウェアサイエンス実験A
+              |・
+              a(href="https://kdb.tsukuba.ac.jp/syllabi/2021/GC41103/jpn/0")  情報メディア実験A
+              br
+              |「JavaによるGUIの記述」
+          tr
+            td 2021年10月-12月
+            td
+              a(href="https://kdb.tsukuba.ac.jp/syllabi/2021/GA18222/jpn/") プログラミング入門A
+          tr
+            td 2022年1月-3月
+            td
+              a(href="https://kdb.tsukuba.ac.jp/syllabi/2021/GA18312/jpn/") プログラミング入門B
 
   h4#skills-header
     i.material-icons build

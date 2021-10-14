@@ -43,7 +43,7 @@
       <li class="collection-item"><a href="/#works-header">Works<i class="material-icons secondary-content">school</i></a></li>
       <li class="collection-item"><a href="/#papers-header">Papers<i class="material-icons secondary-content">description</i></a></li>
       <li class="collection-item"><a href="/#awards-header">Awards<i class="material-icons secondary-content">emoji_events</i></a></li>
-      <li class="collection-item"><a href="/#job-history-header">History<i class="material-icons secondary-content">history_edu</i></a></li>
+      <li class="collection-item"><a href="/#history-header">History<i class="material-icons secondary-content">history_edu</i></a></li>
       <li class="collection-item"><a href="/#skills-header">Skills<i class="material-icons secondary-content">build</i></a></li>
     </ul>
   </div>
@@ -162,7 +162,7 @@
       <h5 id="papers-reviewed-domestic-conf-header">査読あり/国内会議</h5>
       <div id="papers-reviewed-domestic-conf">
         <ul class="collapsible expandable">
-          <li>
+          <li class="card">
             <div class="collapsible-header">
               <div class="title">JoyFlick: フリック入力に基づくゲームパッド向けかな文字入力手法</div>
               <div class="authors">
@@ -171,7 +171,7 @@
                 <div class="author"><a href="https://www.iplab.cs.tsukuba.ac.jp/~shizuki/">志築文太郎</a></div>
               </div>
               <div class="tags">
-                <div class="chip">WISS2020 ショート再録<a href="https://www.wiss.org/WISS2020Proceedings/data/17.pdf">（予稿PDF）</a></div>
+                <div class="chip"><a href="https://www.wiss.org/WISS2020/">WISS2020</a></div>
                 <div class="chip rate">67.6</div>
                 <div class="chip">登壇発表<a href="https://youtu.be/JDWQJcLl8ek?t=17706">（Youtube）</a></div>
                 <div class="chip date"> 
@@ -179,7 +179,7 @@
                 </div>
                 <div class="chip pages">6</div>
               </div>
-            </div>
+            </div><a class="btn-floating halfway-fab waves-effect btn-large blue lighten-3" href="https://www.wiss.org/WISS2020Proceedings/data/17.pdf"><i class="material-icons">description</i></a>
             <div class="collapsible-body row">
               <div class="col s12">
                 <ul class="tabs">
@@ -213,7 +213,7 @@
       <h5 id="papers-reviewed-domestic-journal-header">査読あり/国内論文誌</h5>
       <div id="papers-reviewed-domestic-journal">
         <ul class="collapsible expandable">
-          <li>
+          <li class="card">
             <div class="collapsible-header">
               <div class="title">フリック入力に基づく2本の押し込み機能付きジョイスティックを用いたテキスト入力手法</div>
               <div class="authors">
@@ -223,13 +223,28 @@
                 <div class="author"><a href="https://sites.google.com/view/ikkakukawaguchi/home">川口一画</a></div>
               </div>
               <div class="tags">
-                <div class="chip">ヒューマンインタフェース学会</div>
+                <div class="chip"> <a href="https://jp.his.gr.jp/">ヒューマンインタフェース学会</a></div>
                 <div class="chip">原著論文</div>
                 <div class="chip date"> 
                   <time datetime="2020-12-17">Nov. 2021</time>
                 </div>
                 <div class="chip pages">12</div>
-                <div class="chip red-text">To Appear</div>
+                <div class="chip red-text">採録決定済</div>
+              </div>
+            </div><a class="btn-floating halfway-fab waves-effect btn-large blue lighten-3 disabled" href=""><i class="material-icons">description</i></a>
+            <div class="collapsible-body row">
+              <div class="col s12">
+                <ul class="tabs">
+                  <li class="tab col s6"><a class="active" href="#hiwakate3-abstruct">Abstruct</a></li>
+                  <li class="tab col s6"><a href="#hiwakate3-citation">Citation</a></li>
+                </ul>
+              </div>
+              <div class="col s12 abstruct" id="hiwakate3-abstruct">
+                <p>A Japanese software keyboard for game consoles has a problem with the entry speed and widget size. In this article, we show JoyFlick that is a text entry method for an improved Japanese software keyboard. We evaluated the text entry speed and accuracy of JoyFlick. Also, we conducted an analysis of the user's operations to study the tendency of the operations and verify the design of JoyFlick. The results showed the following tendencies: the user tends to tilt the stick to select the keys on the outer edge; the user tends to restore the stick to the neutral position between selections; the user tends to restore both sticks to the neutral position at the same time (M=15.5 * 10^-2s) at the entry of a character. Also, the results showed that the design of JoyFlick, which restricts the order of consonant and vowel selection prevents a part of mistaken entries. Moreover, we show the outlook of the application and the necessity of	study in actual and several environments. </p>
+              </div>
+              <div class="col s12 citation" id="hiwakate3-citation">
+                <div class="title">平文</div>
+                <p class="citation-item">横山海青， 高倉礼, 志築文太郎. フリック入力に基づく2本の押し込み機能付きジョイスティックを用いたテキスト入力手法, ヒューマンインタフェース学会論文誌, 23巻, 4号, 2021年11月. （採録決定済）</p>
               </div>
             </div>
           </li>
@@ -238,7 +253,7 @@
       <h5 id="papers-reviewed-international-header">査読あり/国際会議</h5>
       <div id="papers-reviewed-international">
         <ul class="collapsible expandable">
-          <li class="coming-soon">
+          <li class="card">
             <div class="collapsible-header">
               <div class="title">JoyFlick: Japanese Text Entry Using Dual Joysticks for Flick Input Users</div>
               <div class="authors">
@@ -247,7 +262,8 @@
                 <div class="author"><a href="https://www.iplab.cs.tsukuba.ac.jp/~shizuki/">Buntarou Shizuki</a></div>
               </div>
               <div class="tags">
-                <div class="chip"><a href="https://www.interact2021.org/">INTERACT2021 </a>Full Paper Track / Springer LNCS series<a href="https://doi.org/10.1007/978-3-030-85613-7_8">（PDF）</a></div>
+                <div class="chip"><a href="https://www.interact2021.org/">INTERACT2021</a></div>
+                <div class="chip">Full Paper Track</div>
                 <div class="chip rate">29</div>
                 <div class="chip">登壇発表</div>
                 <div class="chip date"> 
@@ -255,7 +271,7 @@
                 </div>
                 <div class="chip pages">18</div>
               </div>
-            </div>
+            </div><a class="btn-floating halfway-fab waves-effect btn-large blue lighten-3" href="https://www.iplab.cs.tsukuba.ac.jp/paper/international/kyokoyama_interact2021.pdf"><i class="material-icons">description</i></a>
             <div class="collapsible-body row">
               <div class="col s12">
                 <ul class="tabs">
@@ -320,6 +336,28 @@
       <li class="collection-item">2021年3月: <a href="https://www.coins.tsukuba.ac.jp/">筑波大学 情報学群 情報科学類</a> 卒業（<a href="https://www.coins.tsukuba.ac.jp/award/">情報学群長表彰</a>）</li>
       <li class="collection-item">2021年4月: <a href="https://www.cs.tsukuba.ac.jp/">筑波大学 大学院 情報理工学位プログラム</a> 入学</li>
       <li class="collection-header">
+        <h5>アルバイト</h5>
+      </li>
+      <li class="collection-item">
+        <h6> <a href="https://www.softether.jp/">ソフトイーサ</a></h6>
+        <table>
+          <tbody> 
+            <tr>
+              <td>在籍時期</td>
+              <td>在籍中（2021/10-）</td>
+            </tr>
+            <tr> 
+              <td>役職</td>
+              <td>アルバイト（プログラマー）</td>
+            </tr>
+            <tr>
+              <td>使用技術</td>
+              <td>Unity, HTC VIVE Pro Eye, G29（ハンドルコントローラー）</td>
+            </tr>
+          </tbody>
+        </table>
+      </li>
+      <li class="collection-header">
         <h5>インターン</h5>
       </li>
       <li class="collection-item"> 
@@ -368,15 +406,30 @@
             </tr>
             <tr class="tech">
               <td>使用技術</td>
-              <td>PHP, Laravel</td>
+              <td>PHP, Laravel, MySQL</td>
             </tr>
           </tbody>
         </table>
       </li>
       <li class="collection-header">
         <h5>ティーチングアシスタント（TA）</h5>
+        <table> 
+          <tbody> 
+            <tr> 
+              <td>2021年4月-8月</td>
+              <td><a href="https://kdb.tsukuba.ac.jp/syllabi/2021/GB26403/jpn/0">ソフトウェアサイエンス実験A</a>・<a href="https://kdb.tsukuba.ac.jp/syllabi/2021/GC41103/jpn/0"> 情報メディア実験A</a><br>「JavaによるGUIの記述」</td>
+            </tr>
+            <tr>
+              <td>2021年10月-12月</td>
+              <td><a href="https://kdb.tsukuba.ac.jp/syllabi/2021/GA18222/jpn/">プログラミング入門A</a></td>
+            </tr>
+            <tr>
+              <td>2022年1月-3月</td>
+              <td><a href="https://kdb.tsukuba.ac.jp/syllabi/2021/GA18312/jpn/">プログラミング入門B</a></td>
+            </tr>
+          </tbody>
+        </table>
       </li>
-      <li class="collection-item">2021年4月-8月: ソフトウェアサイエンス実験A・情報メディア実験A「JavaによるGUIの記述」</li>
     </ul>
     <h4 id="skills-header"><i class="material-icons">build</i> スキル</h4>
     <div id="skills">
