@@ -6,8 +6,19 @@
 }
 
 .card {
-    > .card-image > .card-title {
-        background: rgba(0,0,0,0.6);
+    > .card-image {
+        > video {
+            width: 100%;
+        }
+        > .card-title {
+            background: rgba(0,0,0,0.6);
+        }    
+    }
+}
+
+.badges {
+    > *:not(:first-child) {
+        margin-left: 3px;
     }
 }
 

@@ -10,10 +10,22 @@
   "author": "Kaisei Yokoyama",
   "license": "UNLICENSED",
   "devDependencies": {
-    "browser-sync": "^2.26.13",
+    "browser-sync": "^2.27.7",
     "gulp": "^4.0.2",
     "gulp-pug": "^4.0.1",
     "gulp-sass": "^4.1.0",
     "yargs-parser": ">=13.1.2"
-  }
+  },
+  "directories": {
+    "doc": "docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KaiseiYokoyama/KaiseiYokoyama.github.io.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/KaiseiYokoyama/KaiseiYokoyama.github.io/issues"
+  },
+  "homepage": "https://github.com/KaiseiYokoyama/KaiseiYokoyama.github.io#readme"
 }

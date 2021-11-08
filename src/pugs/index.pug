@@ -43,6 +43,37 @@ block container
     i.material-icons widgets
     |  プロダクト
   #products.row
+    .col.l12
+      .card
+        .card-image
+          video(src="https://user-images.githubusercontent.com/8509057/140267217-08b6b6f0-0ff0-4de4-8a46-325e0ffe2837.mp4" muted autoplay playsinline loop) 
+          a.btn-floating.halfway-fab.waves-effect.waves-light.btn-large.blue.lighten-3(href='https://github.com/KaiseiYokoyama/JoyFlickMOD')
+            i.fab.fa-git-alt
+        .card-content
+          span.card-title
+            strong JoyFlick MOD
+          .tags
+            span.chip Kotlin / Java
+            span.chip Minecraft
+            span.chip JoyFlick
+          .badges
+            a
+              img(src='https://img.shields.io/badge/Minecraft-1.16.3-green?style=flat-square')
+            a(href='https://files.minecraftforge.net/net/minecraftforge/forge/index_1.16.3.html')
+              img(src='https://img.shields.io/badge/Minecraft%20Forge-34%20or%20more-green?style=flat-square')
+          p.description MinecraftにJoyFlickを追加するMODです。
+            | Nintendo Switch Pro コントローラーなどのゲーム用のコントローラをPCに接続しているときに、
+            | JoyFlickおよび50音キーボードが利用できるようになります。
+            | Google CGI API for Japanese Input による変換も利用できます。
+          p.description 
+            strong 前提MOD: 
+            a(href="https://www.curseforge.com/minecraft/mc-mods/controllable/files/3335987") Controllable v0.13
+            | , 
+            a(href="https://www.curseforge.com/minecraft/mc-mods/kotlin-for-forge/files/3452303") Kotlin for Forge v1.15.1 or more
+        .card-action.hide-on-med-and-down
+          a(href='https://github.com/KaiseiYokoyama/JoyFlickMOD/releases/download/v0.1.0/joyflick-0.1.0-1.16.3.jar').waves-effect.waves-light.btn-flat
+            i.material-icons.left file_download
+            | Download JoyFlick 0.1.0-1.16.3
     .col.m12.l6
       .card
         .card-image
@@ -119,7 +150,7 @@ block container
     i.material-icons school
     |  研究
   #works.row
-    .col.m12.l12
+    .col.m12
       .card
         .card-image
           img(src='images/joyflick.jpg')

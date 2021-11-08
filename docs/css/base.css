@@ -3,8 +3,16 @@
   font-family: 'Noto Sans JP', sans-serif;
 }
 
+.card > .card-image > video {
+  width: 100%;
+}
+
 .card > .card-image > .card-title {
   background: rgba(0, 0, 0, 0.6);
+}
+
+.badges > *:not(:first-child) {
+  margin-left: 3px;
 }
 
 svg {
