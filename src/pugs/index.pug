@@ -246,8 +246,7 @@ block container
               .chip.date 
                 time(datetime='2020-12-17') Nov. 2021
               .chip.pages 12
-              .chip.red-text 採録決定済
-          a.btn-floating.halfway-fab.waves-effect.btn-large.blue.lighten-3.disabled(href='')
+          a.btn-floating.halfway-fab.waves-effect.btn-large.blue.lighten-3(href='https://www.jstage.jst.go.jp/article/his/23/4/23_383/_pdf/-char/ja')
             i.material-icons description
           .collapsible-body.row
             .col.s12
@@ -260,28 +259,23 @@ block container
               p A Japanese software keyboard for game consoles has a problem with the entry speed and widget size. In this article, we show JoyFlick that is a text entry method for an improved Japanese software keyboard. We evaluated the text entry speed and accuracy of JoyFlick. Also, we conducted an analysis of the user's operations to study the tendency of the operations and verify the design of JoyFlick. The results showed the following tendencies: the user tends to tilt the stick to select the keys on the outer edge; the user tends to restore the stick to the neutral position between selections; the user tends to restore both sticks to the neutral position at the same time (M=15.5 * 10^-2s) at the entry of a character. Also, the results showed that the design of JoyFlick, which restricts the order of consonant and vowel selection prevents a part of mistaken entries. Moreover, we show the outlook of the application and the necessity of	study in actual and several environments. 
             #hiwakate3-citation.col.s12.citation
               .title 平文
-              p.citation-item 横山海青， 高倉礼, 志築文太郎. フリック入力に基づく2本の押し込み機能付きジョイスティックを用いたテキスト入力手法, ヒューマンインタフェース学会論文誌, 23巻, 4号, 2021年11月. （採録決定済）
-              //- .title Bibtex
-              //- pre.citation-item
-              //-   | @InProceedings{10.1007/978-3-030-85613-7_8,
-              //-   |   author="Yokoyama, Kaisei
-              //-   |   and Takakura, Rei
-              //-   |   and Shizuki, Buntarou",
-              //-   |   editor="Ardito, Carmelo
-              //-   |   and Lanzilotti, Rosa
-              //-   |   and Malizia, Alessio
-              //-   |   and Petrie, Helen
-              //-   |   and Piccinno, Antonio
-              //-   |   and Desolda, Giuseppe
-              //-   |   and Inkpen, Kori",
-              //-   |   title="JoyFlick: Japanese Text Entry Using Dual Joysticks for Flick Input Users",
-              //-   |   booktitle="Human-Computer Interaction -- INTERACT 2021",
-              //-   |   year="2021",
-              //-   |   publisher="Springer International Publishing",
-              //-   |   address="Cham",
-              //-   |   pages="107--125",
-              //-   |   isbn="978-3-030-85613-7"
-              //-   | }
+              p.citation-item 横山 海青, 髙倉 礼, 志築 文太郎, 川口 一画, フリック入力に基づく2本の押し込み機能付きジョイスティック, ヒューマンインタフェース学会論文誌, 2021, 23 巻, 4 号, p. 383-396, 公開日 2021/11/25, Online ISSN 2186-8271, Print ISSN 1344-7262, https://doi.org/10.11184/his.23.4_383, https://www.jstage.jst.go.jp/article/his/23/4/23_383/_article/-char/ja
+              .title Bibtex
+              pre.citation-item
+                  |@article{kyokoyama_hi_2021,
+                  |  title={フリック入力に基づく2本の押し込み機能付きジョイスティック},
+                  | author={横山 海青 and \UTF{9AD9}倉 礼 and 志築 文太郎 and 川口 一画},
+                  | journal={ヒューマンインタフェース学会論文誌},
+                  | volume={23},
+                  | number={4},
+                  | pages={383-396},
+                  | year={2021},
+                  | doi={10.11184/his.23.4_383}
+                  |}
+              span.warning
+                i.material-icons.red-text.left warning
+                span.left 以下のコマンドをプリアンブルに書き足す必要があります．
+                code.left \usepackage{otf}
     h5#papers-reviewed-international-header 査読あり/国際会議
     #papers-reviewed-international
       ul.collapsible.expandable
