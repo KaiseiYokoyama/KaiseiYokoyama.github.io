@@ -208,7 +208,7 @@ block container
             #wiss2020-citation.col.s12.citation
               .title 平文
               p.citation-item 横山海青，髙倉礼，志築文太郎．JoyFlick: フリック入力に基づくゲームパッド向けかな文字入力手法．第28回インタラクティブシステムとソフトウェアに関するワークショップ（WISS2020），pp. 97–102，日本ソフトウェア科学会，2020年12月
-              .title Bibtex
+              .title Bibtex（otfパッケージ必須）
               pre.citation-item
                 | @article{joyflick,
                 |   author    = {{横山海青，\UTF{9AD9}倉礼，志築文太郎}},
@@ -221,10 +221,6 @@ block container
                 |   pages     = {97--102},
                 |   URL       = {https://www.wiss.org/WISS2020Proceedings/data/17.pdf},
                 | }
-              span.warning
-                i.material-icons.red-text.left warning
-                span.left 以下のコマンドをプリアンブルに書き足す必要があります．
-                code.left \usepackage{otf}
     h5#papers-reviewed-domestic-journal-header 査読あり/国内論文誌
     #papers-reviewed-domestic-journal
       ul.collapsible.expandable
@@ -258,24 +254,34 @@ block container
             #hiwakate3-abstruct.col.s12.abstruct
               p A Japanese software keyboard for game consoles has a problem with the entry speed and widget size. In this article, we show JoyFlick that is a text entry method for an improved Japanese software keyboard. We evaluated the text entry speed and accuracy of JoyFlick. Also, we conducted an analysis of the user's operations to study the tendency of the operations and verify the design of JoyFlick. The results showed the following tendencies: the user tends to tilt the stick to select the keys on the outer edge; the user tends to restore the stick to the neutral position between selections; the user tends to restore both sticks to the neutral position at the same time (M=15.5 * 10^-2s) at the entry of a character. Also, the results showed that the design of JoyFlick, which restricts the order of consonant and vowel selection prevents a part of mistaken entries. Moreover, we show the outlook of the application and the necessity of	study in actual and several environments. 
             #hiwakate3-citation.col.s12.citation
-              .title 平文
-              p.citation-item 横山 海青, 髙倉 礼, 志築 文太郎, 川口 一画, フリック入力に基づく2本の押し込み機能付きジョイスティック, ヒューマンインタフェース学会論文誌, 2021, 23 巻, 4 号, p. 383-396, 公開日 2021/11/25, Online ISSN 2186-8271, Print ISSN 1344-7262, https://doi.org/10.11184/his.23.4_383, https://www.jstage.jst.go.jp/article/his/23/4/23_383/_article/-char/ja
-              .title Bibtex
+              .title 平文（日本語）
+              p.citation-item 横山 海青, 髙倉 礼, 志築 文太郎, 川口 一画, フリック入力に基づく2本の押し込み機能付きジョイスティックを用いたテキスト入力手法, ヒューマンインタフェース学会論文誌, 2021, 23 巻, 4 号, p. 383-396, 公開日 2021/11/25, Online ISSN 2186-8271, Print ISSN 1344-7262, https://doi.org/10.11184/his.23.4_383, https://www.jstage.jst.go.jp/article/his/23/4/23_383/_article/-char/ja
+              .title Bibtex（日本語、otfパッケージ必須）
               pre.citation-item
-                  |@article{kyokoyama_hi_2021,
-                  |  title={フリック入力に基づく2本の押し込み機能付きジョイスティック},
-                  | author={横山 海青 and \UTF{9AD9}倉 礼 and 志築 文太郎 and 川口 一画},
-                  | journal={ヒューマンインタフェース学会論文誌},
-                  | volume={23},
-                  | number={4},
-                  | pages={383-396},
-                  | year={2021},
-                  | doi={10.11184/his.23.4_383}
-                  |}
-              span.warning
-                i.material-icons.red-text.left warning
-                span.left 以下のコマンドをプリアンブルに書き足す必要があります．
-                code.left \usepackage{otf}
+                  | @article{kyokoyama_hi_2021,
+                  |   title={フリック入力に基づく2本の押し込み機能付きジョイスティックを用いたテキスト入力手法},
+                  |   author={横山 海青 and \UTF{9AD9}倉 礼 and 志築 文太郎 and 川口 一画},
+                  |   journal={ヒューマンインタフェース学会論文誌},
+                  |   volume={23},
+                  |   number={4},
+                  |   pages={383-396},
+                  |   year={2021},
+                  |   doi={10.11184/his.23.4_383}
+                  | }
+              .title Plane Text (English)
+              p.citation-item Kaisei Yokoyama, Rei Takakura, Buntarou Shizuki, Ikkaku Kawaguchi, Text Entry Method based on Flick Input using Two Joysticks with Push, The Transactions of Human Interface Society, 2021, Volume 23, Issue 4, Pages 383-396, Released November 25, 2021, Online ISSN 2186-8271, Print ISSN 1344-7262, https://doi.org/10.11184/his.23.4_383, https://www.jstage.jst.go.jp/article/his/23/4/23_383/_article/-char/en
+              .title Bibtex (English)
+              pre.citation-item
+                  | @article{kyokoyama_hi_2021,
+                  |   title={Text Entry Method based on Flick Input using Two Joysticks with Push},
+                  |   author={Yokoyama, Kaisei and Takakura, Rei and Shizuki, Buntarou and Kawaguchi, Ikkaku},
+                  |   journal={The Transactions of Human Interface Society},
+                  |   volume={23},
+                  |   number={4},
+                  |   pages={383-396},
+                  |   year={2021},
+                  |   doi={10.11184/his.23.4_383}
+                  | }
     h5#papers-reviewed-international-header 査読あり/国際会議
     #papers-reviewed-international
       ul.collapsible.expandable
