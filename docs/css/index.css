@@ -312,6 +312,10 @@ main #products .card .card-content .awards > .award > *:not(:first-child), main 
   margin-left: 3px;
 }
 
+main #papers h5 {
+  margin-top: max(1.09333rem, 28px);
+}
+
 main #papers .card {
   box-shadow: none;
 }

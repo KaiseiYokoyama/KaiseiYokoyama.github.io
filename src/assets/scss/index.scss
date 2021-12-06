@@ -385,6 +385,10 @@ main {
     }
 
     #papers {
+        h5 {
+            margin-top: unquote($string: "max(1.09333rem, 28px)");
+        }
+
         .card {
             box-shadow: none;
             .card-content {
