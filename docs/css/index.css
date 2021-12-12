@@ -320,6 +320,10 @@ main #papers .card {
   box-shadow: none;
 }
 
+main #papers .card .tags .chip.pdf .button > i.material-icons.left, main #papers .card .tags .chip.pdf button > i.material-icons.left {
+  margin-right: 0;
+}
+
 main #papers .card .card-content > .description {
   margin-top: 30px;
 }

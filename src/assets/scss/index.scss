@@ -391,6 +391,21 @@ main {
 
         .card {
             box-shadow: none;
+            .tags {
+                .chip {
+                    &.pdf {
+                        .button, button {
+                            // border: 1px solid #9e9e9e;
+                            // border-radius:  2px;
+
+                            > i.material-icons.left {
+                                margin-right: 0;
+                            }
+                        }
+                    }
+                }
+            }
+
             .card-content {
                 > .description {
                     margin-top: 30px;

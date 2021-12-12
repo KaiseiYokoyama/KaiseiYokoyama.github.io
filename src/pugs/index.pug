@@ -196,8 +196,10 @@ block container
               .chip.date 
                 time(datetime='2020-12-17') Dec. 2020
               .chip.pages 6
-          a.btn-floating.halfway-fab.waves-effect.btn-large.blue.lighten-3(href='https://www.wiss.org/WISS2020Proceedings/data/17.pdf')
-            i.material-icons description
+              .chip.pdf
+                a(href='https://www.wiss.org/WISS2020Proceedings/data/17.pdf').button.btn-small.btn-flat.waves-effect.waves-blue
+                  i.material-icons.left description
+                  span PDF
           .collapsible-body.row
             .col.s12
               ul.tabs
@@ -245,8 +247,10 @@ block container
               .chip.date 
                 time(datetime='2020-12-17') Nov. 2021
               .chip.pages 12
-          a.btn-floating.halfway-fab.waves-effect.btn-large.blue.lighten-3(href='https://www.jstage.jst.go.jp/article/his/23/4/23_383/_pdf/-char/ja')
-            i.material-icons description
+              .chip.pdf
+                a(href='https://www.jstage.jst.go.jp/article/his/23/4/23_383/_pdf/-char/ja').button.btn-small.btn-flat.waves-effect.waves-blue
+                  i.material-icons.left description
+                  span PDF
           .collapsible-body.row
             .col.s12
               ul.tabs
@@ -300,14 +304,20 @@ block container
             .tags
               .chip
                 a(href="https://www.interact2021.org/") INTERACT2021
-              .chip Full Paper Track
               .chip.rate 29
+              .chip Full Paper Track
               .chip 登壇発表
               .chip.date 
                 time(datetime='2021-9-30') Sep. 2021
               .chip.pages 18
-          a.btn-floating.halfway-fab.waves-effect.btn-large.blue.lighten-3(href='https://www.iplab.cs.tsukuba.ac.jp/paper/international/kyokoyama_interact2021.pdf')
-            i.material-icons description
+              .chip.pdf
+                a(href='https://www.iplab.cs.tsukuba.ac.jp/paper/international/kyokoyama_interact2021.pdf').button.btn-small.btn-flat.waves-effect.waves-blue
+                  i.material-icons.left description
+                  span PDF
+              .chip.pdf
+                a(href='https://link.springer.com/chapter/10.1007/978-3-030-85613-7_8').button.btn-small.btn-flat.waves-effect.waves-blue
+                  i.material-icons.left link
+                  span Springer
           .collapsible-body.row
             .col.s12
               ul.tabs
@@ -357,6 +367,27 @@ block container
               .chip 予稿なしデモポスター
               .chip.date 
                 time(datetime='2021-12-8') Dec. 2021
+        li.card
+          .collapsible-header
+            .title VR環境向けの視線を用いた3次元バブルカーソルの提案
+            .authors
+              .author
+                a(href='https://www.iplab.cs.tsukuba.ac.jp/~hirai/') 平井李音
+              .author
+                a(href='https://www.iplab.cs.tsukuba.ac.jp/~tominaga/') 冨永浩暉
+              .author.me 横山海青
+              .author
+                a(href='https://www.iplab.cs.tsukuba.ac.jp/~shizuki/') 志築文太郎
+            .tags
+              .chip
+                a(href="https://www.wiss.org/WISS2021/") WISS 2021
+              .chip デモポスター
+              .chip.date 
+                time(datetime='2021-12-10') Dec. 2021
+              .chip.pdf
+                a(href='https://www.wiss.org/WISS2021Proceedings/data/3-B05.pdf').button.btn-small.btn-flat.waves-effect.waves-blue
+                  i.material-icons.left description
+                  span PDF
   h4#awards-header
     i.material-icons emoji_events
     |  受賞歴
