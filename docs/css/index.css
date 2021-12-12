@@ -230,15 +230,6 @@ main #products ul.collapsible li .collapsible-header .authors > .author:not(:fir
   content: '，';
 }
 
-@media only screen and (max-width: 992px) {
-  main #products ul.collapsible li .collapsible-header .authors, main #works ul.collapsible li .collapsible-header .authors, main #papers ul.collapsible li .collapsible-header .authors {
-    justify-content: space-between;
-  }
-  main #products ul.collapsible li .collapsible-header .authors > .author:not(:first-child)::before, main #works ul.collapsible li .collapsible-header .authors > .author:not(:first-child)::before, main #papers ul.collapsible li .collapsible-header .authors > .author:not(:first-child)::before {
-    content: '';
-  }
-}
-
 main #products ul.collapsible li .collapsible-header .tags > .chip, main #works ul.collapsible li .collapsible-header .tags > .chip, main #papers ul.collapsible li .collapsible-header .tags > .chip {
   height: auto;
   background-color: inherit;
