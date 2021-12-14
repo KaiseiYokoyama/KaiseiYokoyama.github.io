@@ -245,103 +245,120 @@ main {
     }
 
     #products, #works, #papers {
-        ul.collapsible li {
-            .collapsible-header {
-                flex-direction: column;
+        ul.collection {
+            border: none;
 
-                .title {
-                    font-size: 130%;
-                    font-weight: 600;
+            li.collection-item {
+                border: none;
 
-                    margin-bottom: 5px;
-                }
+                .card {
+                    flex-direction: column;
 
-                .authors {
-                    display: flex;
-
-                    > .author {
-                        &.me {
-                            font-weight: 800;
-                        }
-
-                        &:not(:first-child)::before {
-                            content: '，';
-                        }
-                    }
-            }
-
-                .tags > .chip {
-                    height: auto;
-                    background-color: inherit;
-
-                    padding: 0;
-
-                    // &:not(:first-child)::before {
-                    //     content: '/';
-                    // }
-
-                    &.pages {
-                        &::after {
-                            content: 'pages';
-                        }
+                    > .card-content:first-child:not(.padding-bottom) {
+                        padding-bottom: 0;
                     }
 
-                    &.rate {
-                        font-weight: 900;
-        
-                        &::before {
-                            content: '採択率';
-                        }
-        
-                        &::after {
-                            content: '%';
+                    > .card-content.padding-bottom {
+                        :last-child {
+                            margin-bottom: 0;
                         }
                     }
-                }
-            }
-
-            .collapsible-body {
-                @media only screen and (max-width: 992px) {
-                    padding: 0.5rem;
-                }
-
-                > .abstruct {
-                    // &::before {
-                    //     content: "Abstruct";
-                    //     font-weight: 900;
-                    //     font-size: 140%;
-                    // }
-                }
-
-                > .citation {
+    
                     .title {
+                        font-size: 130%;
                         font-weight: 600;
-                        font-size: 120%;
+    
+                        margin-bottom: 5px;
                     }
-
-                    > :not(.title) {
-                        margin-left: 20px;
-                    }
-
-                    .citation-item {
-                        padding: 5px;
-                        background-color: rgba($color: #9e9e9e, $alpha: 0.2);
-                    }
-
-                    pre.citation-item {
-                        white-space: pre-wrap;
-                    }
-
-                    .warning {
-                        > i.material-icons.left {
-                            padding-left: 20px;
+    
+                    .authors {
+                        display: flex;
+    
+                        > .author {
+                            &.me {
+                                font-weight: 800;
+                            }
+    
+                            &:not(:first-child)::before {
+                                content: '，';
+                            }
+                        }
+                }
+    
+                    .tags > .chip {
+                        height: auto;
+                        background-color: inherit;
+    
+                        padding: 0;
+    
+                        // &:not(:first-child)::before {
+                        //     content: '/';
+                        // }
+    
+                        &.pages {
+                            &::after {
+                                content: 'pages';
+                            }
+                        }
+    
+                        &.rate {
+                            font-weight: 900;
+            
+                            &::before {
+                                content: '採択率';
+                            }
+            
+                            &::after {
+                                content: '%';
+                            }
                         }
                     }
-                    // &::before {
-                    //     content: "Citation";
-                    //     font-weight: 900;
-                    //     font-size: 140%;
+
+                    @media only screen and (max-width: 992px) {
+                        padding: 0.5rem;
+                    }
+    
+                    // > .abstruct {
+                        // &::before {
+                        //     content: "Abstruct";
+                        //     font-weight: 900;
+                        //     font-size: 140%;
+                        // }
                     // }
+    
+                     .citation {
+                        .title {
+                            font-weight: 600;
+                            font-size: 120%;
+
+                            margin-top: 30px;
+                            margin-bottom: 10px;
+                        }
+    
+                        > :not(.title) {
+                            margin-left: 20px;
+                        }
+    
+                        .citation-item {
+                            padding: 5px;
+                            background-color: rgba($color: #9e9e9e, $alpha: 0.2);
+                        }
+    
+                        pre.citation-item {
+                            white-space: pre-wrap;
+                        }
+    
+                        .warning {
+                            > i.material-icons.left {
+                                padding-left: 20px;
+                            }
+                        }
+                        // &::before {
+                        //     content: "Citation";
+                        //     font-weight: 900;
+                        //     font-size: 140%;
+                        // }
+                    }
                 }
             }
         }
@@ -380,7 +397,7 @@ main {
         }
 
         .card {
-            box-shadow: none;
+            // box-shadow: none;
             .tags {
                 .chip {
                     &.pdf {

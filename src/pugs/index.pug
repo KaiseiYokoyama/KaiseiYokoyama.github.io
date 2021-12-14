@@ -180,12 +180,13 @@ block container
   h4#publications-header
     i.material-icons description
     |  出版物
+  h5#papers-header
+    |  学術文献
   #papers
-    h5#papers-reviewed-domestic-conf-header 査読あり/国内会議
-    #papers-reviewed-domestic-conf
-      ul.collapsible.expandable
-        li.card
-          .collapsible-header
+    ul.collection
+      li.collection-item
+        .card
+          .card-content
             .title JoyFlick: フリック入力に基づくゲームパッド向けかな文字入力手法
             .authors
               .author.me 横山海青
@@ -206,13 +207,13 @@ block container
                 a(href='https://www.wiss.org/WISS2020Proceedings/data/17.pdf').button.btn-small.btn-flat.waves-effect.waves-blue
                   i.material-icons.left description
                   span PDF
-          .collapsible-body.row
-            .col.s12
-              ul.tabs
-                li.tab.col.s6
-                  a(href='#wiss2020-abstruct').active Abstruct
-                li.tab.col.s6
-                  a(href='#wiss2020-citation') Citation
+          .card-tabs
+            ul.tabs.tabs-fixed-width
+              li.tab
+                a(href='#wiss2020-abstruct') Abstruct
+              li.tab
+                a(href='#wiss2020-citation').active Citation
+          .card-content.grey.lighten-4
             #wiss2020-abstruct.col.s12.abstruct
               p 本稿では，ハードウェアキーボードが接続されていない家庭用ゲーム機において，ゲームパッドを用いてかな文字を入力する手法であるJoyFlickを示す．JoyFlickは，スマートフォンのかな文字入力手法として利用率の高いフリック入力に基づくことにより，ユーザの学習コストを抑えている．9 名を参加者とした実験により，JoyFlick が限られた練習量において現在の家庭用ゲーム機に搭載されている手法と同程度の入力速度（36 CPM）に到達すること，またユーザのフリック入力の経験が JoyFlick の習熟に良い影響を与えることが分かった．
             #wiss2020-citation.col.s12.citation
@@ -231,11 +232,9 @@ block container
                 |   pages     = {97--102},
                 |   URL       = {https://www.wiss.org/WISS2020Proceedings/data/17.pdf},
                 | }
-    h5#papers-reviewed-domestic-journal-header 査読あり/国内論文誌
-    #papers-reviewed-domestic-journal
-      ul.collapsible.expandable
-        li.card
-          .collapsible-header
+      li.collection-item
+        .card
+          .card-content
             .title フリック入力に基づく2本の押し込み機能付きジョイスティックを用いたテキスト入力手法
             .authors
               .author.me 横山海青
@@ -257,13 +256,13 @@ block container
                 a(href='https://www.jstage.jst.go.jp/article/his/23/4/23_383/_pdf/-char/ja').button.btn-small.btn-flat.waves-effect.waves-blue
                   i.material-icons.left description
                   span PDF
-          .collapsible-body.row
-            .col.s12
-              ul.tabs
-                li.tab.col.s6
-                  a(href='#hiwakate3-abstruct').active Abstruct
-                li.tab.col.s6
-                  a(href='#hiwakate3-citation') Citation
+          .card-tabs
+            ul.tabs.tabs-fixed-width
+              li.tab
+                a(href='#hiwakate3-abstruct') Abstruct
+              li.tab
+                a(href='#hiwakate3-citation').active Citation
+          .card-content.grey.lighten-4
             #hiwakate3-abstruct.col.s12.abstruct
               p A Japanese software keyboard for game consoles has a problem with the entry speed and widget size. In this article, we show JoyFlick that is a text entry method for an improved Japanese software keyboard. We evaluated the text entry speed and accuracy of JoyFlick. Also, we conducted an analysis of the user's operations to study the tendency of the operations and verify the design of JoyFlick. The results showed the following tendencies: the user tends to tilt the stick to select the keys on the outer edge; the user tends to restore the stick to the neutral position between selections; the user tends to restore both sticks to the neutral position at the same time (M=15.5 * 10^-2s) at the entry of a character. Also, the results showed that the design of JoyFlick, which restricts the order of consonant and vowel selection prevents a part of mistaken entries. Moreover, we show the outlook of the application and the necessity of	study in actual and several environments. 
             #hiwakate3-citation.col.s12.citation
@@ -295,11 +294,9 @@ block container
                   |   year={2021},
                   |   doi={10.11184/his.23.4_383}
                   | }
-    h5#papers-reviewed-international-header 査読あり/国際会議
-    #papers-reviewed-international
-      ul.collapsible.expandable
-        li.card
-          .collapsible-header
+      li.collection-item
+        .card
+          .card-content
             .title JoyFlick: Japanese Text Entry Using Dual Joysticks for Flick Input Users
             .authors
               .author.me Kaisei Yokoyama
@@ -324,13 +321,13 @@ block container
                 a(href='https://link.springer.com/chapter/10.1007/978-3-030-85613-7_8').button.btn-small.btn-flat.waves-effect.waves-blue
                   i.material-icons.left link
                   span Springer
-          .collapsible-body.row
-            .col.s12
-              ul.tabs
-                li.tab.col.s6
-                  a(href='#interact2021-abstruct').active Abstruct
-                li.tab.col.s6
-                  a(href='#interact2021-citation') Citation
+          .card-tabs
+            ul.tabs.tabs-fixed-width
+              li.tab
+                a(href='#interact2021-abstruct') Abstruct
+              li.tab
+                a(href='#interact2021-citation').active Citation
+          .card-content.grey.lighten-4
             #interact2021-abstruct.col.s12.abstruct
               p We show JoyFlick: A Japanese text entry method on game consoles with dual joysticks for flick-input users. To reduce the learning cost, the procedure of JoyFlick is designed based on a flick-input, which is a Japanese text entry method that approximately 80% of young Japanese people use daily on smartphones. The user using JoyFlick is able to enter a Japanese basic phonetic character with two joystick operations. In addition, JoyFlick’s widgets spend a little amount of real estate on a screen, making it easy for developers to allocate space for other content. We conducted user studies that compared the performance of JoyFlick with a Kana syllabary keyboard, the de-facto standard for the Japanese text entry method on game consoles. The results showed the followings: (1) after training employing 28 phrases (289 characters, mean entry time = 373s), the flick-input users using JoyFlick can enter texts faster than using the Kana syllabary keyboard; (2) the flick-input users can enter text using JoyFlick 1.53-fold faster (60.1 CPM) than the Kana syllabary keyboard (39.2 CPM) after one-week training in which the users enter texts less than 140 (M=135) characters per day. These results show that JoyFlick provides a fast and easy Japanese text entry method to the flick-input users using the game controllers and yet spends a little amount of real estate on a screen.
             #interact2021-citation.col.s12.citation
@@ -357,11 +354,9 @@ block container
                 |   pages="107--125",
                 |   isbn="978-3-030-85613-7"
                 | }
-    h5#papers-poster-header 査読なし/ポスター発表
-    #papers-poster
-      ul.collapsible.expandable
-        li.card
-          .collapsible-header
+      li.collection-item
+        .card
+          .card-content.padding-bottom
             .title ゲームパッド向け日本語入力手法の評価のためのオンラインゲーム環境
             .authors
               .author.me 横山海青
@@ -373,8 +368,9 @@ block container
               .chip 予稿なしデモポスター
               .chip.date 
                 time(datetime='2021-12-8') Dec. 2021
-        li.card
-          .collapsible-header
+      li.collection-item
+        .card
+          .card-content.padding-bottom
             .title VR環境向けの視線を用いた3次元バブルカーソルの提案
             .authors
               .author
