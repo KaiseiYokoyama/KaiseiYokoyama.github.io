@@ -85,3 +85,7 @@ time.created {
 time.created::before {
   content: 'Created at ';
 }
+
+i.header-icon {
+  color: #2196f3;
+}
