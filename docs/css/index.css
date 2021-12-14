@@ -208,75 +208,93 @@ main #affiliations.collection > *, main #interests.collection > *, main #patents
   background-color: inherit;
 }
 
-main #products ul.collapsible li .collapsible-header, main #works ul.collapsible li .collapsible-header, main #papers ul.collapsible li .collapsible-header {
+main #products ul.collection, main #works ul.collection, main #papers ul.collection {
+  border: none;
+}
+
+main #products ul.collection li.collection-item, main #works ul.collection li.collection-item, main #papers ul.collection li.collection-item {
+  border: none;
+}
+
+main #products ul.collection li.collection-item .card, main #works ul.collection li.collection-item .card, main #papers ul.collection li.collection-item .card {
   flex-direction: column;
 }
 
-main #products ul.collapsible li .collapsible-header .title, main #works ul.collapsible li .collapsible-header .title, main #papers ul.collapsible li .collapsible-header .title {
+main #products ul.collection li.collection-item .card > .card-content:first-child:not(.padding-bottom), main #works ul.collection li.collection-item .card > .card-content:first-child:not(.padding-bottom), main #papers ul.collection li.collection-item .card > .card-content:first-child:not(.padding-bottom) {
+  padding-bottom: 0;
+}
+
+main #products ul.collection li.collection-item .card > .card-content.padding-bottom :last-child, main #works ul.collection li.collection-item .card > .card-content.padding-bottom :last-child, main #papers ul.collection li.collection-item .card > .card-content.padding-bottom :last-child {
+  margin-bottom: 0;
+}
+
+main #products ul.collection li.collection-item .card .title, main #works ul.collection li.collection-item .card .title, main #papers ul.collection li.collection-item .card .title {
   font-size: 130%;
   font-weight: 600;
   margin-bottom: 5px;
 }
 
-main #products ul.collapsible li .collapsible-header .authors, main #works ul.collapsible li .collapsible-header .authors, main #papers ul.collapsible li .collapsible-header .authors {
+main #products ul.collection li.collection-item .card .authors, main #works ul.collection li.collection-item .card .authors, main #papers ul.collection li.collection-item .card .authors {
   display: flex;
 }
 
-main #products ul.collapsible li .collapsible-header .authors > .author.me, main #works ul.collapsible li .collapsible-header .authors > .author.me, main #papers ul.collapsible li .collapsible-header .authors > .author.me {
+main #products ul.collection li.collection-item .card .authors > .author.me, main #works ul.collection li.collection-item .card .authors > .author.me, main #papers ul.collection li.collection-item .card .authors > .author.me {
   font-weight: 800;
 }
 
-main #products ul.collapsible li .collapsible-header .authors > .author:not(:first-child)::before, main #works ul.collapsible li .collapsible-header .authors > .author:not(:first-child)::before, main #papers ul.collapsible li .collapsible-header .authors > .author:not(:first-child)::before {
+main #products ul.collection li.collection-item .card .authors > .author:not(:first-child)::before, main #works ul.collection li.collection-item .card .authors > .author:not(:first-child)::before, main #papers ul.collection li.collection-item .card .authors > .author:not(:first-child)::before {
   content: '，';
 }
 
-main #products ul.collapsible li .collapsible-header .tags > .chip, main #works ul.collapsible li .collapsible-header .tags > .chip, main #papers ul.collapsible li .collapsible-header .tags > .chip {
+main #products ul.collection li.collection-item .card .tags > .chip, main #works ul.collection li.collection-item .card .tags > .chip, main #papers ul.collection li.collection-item .card .tags > .chip {
   height: auto;
   background-color: inherit;
   padding: 0;
 }
 
-main #products ul.collapsible li .collapsible-header .tags > .chip.pages::after, main #works ul.collapsible li .collapsible-header .tags > .chip.pages::after, main #papers ul.collapsible li .collapsible-header .tags > .chip.pages::after {
+main #products ul.collection li.collection-item .card .tags > .chip.pages::after, main #works ul.collection li.collection-item .card .tags > .chip.pages::after, main #papers ul.collection li.collection-item .card .tags > .chip.pages::after {
   content: 'pages';
 }
 
-main #products ul.collapsible li .collapsible-header .tags > .chip.rate, main #works ul.collapsible li .collapsible-header .tags > .chip.rate, main #papers ul.collapsible li .collapsible-header .tags > .chip.rate {
+main #products ul.collection li.collection-item .card .tags > .chip.rate, main #works ul.collection li.collection-item .card .tags > .chip.rate, main #papers ul.collection li.collection-item .card .tags > .chip.rate {
   font-weight: 900;
 }
 
-main #products ul.collapsible li .collapsible-header .tags > .chip.rate::before, main #works ul.collapsible li .collapsible-header .tags > .chip.rate::before, main #papers ul.collapsible li .collapsible-header .tags > .chip.rate::before {
+main #products ul.collection li.collection-item .card .tags > .chip.rate::before, main #works ul.collection li.collection-item .card .tags > .chip.rate::before, main #papers ul.collection li.collection-item .card .tags > .chip.rate::before {
   content: '採択率';
 }
 
-main #products ul.collapsible li .collapsible-header .tags > .chip.rate::after, main #works ul.collapsible li .collapsible-header .tags > .chip.rate::after, main #papers ul.collapsible li .collapsible-header .tags > .chip.rate::after {
+main #products ul.collection li.collection-item .card .tags > .chip.rate::after, main #works ul.collection li.collection-item .card .tags > .chip.rate::after, main #papers ul.collection li.collection-item .card .tags > .chip.rate::after {
   content: '%';
 }
 
 @media only screen and (max-width: 992px) {
-  main #products ul.collapsible li .collapsible-body, main #works ul.collapsible li .collapsible-body, main #papers ul.collapsible li .collapsible-body {
+  main #products ul.collection li.collection-item .card, main #works ul.collection li.collection-item .card, main #papers ul.collection li.collection-item .card {
     padding: 0.5rem;
   }
 }
 
-main #products ul.collapsible li .collapsible-body > .citation .title, main #works ul.collapsible li .collapsible-body > .citation .title, main #papers ul.collapsible li .collapsible-body > .citation .title {
+main #products ul.collection li.collection-item .card .citation .title, main #works ul.collection li.collection-item .card .citation .title, main #papers ul.collection li.collection-item .card .citation .title {
   font-weight: 600;
   font-size: 120%;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
-main #products ul.collapsible li .collapsible-body > .citation > :not(.title), main #works ul.collapsible li .collapsible-body > .citation > :not(.title), main #papers ul.collapsible li .collapsible-body > .citation > :not(.title) {
+main #products ul.collection li.collection-item .card .citation > :not(.title), main #works ul.collection li.collection-item .card .citation > :not(.title), main #papers ul.collection li.collection-item .card .citation > :not(.title) {
   margin-left: 20px;
 }
 
-main #products ul.collapsible li .collapsible-body > .citation .citation-item, main #works ul.collapsible li .collapsible-body > .citation .citation-item, main #papers ul.collapsible li .collapsible-body > .citation .citation-item {
+main #products ul.collection li.collection-item .card .citation .citation-item, main #works ul.collection li.collection-item .card .citation .citation-item, main #papers ul.collection li.collection-item .card .citation .citation-item {
   padding: 5px;
   background-color: rgba(158, 158, 158, 0.2);
 }
 
-main #products ul.collapsible li .collapsible-body > .citation pre.citation-item, main #works ul.collapsible li .collapsible-body > .citation pre.citation-item, main #papers ul.collapsible li .collapsible-body > .citation pre.citation-item {
+main #products ul.collection li.collection-item .card .citation pre.citation-item, main #works ul.collection li.collection-item .card .citation pre.citation-item, main #papers ul.collection li.collection-item .card .citation pre.citation-item {
   white-space: pre-wrap;
 }
 
-main #products ul.collapsible li .collapsible-body > .citation .warning > i.material-icons.left, main #works ul.collapsible li .collapsible-body > .citation .warning > i.material-icons.left, main #papers ul.collapsible li .collapsible-body > .citation .warning > i.material-icons.left {
+main #products ul.collection li.collection-item .card .citation .warning > i.material-icons.left, main #works ul.collection li.collection-item .card .citation .warning > i.material-icons.left, main #papers ul.collection li.collection-item .card .citation .warning > i.material-icons.left {
   padding-left: 20px;
 }
 
@@ -305,10 +323,6 @@ main #products .card .card-content .awards > .award > *:not(:first-child), main 
 
 main #papers h5 {
   margin-top: max(1.09333rem, 28px);
-}
-
-main #papers .card {
-  box-shadow: none;
 }
 
 main #papers .card .tags .chip.pdf .button > i.material-icons.left, main #papers .card .tags .chip.pdf button > i.material-icons.left {

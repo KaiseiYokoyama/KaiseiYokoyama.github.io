@@ -91,3 +91,15 @@ main > .container {
         }
     }
 }
+
+time.created {
+    color: rgba($color: #000000, $alpha: 0.6);
+
+    &::before {
+        content: 'Created at ';
+    }
+}
+
+i.header-icon {
+    color: #2196f3;
+}
