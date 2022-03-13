@@ -372,6 +372,29 @@ block container
               .chip 予稿なしデモポスター
               .chip.date 
                 time(datetime='2021-12-8') Dec. 2021
+          .card-tabs
+            ul.tabs.tabs-fixed-width
+              li.tab
+                a(href='#wiss2021-0-abstruct') Abstruct
+              li.tab
+                a(href='#wiss2021-0-citation').active Citation
+          .card-content.grey.lighten-4
+            #wiss2021-0-abstruct.col.s12.abstruct
+              p ゲームパッド向け日本語入力手法の評価のためのオンラインゲーム環境を示す．本環境では，評価者が複数のソフトウェアキーボードのテキストの入力速度，テキストチャットの使用頻度，ソフトウェアキーボードへの操作，ユーザのゲーム内での動きを収集できる．特に，ゲームパッドが用いられる環境の一つであるオンラインゲーム上のテキストチャットにおいて，ユーザ間のテキストコミュニケーションでのデータを収集できるため，評価者はソフトウェアキーボードの実用上の性能を測定できることが期待される．
+            #wiss2021-0-citation.col.s12.citation
+              .title 平文
+              p.citation-item 横山海青，志築文太郎．ゲームパッド向け日本語入力手法の評価のためのオンラインゲーム環境．第29回インタラクティブシステムとソフトウェアに関するワークショップ（WISS2021），日本ソフトウェア科学会，2021年12月．
+              .title Bibtex
+              pre.citation-item
+                | @article{wiss2021_kyokoyama,
+                |   author    = {{横山海青，志築文太郎}},
+                |   title     = {{ゲームパッド向け日本語入力手法の評価のためのオンラインゲーム環境}},
+                |   journal   = {第29回インタラクティブシステムとソフトウェアに関するワークショップ},
+                |   series    = {WISS2021},
+                |   publisher = {日本ソフトウェア科学会},
+                |   year      = {2021},
+                |   month     = {12},
+                | }
       li.collection-item
         .card
           .card-content.padding-bottom
