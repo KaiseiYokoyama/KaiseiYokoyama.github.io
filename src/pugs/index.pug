@@ -394,6 +394,31 @@ block container
                 a(href='https://www.wiss.org/WISS2021Proceedings/data/3-B05.pdf').button.btn-small.btn-flat.waves-effect.waves-blue
                   i.material-icons.left description
                   span PDF
+          .card-tabs
+            ul.tabs.tabs-fixed-width
+              li.tab
+                a(href='#wiss2021-1-abstruct') Abstruct
+              li.tab
+                a(href='#wiss2021-1-citation').active Citation
+          .card-content.grey.lighten-4
+            #wiss2021-1-abstruct.col.s12.abstruct
+              p ポインティングは VR 環境においてもターゲットを選択するための基本的な操作であり，近年アイトラッキングに基づいたハンズフリー手法も用いられるようになってきている．一方で，VR においてはターゲット群が異なる奥行にて表示されるため，ターゲットが他のターゲットに一部遮蔽されるあるいは完全に遮蔽されることによりオクルージョン問題が生じ，ポインティングに支障をきたす．そこで，我々は小さい，あるいは密集したターゲット群から任意のターゲットを選択することに長ける動的エリアカーソル法を用いることを考え，その 1 つである Bubble Gaze Cursor を 3 次元に拡張した VR 環境向けのポインティング手法を実装している．ユーザはこの手法を用いてポインティングを行うことにより，オクルージョンによる影響が軽減される．
+            #wiss2021-1-citation.col.s12.citation
+              .title 平文
+              p.citation-item 平井李音，冨永浩暉，横山海青，志築文太郎．VR環境向けの視線を用いた3次元バブルカーソルの提案．第29回インタラクティブシステムとソフトウェアに関するワークショップ（WISS2021），日本ソフトウェア科学会，2021年12月，2 pages．
+              .title Bibtex
+              pre.citation-item
+                | @article{wiss2021_hirai_gaze,
+                |   author    = {{平井李音，冨永浩暉，横山海青，志築文太郎}},
+                |   title     = {{VR環境向けの視線を用いた3次元バブルカーソルの提案}},
+                |   journal   = {第29回インタラクティブシステムとソフトウェアに関するワークショップ},
+                |   series    = {WISS2021},
+                |   publisher = {日本ソフトウェア科学会},
+                |   year      = {2021},
+                |   month     = {12},
+                |   pages     = {2},
+                |   URL       = {https://www.iplab.cs.tsukuba.ac.jp/~hirai/paper/hirai_wiss2021.pdf},
+                | }
   h4#patents-header
     i.material-icons.header-icon inventory
     |  特許
