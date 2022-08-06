@@ -199,11 +199,11 @@ main #profile .card-content ul.links.collection a {
   }
 }
 
-main #affiliations.collection, main #interests.collection, main #patents.collection, main #awards.collection, main #history.collection {
+main #affiliations.collection, main #interests.collection, main #patents.collection, main #awards.collection, main #history.collection, main #scholarship.collection {
   border: none;
 }
 
-main #affiliations.collection > *, main #interests.collection > *, main #patents.collection > *, main #awards.collection > *, main #history.collection > * {
+main #affiliations.collection > *, main #interests.collection > *, main #patents.collection > *, main #awards.collection > *, main #history.collection > *, main #scholarship.collection > * {
   border: none;
   background-color: inherit;
 }
