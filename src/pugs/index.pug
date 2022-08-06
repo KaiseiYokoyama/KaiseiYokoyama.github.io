@@ -180,10 +180,10 @@ block container
   h4#publications-header
     i.material-icons.header-icon description
     |  出版物
-  h5#papers-header
-    |  学術文献
   #papers
-    ul.collection
+    ul.collection.with-header
+      li.collection-header
+        h5#papers-header 論文誌
       li.collection-item
         .card
           .card-content
@@ -250,6 +250,8 @@ block container
                   |   year={2021},
                   |   doi={10.11184/his.23.4_383}
                   | }
+      li.collection-header
+        h5#papers-header 国際学会（査読あり）
       li.collection-item
         .card
           .card-content
@@ -310,6 +312,8 @@ block container
                 |   pages="107--125",
                 |   isbn="978-3-030-85613-7"
                 | }
+      li.collection-header
+        h5#papers-header 国内学会（査読あり）
       li.collection-item
         .card
           .card-content
@@ -358,6 +362,8 @@ block container
                 |   pages     = {97--102},
                 |   URL       = {https://www.wiss.org/WISS2020Proceedings/data/17.pdf},
                 | }
+      li.collection-header
+        h5#papers-header 国内学会（査読なし）
       li.collection-item
         .card
           .card-content.padding-bottom
