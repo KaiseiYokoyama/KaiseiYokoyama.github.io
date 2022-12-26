@@ -404,7 +404,56 @@ block container
                 |   year      = {2020},
                 |   month     = {12},
                 |   pages     = {97--102},
-                |   URL       = {https://www.wiss.org/WISS2020Proceedings/data/17.pdf},
+                |   URL       = {https://www.wiss.org/WISS2020Proceedings/data/17.pdf}
+                | }
+      li.collection-item
+        .card
+          .card-content
+            .title WristRayFlick：手首からのレイによるVR向けの片手かな文字入力手法
+            .authors
+              .author
+                a(href="https://www.iplab.cs.tsukuba.ac.jp/~iguchi/") 井口凌輔
+              .author.me 横山海青
+              .author 
+                a(href='https://www.iplab.cs.tsukuba.ac.jp/~isomoto/') 礒本俊弥
+              .author
+                a(href='https://www.iplab.cs.tsukuba.ac.jp/~shizuki/') 志築文太郎
+            .tags
+              .chip
+                a(href="https://www.wiss.org/WISS2020/") WISS2022
+              //- .chip.rate 67.6
+              .chip 登壇発表（ロングティザー）
+              .chip.date 
+                time(datetime='2022-12-15') Dec. 2022
+              .chip.pages 3
+              .chip.pdf
+                a(href='https://www.iplab.cs.tsukuba.ac.jp/paper/poster/iguchi_wiss2022.pdf').button.btn-small.btn-flat.waves-effect.waves-blue
+                  i.material-icons.left description
+                  span PDF
+          .card-tabs
+            ul.tabs.tabs-fixed-width
+              li.tab
+                a(href='#wiss2022-abstruct').active Abstruct
+              li.tab
+                a(href='#wiss2022-citation') Citation
+          .card-content.grey.lighten-4
+            #wiss2022-abstruct.col.s12.abstruct
+              p 本研究では，ハンドトラッキングを用いる VR 環境において使用できる，手首からのレイによる片手かな文字入力手法である WristRayFlick を示す．従来のフリック入力に基づく VR 向けの文字入力手法において，ユーザは指先をキーに触れさせるために奥行き方向へ手を移動させる必要がある．対して，WristRayFlick においては，手首からのレイによる子音キーの選択が可能であるため，奥行き方向の手の移動を必要としない．これにより，疲労の軽減および文字入力の高速化が見込める．
+            #wiss2022-citation.col.s12.citation
+              .title 平文
+              p.citation-item 井口凌輔，横山海青，礒本俊弥，志築文太郎．WristRayFlick：手首からのレイによるVR向けの片手かな文字入力手法，第30回インタラクティブシステムとソフトウェアに関するワークショップ（WISS2022），日本ソフトウェア科学会，2022年12月，3 pages
+              .title Bibtex
+              pre.citation-item
+                | @inproceedings{wristrayflick,
+                |   author    = {{井口凌輔，横山海青，礒本俊弥，志築文太郎}},
+                |   title     = {{WristRayFlick：手首からのレイによるVR向けの片手かな文字入力手法}},
+                |   journal   = {第30回インタラクティブシステムとソフトウェアに関するワークショップ},
+                |   series    = {WISS2022},
+                |   publisher = {日本ソフトウェア科学会},
+                |   year      = {2022},
+                |   month     = {12},
+                |   pages     = {3},
+                |   URL       = {https://www.wiss.org/WISS2022Proceedings/data/T03.pdf}
                 | }
       li.collection-header
         h5 国内学会（査読なし）
