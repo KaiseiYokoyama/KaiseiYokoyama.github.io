@@ -380,11 +380,22 @@ main {
                     }
                 }
 
-                .awards > .award {
+                .awards {
                     display: flex;
 
-                    > *:not(:first-child) {
-                        margin-left: 3px;
+                    > .award {
+                        &::before {
+                            font-family: 'Material Icons';
+                            content: 'emoji_events';
+                            font-size: 24px;
+                            line-height: 1;
+                            display: inline-block;
+                            vertical-align: -20%;
+                        }
+    
+                        &:not(:first-child) {
+                            margin-left: 13px;
+                        }
                     }
                 }
             }

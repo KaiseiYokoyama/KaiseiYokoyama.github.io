@@ -313,12 +313,21 @@ main #products .card .card-content .tags > .chip:not(:last-child)::after, main #
   content: ', ';
 }
 
-main #products .card .card-content .awards > .award, main #works .card .card-content .awards > .award, main #papers .card .card-content .awards > .award {
+main #products .card .card-content .awards, main #works .card .card-content .awards, main #papers .card .card-content .awards {
   display: flex;
 }
 
-main #products .card .card-content .awards > .award > *:not(:first-child), main #works .card .card-content .awards > .award > *:not(:first-child), main #papers .card .card-content .awards > .award > *:not(:first-child) {
-  margin-left: 3px;
+main #products .card .card-content .awards > .award::before, main #works .card .card-content .awards > .award::before, main #papers .card .card-content .awards > .award::before {
+  font-family: 'Material Icons';
+  content: 'emoji_events';
+  font-size: 24px;
+  line-height: 1;
+  display: inline-block;
+  vertical-align: -20%;
+}
+
+main #products .card .card-content .awards > .award:not(:first-child), main #works .card .card-content .awards > .award:not(:first-child), main #papers .card .card-content .awards > .award:not(:first-child) {
+  margin-left: 13px;
 }
 
 main #papers h5 {
