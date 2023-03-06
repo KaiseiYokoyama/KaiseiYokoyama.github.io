@@ -300,18 +300,6 @@ main {
                                 content: 'pages';
                             }
                         }
-    
-                        &.rate {
-                            font-weight: 900;
-            
-                            &::before {
-                                content: '採択率';
-                            }
-            
-                            &::after {
-                                content: '%';
-                            }
-                        }
                     }
 
                     @media only screen and (max-width: 992px) {
@@ -427,6 +415,34 @@ main {
 
         .card {
             // box-shadow: none;
+            .badges {
+                span.new.badge {
+                    float: unset;
+                    padding: 2px;
+                    font-weight: 500;
+
+                    .rate {
+                        font-weight: 900;
+        
+                        &::before {
+                            content: '/採択率';
+                        }
+        
+                        &::after {
+                            content: '%';
+                        }
+                    }
+
+                    &:first-child {
+                        margin-left: 0px;
+                    }
+
+                    &::after {
+                        content: unset;
+                    }
+                }
+            }
+
             .tags {
                 .chip {
                     &.pdf {

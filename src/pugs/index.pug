@@ -174,12 +174,14 @@ block container
     i.material-icons.header-icon description
     |  出版物
   #papers
-    ul.collection.with-header
-      li.collection-header
-        h5 論文誌
+    ul.collection
       li.collection-item#hiarticle2021
         .card
           .card-content
+            .badges
+              span.new.badge.blue 論文誌/原著論文
+              span.new.badge.blue 査読有り
+                span.rate 64.7
             .awards
               a(href='https://jp.his.gr.jp/guide/awards/').award 第23回論文賞
               a(href='https://jp.his.gr.jp/journals/youngaward/').award 若手卓越研究賞
@@ -195,8 +197,6 @@ block container
             .tags
               .chip 
                 a(href="https://jp.his.gr.jp/") ヒューマンインタフェース学会
-              .chip.rate 64.7
-              .chip 原著論文
               .chip.date 
                 time(datetime='2020-11-25') Nov. 2021
               .chip.pages 12
@@ -245,6 +245,9 @@ block container
       li.collection-item
         .card
           .card-content
+            .badges
+              span.new.badge.blue 論文誌/原著論文
+              span.new.badge.blue 査読有り
             .title 表情に基づく動画再生速度の自動調節による外国語学習支援システムの実装と理解度に与える影響の評価
             .authors
               .author
@@ -290,11 +293,13 @@ block container
                   |   pages={11},
                   |   year={2023}
                   | }
-      li.collection-header
-        h5 国際学会（査読あり）
       li.collection-item#interact2021
         .card
           .card-content
+            .badges
+              span.new.badge.green 国際学会/Full Paper Track
+              span.new.badge.blue 査読有り
+                span.rate 29
             .title JoyFlick: Japanese Text Entry Using Dual Joysticks for Flick Input Users
             .authors
               .author.me Kaisei Yokoyama
@@ -305,8 +310,6 @@ block container
             .tags
               .chip
                 a(href="https://www.interact2021.org/") INTERACT2021
-              .chip.rate 29
-              .chip Full Paper Track
               .chip 登壇発表
               .chip.date 
                 time(datetime='2021-9-30') Sep. 2021
@@ -352,11 +355,13 @@ block container
                 |   pages="107--125",
                 |   isbn="978-3-030-85613-7"
                 | }
-      li.collection-header
-        h5 国内学会（査読あり）
       li.collection-item#wiss2020
         .card
           .card-content
+            .badges
+              span.new.badge.orange 国内学会
+              span.new.badge.blue 査読有り
+                span.rate 67.6
             .title JoyFlick: フリック入力に基づくゲームパッド向けかな文字入力手法
             .authors
               .author.me 横山海青
@@ -367,7 +372,6 @@ block container
             .tags
               .chip
                 a(href="https://www.wiss.org/WISS2020/") WISS2020
-              .chip.rate 67.6
               .chip 登壇発表
                 a(href='https://youtu.be/JDWQJcLl8ek?t=17706') （Youtube）
               .chip.date 
@@ -405,6 +409,9 @@ block container
       li.collection-item
         .card
           .card-content
+            .badges
+              span.new.badge.orange 国内学会
+              span.new.badge.blue 査読有り
             .title WristRayFlick：手首からのレイによるVR向けの片手かな文字入力手法
             .authors
               .author
@@ -417,7 +424,6 @@ block container
             .tags
               .chip
                 a(href="https://www.wiss.org/WISS2020/") WISS2022
-              //- .chip.rate 67.6
               .chip 登壇発表（ロングティザー）
               .chip.date 
                 time(datetime='2022-12-15') Dec. 2022
@@ -451,11 +457,11 @@ block container
                 |   pages     = {3},
                 |   URL       = {https://www.wiss.org/WISS2022Proceedings/data/T03.pdf}
                 | }
-      li.collection-header
-        h5 国内学会（査読なし）
       li.collection-item
         .card
           .card-content.padding-bottom
+            .badges
+              span.new.badge.orange 国内学会
             .title Minecraftのマルチプレイ環境におけるユーザ実験のための行動記録用MOD
             .authors
               .author.me 横山海青
@@ -493,6 +499,8 @@ block container
       li.collection-item
         .card
           .card-content.padding-bottom
+            .badges
+              span.new.badge.orange 国内学会
             .title ゲームパッド向け日本語入力手法の評価のためのオンラインゲーム環境
             .authors
               .author.me 横山海青
@@ -530,6 +538,8 @@ block container
       li.collection-item
         .card
           .card-content.padding-bottom
+            .badges
+              span.new.badge.orange 国内学会
             .title 2次元ポインティングタスクにおける再テスト信頼性の予備調査
             .authors
               .author
@@ -574,6 +584,8 @@ block container
       li.collection-item
         .card
           .card-content.padding-bottom
+            .badges
+              span.new.badge.orange 国内学会
             .title VR環境向けの視線を用いた3次元バブルカーソルの提案
             .authors
               .author

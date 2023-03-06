@@ -256,18 +256,6 @@ main #products ul.collection li.collection-item .card .tags > .chip.pages::after
   content: 'pages';
 }
 
-main #products ul.collection li.collection-item .card .tags > .chip.rate, main #works ul.collection li.collection-item .card .tags > .chip.rate, main #papers ul.collection li.collection-item .card .tags > .chip.rate {
-  font-weight: 900;
-}
-
-main #products ul.collection li.collection-item .card .tags > .chip.rate::before, main #works ul.collection li.collection-item .card .tags > .chip.rate::before, main #papers ul.collection li.collection-item .card .tags > .chip.rate::before {
-  content: '採択率';
-}
-
-main #products ul.collection li.collection-item .card .tags > .chip.rate::after, main #works ul.collection li.collection-item .card .tags > .chip.rate::after, main #papers ul.collection li.collection-item .card .tags > .chip.rate::after {
-  content: '%';
-}
-
 @media only screen and (max-width: 992px) {
   main #products ul.collection li.collection-item .card, main #works ul.collection li.collection-item .card, main #papers ul.collection li.collection-item .card {
     padding: 0.5rem;
@@ -346,6 +334,32 @@ main #works .related-papers .paper:not(:last-child)::after {
 
 main #papers h5 {
   margin-top: max(1.09333rem, 28px);
+}
+
+main #papers .card .badges span.new.badge {
+  float: unset;
+  padding: 2px;
+  font-weight: 500;
+}
+
+main #papers .card .badges span.new.badge .rate {
+  font-weight: 900;
+}
+
+main #papers .card .badges span.new.badge .rate::before {
+  content: '/採択率';
+}
+
+main #papers .card .badges span.new.badge .rate::after {
+  content: '%';
+}
+
+main #papers .card .badges span.new.badge:first-child {
+  margin-left: 0px;
+}
+
+main #papers .card .badges span.new.badge::after {
+  content: unset;
 }
 
 main #papers .card .tags .chip.pdf .button > i.material-icons.left, main #papers .card .tags .chip.pdf button > i.material-icons.left {
