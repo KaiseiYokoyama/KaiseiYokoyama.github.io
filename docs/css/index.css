@@ -234,8 +234,8 @@ main #products ul.collection li.collection-item .card .title, main #works ul.col
   margin-bottom: 5px;
 }
 
-main #products ul.collection li.collection-item .card .authors, main #works ul.collection li.collection-item .card .authors, main #papers ul.collection li.collection-item .card .authors {
-  display: flex;
+main #products ul.collection li.collection-item .card .authors > .author, main #works ul.collection li.collection-item .card .authors > .author, main #papers ul.collection li.collection-item .card .authors > .author {
+  display: inline;
 }
 
 main #products ul.collection li.collection-item .card .authors > .author.me, main #works ul.collection li.collection-item .card .authors > .author.me, main #papers ul.collection li.collection-item .card .authors > .author.me {

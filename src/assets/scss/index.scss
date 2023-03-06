@@ -271,10 +271,10 @@ main {
                         margin-bottom: 5px;
                     }
     
-                    .authors {
-                        display: flex;
-    
+                    .authors {    
                         > .author {
+                            display: inline;
+
                             &.me {
                                 font-weight: 800;
                             }
