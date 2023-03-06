@@ -330,6 +330,20 @@ main #products .card .card-content .awards > .award:not(:first-child), main #wor
   margin-left: 13px;
 }
 
+main #works .related-papers::before {
+  content: '関連する論文';
+  margin-right: 8px;
+  font-weight: 500;
+}
+
+main #works .related-papers .paper:not(:last-child) {
+  margin-right: 8px;
+}
+
+main #works .related-papers .paper:not(:last-child)::after {
+  content: '，';
+}
+
 main #papers h5 {
   margin-top: max(1.09333rem, 28px);
 }

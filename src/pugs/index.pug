@@ -161,17 +161,15 @@ block container
           .card-content
             span.card-title
               strong JoyFlick
-            .tags
-              .chip かな文字入力
-              .chip フリック入力
-              .chip ゲームパッド
+            .related-papers
+              a(href="#hiarticle2021").paper ヒューマンインタフェース学会 論文誌
+              a(href="#interact2021").paper INTERACT2021 フルペーパー
+              a(href="#wiss2020").paper WISS2020 査読付き予稿
+            .description ゲームパッドのみを用いた高速なかな文字入力手法です．既存の50音表に似たキーボードよりも高速な入力が可能になるだけでなく，練習を積むことによってさらに入力速度が向上します（毎分100文字程度）．また，既存の50音表に似たキーボードよりも小さなウィジェットで使用できます．
           .card-action
             a(href='https://www.wiss.org/WISS2020Proceedings/data/17.mp4').waves-effect.waves-light.btn-flat
               i.material-icons.left movie
               | 操作例デモムービー
-            a(href='/works/joyflick.html').waves-effect.waves-light.btn.right
-              i.material-icons.left apps
-              | デモ用アプリケーション
   h4#publications-header
     i.material-icons.header-icon description
     |  出版物
@@ -179,7 +177,7 @@ block container
     ul.collection.with-header
       li.collection-header
         h5 論文誌
-      li.collection-item
+      li.collection-item#hiarticle2021
         .card
           .card-content
             .awards
@@ -200,7 +198,7 @@ block container
               .chip.rate 64.7
               .chip 原著論文
               .chip.date 
-                time(datetime='2020-12-17') Nov. 2021
+                time(datetime='2020-11-25') Nov. 2021
               .chip.pages 12
               .chip.pdf
                 a(href='https://www.jstage.jst.go.jp/article/his/23/4/23_383/_pdf/-char/ja').button.btn-small.btn-flat.waves-effect.waves-blue
@@ -294,7 +292,7 @@ block container
                   | }
       li.collection-header
         h5 国際学会（査読あり）
-      li.collection-item
+      li.collection-item#interact2021
         .card
           .card-content
             .title JoyFlick: Japanese Text Entry Using Dual Joysticks for Flick Input Users
@@ -356,7 +354,7 @@ block container
                 | }
       li.collection-header
         h5 国内学会（査読あり）
-      li.collection-item
+      li.collection-item#wiss2020
         .card
           .card-content
             .title JoyFlick: フリック入力に基づくゲームパッド向けかな文字入力手法

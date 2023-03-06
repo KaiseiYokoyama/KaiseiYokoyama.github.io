@@ -402,6 +402,24 @@ main {
         }
     }
 
+    #works {
+        .related-papers {
+            &::before {
+                content: '関連する論文';
+                margin-right: 8px;
+                font-weight: 500; // strong
+            }
+            .paper {
+                &:not(:last-child) {
+                    margin-right: 8px;
+                    &::after {
+                        content: '，';
+                    }
+                }
+            }
+        }
+    }
+
     #papers {
         h5 {
             margin-top: unquote($string: "max(1.09333rem, 28px)");
