@@ -237,7 +237,6 @@ block container
             .badges
               span.new.badge.blue 論文誌/原著論文
               span.new.badge.blue 査読有り
-              span.new.badge.red To Appear
             .title 2本のジョイスティックを用いたテキスト入力手法のウィジェットが入力性能に与える影響の調査
             .authors
               .author.me 横山海青
@@ -253,10 +252,10 @@ block container
               .chip.date 
                 time(datetime='2023-05') May 2023
               .chip.pages 10
-              //- .chip.pdf
-              //-   a(href='https://www.jstage.jst.go.jp/article/his/23/4/23_383/_pdf/-char/ja').button.btn-small.btn-flat.waves-effect.waves-blue
-              //-     i.material-icons.left description
-              //-     span PDF
+              .chip.pdf
+                a(href='https://www.jstage.jst.go.jp/article/his/25/2/25_149/_pdf/-char/ja').button.btn-small.btn-flat.waves-effect.waves-blue
+                  i.material-icons.left description
+                  span PDF
           .card-tabs.hide-on-small-only
             ul.tabs.tabs-fixed-width
               li.tab
@@ -268,7 +267,7 @@ block container
               p The widget of a software keyboard, installed on the game consoles for text entry using only the gamepad, occupies a certain amount of the screen real estate. The reduction of the occupancy allows game designers to allocate a larger area for the game contents. We show KAI, a software keyboard indication method that reduces the screen occupancy of the widget while minimizing the degradation of input speed and accuracy. We conducted a comparative study of the conventional, KAI, and invisible indication methods with JoyFlick. The results showed that the conventional widget was the fastest and least erroneous among the three indication methods. In addition, the invisible widget was the slowest and most errornous. Therefore, for some software keyboards, KAI can be applied to reduce screen occupancy while minimizing the degradation of input speed and accuracy. 
             #hiarticle2023-citation.col.s12.citation
               .title 平文（日本語）
-              p.citation-item 横山 海青, 日高 拓真, 鈴木 健介, 志築 文太郎, 2本のジョイスティックを用いたテキスト入力手法のウィジェットが入力性能に与える影響の調査, ヒューマンインタフェース学会論文誌, 2023, 25 巻, 2 号, To Appear
+              p.citation-item 横山 海青, 日高 拓真, 鈴木 健介, 志築 文太郎, 2本のジョイスティックを用いたテキスト入力手法のウィジェットが入力性能に与える影響の調査, ヒューマンインタフェース学会論文誌, 2023, 25 巻, 2 号, p. 149-158, 公開日 2023/05/25, Online ISSN 2186-8271, Print ISSN 1344-7262, https://doi.org/10.11184/his.25.2_149, https://www.jstage.jst.go.jp/article/his/25/2/25_149/_article/-char/ja
               .title Bibtex（日本語）
               pre.citation-item
                   | @article{kyokoyama_hi_2023,
@@ -277,13 +276,12 @@ block container
                   |   journal={ヒューマンインタフェース学会論文誌},
                   |   volume={25},
                   |   number={2},
-                  //- |   pages={383-396},
+                  |   pages={149-158},
                   |   year={2023},
-                  |   note={(To Appear)}
-                  //- |   doi={10.11184/his.23.4_383}
+                  |   doi={10.11184/his.25.2_149}
                   | }
               .title Plane Text (English)
-              p.citation-item Kaisei Yokoyama, Takuma Hidaka, Kensuke Suzuki, Buntarou Shizuki, Investing How the Widget of Text Entry Method using Dual Joysticks Affects Text Entry Performance, The Transactions of Human Interface Society, 2023, Volume 25, Issue 2, To Appear
+              p.citation-item Kaisei Yokoyama, Takuma Hidaka, Kensuke Suzuki, Buntarou Shizuki, Investing How the Widget of Text Entry Method using Dual Joysticks Affects Text Entry Performance, The Transactions of Human Interface Society, 2023, Volume 25, Issue 2, Pages 149-158, Released on J-STAGE May 25, 2023, Online ISSN 2186-8271, Print ISSN 1344-7262, https://doi.org/10.11184/his.25.2_149, https://www.jstage.jst.go.jp/article/his/25/2/25_149/_article/-char/en
               .title Bibtex (English)
               pre.citation-item
                   | @article{kyokoyama_hi_2023,
@@ -292,7 +290,8 @@ block container
                   |   journal={The Transactions of Human Interface Society},
                   |   volume={25},
                   |   number={2},
-                  |   note={(To Appear)}
+                  |   pages={149-158},
+                  |   doi={10.11184/his.25.2_149}
                   | }
       li.collection-item
         .card
