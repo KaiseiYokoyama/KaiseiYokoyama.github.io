@@ -1,12 +1,11 @@
 @import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
 * {
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
 }
 
 .card > .card-image > video {
   width: 100%;
 }
-
 .card > .card-image > .card-title {
   background: rgba(0, 0, 0, 0.6);
 }
@@ -30,14 +29,12 @@ main > .container > h4 {
 .btn-floating.btn-floating-long {
   width: auto;
 }
-
 .btn-floating.btn-floating-long.btn-large {
   padding-left: 28px;
   padding-right: 28px;
   border-radius: 28px;
   display: flex;
 }
-
 .btn-floating.btn-floating-long.btn-large > .title {
   font-size: 1.6rem;
   height: 56pt;
@@ -47,7 +44,6 @@ main > .container > h4 {
   background-color: #90CBF9;
   font-weight: 600;
 }
-
 .btn:hover {
   background-color: #90CBF9;
   filter: brightness(105%) opacity(0.8);
@@ -56,7 +52,6 @@ main > .container > h4 {
 .btn-flat {
   color: #039be5 !important;
 }
-
 .btn-flat:hover {
   background-color: rgba(3, 155, 229, 0.3);
 }
@@ -64,16 +59,13 @@ main > .container > h4 {
 .tabs .indicator {
   background-color: #039be5;
 }
-
 .tabs .tab a {
   color: #90CBF9;
 }
-
 .tabs .tab a.active, .tabs .tab a:hover {
   background-color: transparent;
   color: #039be5;
 }
-
 .tabs .tab a:focus, .tabs .tab a:focus.active {
   background-color: rgba(3, 155, 229, 0.2);
 }
@@ -81,9 +73,8 @@ main > .container > h4 {
 time.created {
   color: rgba(0, 0, 0, 0.6);
 }
-
 time.created::before {
-  content: 'Created at ';
+  content: "Created at ";
 }
 
 i.header-icon {

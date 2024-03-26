@@ -13,7 +13,6 @@ body {
     width: 100vw;
   }
 }
-
 @media only screen and (min-width: 992px) {
   header {
     width: 25vw;
@@ -22,38 +21,31 @@ body {
     width: 75vw;
   }
 }
-
 header {
   display: flex;
   align-items: center;
   justify-items: center;
   background: #90caf9;
 }
-
 header #index.collection {
   border: none;
 }
-
 header #index.collection a {
   color: rgba(0, 0, 0, 0.87);
   opacity: 0.8;
 }
-
 @keyframes focus_index {
   to {
     font-weight: bolder;
-    opacity: 1.0;
+    opacity: 1;
   }
 }
-
 header #index.collection a:hover {
   animation: focus_index 0.3s ease 0s forwards;
 }
-
 header #index.collection .secondary-content {
   color: black;
 }
-
 header #index.collection > * {
   border: none;
   background: inherit;
@@ -62,79 +54,64 @@ header #index.collection > * {
 main {
   overflow-y: scroll;
 }
-
 main #profile {
   max-width: 620px;
 }
-
 main #profile .card-stacked {
   display: flex;
   flex-direction: row;
 }
-
 main #profile .card-stacked .left {
   flex: 90%;
 }
-
 main #profile .card-stacked .left > .card-action {
   padding-bottom: 0;
 }
-
 main #profile .card-stacked .left > .card-action a {
   color: #039be5;
 }
-
 main #profile .card-stacked .right {
   flex: 10%;
   background-color: #90caf9;
   display: flex;
   justify-content: center;
 }
-
 main #profile .card-stacked .right i.fab.fa-github, main #profile .card-stacked .right i.fab.fa-twitter {
   margin: 0;
   font-size: 36px;
 }
-
 @media only screen and (max-width: 992px) {
   main #profile.card {
     border-right: none;
   }
 }
-
 main #profile .card-content {
   display: flex;
   flex-direction: column;
 }
-
 main #profile .card-content .profile {
   display: flex;
   justify-items: center;
 }
-
 main #profile .card-content .profile #face {
   height: 110px;
   object-fit: scale-down;
   margin: 20px;
 }
-
 main #profile .card-content .profile #name {
   flex-shrink: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-
 main #profile .card-content .profile #name > h4 {
   margin-top: 0rem;
   margin-bottom: 0.456rem;
 }
-
 main #profile .card-content .profile #name .alphabet {
   color: #039be5;
   font-size: 1.64rem;
 }
-
 @media only screen and (max-width: 992px) {
   main #profile .card-content .profile {
     flex-direction: column;
@@ -143,247 +120,196 @@ main #profile .card-content .profile #name .alphabet {
     width: 88%;
   }
 }
-
 main #profile .card-content #affiliations.collection .collection-item {
   padding-bottom: 5px;
 }
-
 main #profile .card-content #affiliations.collection .collection-item:before {
   color: #039be5;
   font-weight: 900;
-  content: '- ';
+  content: "- ";
 }
-
 main #profile .card-content #affiliations.collection a[href] {
   color: rgba(0, 0, 0, 0.87);
   font-weight: 500;
   opacity: 0.8;
 }
-
 @keyframes focus {
   100% {
     color: #039be5;
-    opacity: 1.0;
+    opacity: 1;
   }
 }
-
 main #profile .card-content #affiliations.collection a[href]:hover {
   animation: focus 0.3s ease 0s forwards;
 }
-
 main #profile .card-content ul.links.collection {
   background: none;
   border: none;
 }
-
 main #profile .card-content ul.links.collection li.collection-item {
   background: none;
   border: none;
   padding-left: 0;
   padding-right: 0;
 }
-
 main #profile .card-content ul.links.collection i {
   margin-right: 10px;
   color: white;
 }
-
 main #profile .card-content ul.links.collection a {
   font-size: 18px;
   color: white;
 }
-
 @media only screen and (max-width: 600px) {
   main #profile .card-content .links {
     padding-left: 0px;
   }
 }
-
 main #affiliations.collection, main #interests.collection, main #patents.collection, main #awards.collection, main #history.collection, main #scholarship.collection {
   border: none;
 }
-
 main #affiliations.collection > *, main #interests.collection > *, main #patents.collection > *, main #awards.collection > *, main #history.collection > *, main #scholarship.collection > * {
   border: none;
   background-color: inherit;
 }
-
 main #products ul.collection, main #works ul.collection, main #papers ul.collection {
   border: none;
 }
-
 main #products ul.collection li.collection-item, main #works ul.collection li.collection-item, main #papers ul.collection li.collection-item {
   border: none;
 }
-
 main #products ul.collection li.collection-item .card, main #works ul.collection li.collection-item .card, main #papers ul.collection li.collection-item .card {
   flex-direction: column;
 }
-
 main #products ul.collection li.collection-item .card > .card-content:first-child:not(.padding-bottom), main #works ul.collection li.collection-item .card > .card-content:first-child:not(.padding-bottom), main #papers ul.collection li.collection-item .card > .card-content:first-child:not(.padding-bottom) {
   padding-bottom: 0;
 }
-
 main #products ul.collection li.collection-item .card > .card-content.padding-bottom :last-child, main #works ul.collection li.collection-item .card > .card-content.padding-bottom :last-child, main #papers ul.collection li.collection-item .card > .card-content.padding-bottom :last-child {
   margin-bottom: 0;
 }
-
 main #products ul.collection li.collection-item .card .title, main #works ul.collection li.collection-item .card .title, main #papers ul.collection li.collection-item .card .title {
   font-size: 130%;
   font-weight: 600;
   margin-bottom: 5px;
 }
-
 main #products ul.collection li.collection-item .card .authors > .author, main #works ul.collection li.collection-item .card .authors > .author, main #papers ul.collection li.collection-item .card .authors > .author {
   display: inline;
 }
-
 main #products ul.collection li.collection-item .card .authors > .author.me, main #works ul.collection li.collection-item .card .authors > .author.me, main #papers ul.collection li.collection-item .card .authors > .author.me {
   font-weight: 800;
 }
-
 main #products ul.collection li.collection-item .card .authors > .author:not(:first-child)::before, main #works ul.collection li.collection-item .card .authors > .author:not(:first-child)::before, main #papers ul.collection li.collection-item .card .authors > .author:not(:first-child)::before {
-  content: '，';
+  content: "，";
 }
-
 main #products ul.collection li.collection-item .card .tags > .chip, main #works ul.collection li.collection-item .card .tags > .chip, main #papers ul.collection li.collection-item .card .tags > .chip {
   height: auto;
   background-color: inherit;
   padding: 0;
 }
-
 main #products ul.collection li.collection-item .card .tags > .chip.pages::after, main #works ul.collection li.collection-item .card .tags > .chip.pages::after, main #papers ul.collection li.collection-item .card .tags > .chip.pages::after {
-  content: 'pages';
+  content: "pages";
 }
-
 @media only screen and (max-width: 992px) {
   main #products ul.collection li.collection-item .card, main #works ul.collection li.collection-item .card, main #papers ul.collection li.collection-item .card {
     padding: 0.5rem;
   }
 }
-
 main #products ul.collection li.collection-item .card .citation .title, main #works ul.collection li.collection-item .card .citation .title, main #papers ul.collection li.collection-item .card .citation .title {
   font-weight: 600;
   font-size: 120%;
   margin-top: 30px;
   margin-bottom: 10px;
 }
-
 main #products ul.collection li.collection-item .card .citation > :not(.title), main #works ul.collection li.collection-item .card .citation > :not(.title), main #papers ul.collection li.collection-item .card .citation > :not(.title) {
   margin-left: 20px;
 }
-
 main #products ul.collection li.collection-item .card .citation .citation-item, main #works ul.collection li.collection-item .card .citation .citation-item, main #papers ul.collection li.collection-item .card .citation .citation-item {
   padding: 5px;
   background-color: rgba(158, 158, 158, 0.2);
 }
-
 main #products ul.collection li.collection-item .card .citation pre.citation-item, main #works ul.collection li.collection-item .card .citation pre.citation-item, main #papers ul.collection li.collection-item .card .citation pre.citation-item {
   white-space: pre-wrap;
 }
-
 main #products ul.collection li.collection-item .card .citation .warning > i.material-icons.left, main #works ul.collection li.collection-item .card .citation .warning > i.material-icons.left, main #papers ul.collection li.collection-item .card .citation .warning > i.material-icons.left {
   padding-left: 20px;
 }
-
 main #products .card .card-content > *, main #works .card .card-content > *, main #papers .card .card-content > * {
   margin-bottom: 10px;
 }
-
 main #products .card .card-content .tags > .chip, main #works .card .card-content .tags > .chip, main #papers .card .card-content .tags > .chip {
   height: auto;
   background-color: inherit;
   padding: 0 5px;
   margin: 0;
 }
-
 main #products .card .card-content .tags > .chip:not(:last-child)::after, main #works .card .card-content .tags > .chip:not(:last-child)::after, main #papers .card .card-content .tags > .chip:not(:last-child)::after {
-  content: ', ';
+  content: ", ";
 }
-
 main #products .card .card-content .awards, main #works .card .card-content .awards, main #papers .card .card-content .awards {
   display: flex;
 }
-
 main #products .card .card-content .awards > .award::before, main #works .card .card-content .awards > .award::before, main #papers .card .card-content .awards > .award::before {
-  font-family: 'Material Icons';
-  content: 'emoji_events';
+  font-family: "Material Icons";
+  content: "emoji_events";
   font-size: 24px;
   line-height: 1;
   display: inline-block;
   vertical-align: -20%;
 }
-
 main #products .card .card-content .awards > .award:not(:first-child), main #works .card .card-content .awards > .award:not(:first-child), main #papers .card .card-content .awards > .award:not(:first-child) {
   margin-left: 13px;
 }
-
 main #works .related-papers::before {
-  content: '関連する論文';
+  content: "関連する論文";
   margin-right: 8px;
   font-weight: 500;
 }
-
 main #works .related-papers .paper:not(:last-child) {
   margin-right: 8px;
 }
-
 main #works .related-papers .paper:not(:last-child)::after {
-  content: '，';
+  content: "，";
 }
-
 main #papers h5 {
   margin-top: max(1.09333rem, 28px);
 }
-
 main #papers .card .badges span.new.badge {
   float: unset;
   padding: 2px;
   font-weight: 500;
 }
-
 main #papers .card .badges span.new.badge .rate {
   font-weight: 900;
 }
-
 main #papers .card .badges span.new.badge .rate::before {
-  content: '/採択率';
+  content: "/採択率";
 }
-
 main #papers .card .badges span.new.badge .rate::after {
-  content: '%';
+  content: "%";
 }
-
 main #papers .card .badges span.new.badge:first-child {
   margin-left: 0px;
 }
-
 main #papers .card .badges span.new.badge::after {
   content: unset;
 }
-
 main #papers .card .tags .chip.pdf .button > i.material-icons.left, main #papers .card .tags .chip.pdf button > i.material-icons.left {
   margin-right: 0;
 }
-
 main #papers .card .card-content > .description {
   margin-top: 30px;
 }
-
 main #papers .card .card-content > .description::before {
   content: "Abstruct";
   font-weight: 900;
   font-size: 140%;
 }
-
 main #history table.intern-detail {
   margin-left: 20px;
 }
-
 main #history table.intern-detail td:first-child {
   color: rgba(0, 0, 0, 0.8);
 }
-
 main #history table.intern-detail * {
   border: none;
 }
