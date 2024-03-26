@@ -1,5 +1,5 @@
 let gulp = require('gulp');
-let sass = require('gulp-sass');
+let sass = require('gulp-sass')(require('sass'));
 let pug = require('gulp-pug');
 const browserSync = require('browser-sync');
 
